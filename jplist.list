@@ -1,0 +1,8 @@
+#日区手游
+#限制日本ip的日本网站，以及加速部分网站的访问
+DOMAIN-SUFFIX,jp
+DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
+DOMAIN-SUFFIX,dmm.com
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
