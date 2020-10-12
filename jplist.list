@@ -3,7 +3,7 @@
 DOMAIN-SUFFIX,jp
 
 #公主连结
-DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
+#DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
 
 #DMM
 DOMAIN-SUFFIX,dmm.com
