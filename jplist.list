@@ -2,7 +2,6 @@
 #限制日本ip的日本网站，以及加速部分网站的访问
 DOMAIN-SUFFIX,jp
 
-
 #DMM
 DOMAIN-SUFFIX,dmm.com
 
