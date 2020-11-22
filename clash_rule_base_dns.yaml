@@ -3,7 +3,7 @@ socks-port: 8889
 mixed-port: 8899
 allow-lan: false
 mode: Rule
-log-level: info
+log-level: debug
 external-controller: '127.0.0.1:9090'
 experimental:
   ignore-resolve-fail: true
