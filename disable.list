@@ -1,4 +1,0 @@
-#阻止联网
-
-#阻止Potplayer自动更新
-DOMAIN-SUFFIX,get.daum.net
