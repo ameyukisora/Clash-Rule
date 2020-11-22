@@ -14,6 +14,7 @@ dns:
   enhanced-mode: fake-ip
   default-nameserver:
     - 119.29.29.29
+    - 119.28.28.28
   fake-ip-filter:
     - '*.lan'
     - '*.edu.cn'
@@ -26,6 +27,7 @@ dns:
     - 'www.msftconnecttest.com'
   nameserver:
     - 'https://dns.alidns.com/dns-query'
+    - 'https://dns.dns-over-https.com/dns-query'
 clash-for-android: 
   # append-system-dns: true # 追加系统 DNS 到 nameserver 
   ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
