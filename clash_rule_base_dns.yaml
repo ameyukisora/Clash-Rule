@@ -26,7 +26,7 @@ dns:
     - '*.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver:
-    - 'https://dns.alidns.com/dns-query'
+    - 'https://doh.pub/dns-query'
 clash-for-android: 
   # append-system-dns: true # 追加系统 DNS 到 nameserver 
   ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
