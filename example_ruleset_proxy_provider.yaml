@@ -181,7 +181,7 @@ rule-providers:
   Proxy:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvUHJveHkvUHJveHkubGlzdA== #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1Byb3h5LnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Proxy.yaml
     path: ./providers/rule-provider_Proxy.yaml
     interval: 86400
   ChinaDomain:
