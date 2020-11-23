@@ -145,7 +145,7 @@ rule-providers:
   Reject:
     type: http
     behavior: classical
-    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q= #url=base64编码，原地址：https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list 
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q= #url=base64，origin address：https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list 
     path: ./providers/rule-provider_Reject.yaml
     interval: 86400
   Special:
