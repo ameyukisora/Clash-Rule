@@ -34,39 +34,39 @@ clash-for-android:
 proxy-providers:
   All:
     type: http
-    path: ./Proxy/Proxy-all.yaml
-    url: http://example.com/files/example.yaml
+    path: ./providers/proxy/Proxy-all.yaml
+    url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: http://cp.cloudflare.com/generate_204
       interval: 1800
   JP:
     type: http
-    path: ./Proxy/Proxy-jp.yaml
-    url: http://example.com/files/example.yaml
+    path: ./providers/proxy/Proxy-jp.yaml
+    url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: http://cp.cloudflare.com/generate_204
       interval: 1800
   HK:
     type: http
-    path: ./Proxy/Proxy-hk.yaml
-    url: http://example.com/files/example.yaml
+    path: ./providers/proxy/Proxy-hk.yaml
+    url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: http://cp.cloudflare.com/generate_204
       interval: 1800
   NeteaseMusic:
     type: http
-    path: ./Proxy/Netease_Music.yaml
-    url: http://example.com/files/example.yaml
+    path: ./providers/proxy/Netease_Music.yaml
+    url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
       enable: true
-      url: http://www.gstatic.com/generate_204
+      url: http://cp.cloudflare.com/generate_204
       interval: 1800
 proxy-groups:
   - name: 🔰 Proxy
@@ -111,7 +111,6 @@ rules:
 - RULE-SET,Proxy,🔰 Proxy
 - RULE-SET,ChinaDomain,DIRECT
 - RULE-SET,ChinaIp,DIRECT
-- RULE-SET,ChinaCompanyIp,DIRECT
 - MATCH,🔰 Proxy
 script:
   code: |
@@ -126,7 +125,6 @@ script:
             "Proxy": "🔰 Proxy",
             "ChinaDomain": "DIRECT",
             "ChinaIp": "DIRECT",
-            "ChinaCompanyIp": "DIRECT",
             }
         port = int(metadata["dst_port"])
         if port not in port_list:
@@ -147,61 +145,55 @@ rule-providers:
   Reject:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Reject.yaml
-    path: ./Rules/Reject
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q= #url=base64编码，原地址：https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list 
+    path: ./providers/rule-provider_Reject.yaml
     interval: 86400
   Special:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Special.yaml
-    path: ./Rules/Special
+    url: https://api.dler.io/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1NwZWNpYWwueWFtbA== #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Special.yaml
+    path: ./providers/rule-provider_Special.yaml
     interval: 86400
   ExHentai:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/exhentai.yaml
-    path: ./Rules/ExHentai
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvZXhoZW50YWkubGlzdA== #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/exhentai.list
+    path: ./providers/rule-provider_ExHentai.yaml
     interval: 86400
   JPlist:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/jplist.yaml
-    path: ./Rules/JPlist
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvanBsaXN0Lmxpc3Q= #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/jplist.list
+    path: ./providers/rule-provider_JPlist.yaml
     interval: 86400
   Steam:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml
-    path: ./Rules/Steam
+    url: https://api.dler.io/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1N0ZWFtLnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml
+    path: ./providers/rule-provider_Steam.yaml
     interval: 86400
   Netease Music:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
-    path: ./Rules/Media/Netease_Music
+    url: https://api.dler.io/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL01lZGlhL05ldGVhc2UlMjBNdXNpYy55YW1s #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
+    path: ./providers/rule-provider_Netease_Music.yaml
     interval: 86400
   Proxy:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyLite.yaml
-    path: ./Rules/ProxyLite
+    url: https://api.dler.io/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvUHJveHkvUHJveHkubGlzdA== #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Proxy/Proxy.list
+    path: ./providers/rule-provider_Proxy.yaml
     interval: 86400
   ChinaDomain:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
-    path: ./Rules/ChinaDomain
+    url: https://api.dler.io/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQUNMNFNTUi9BQ0w0U1NSL21hc3Rlci9DbGFzaC9Qcm92aWRlcnMvQ2hpbmFEb21haW4ueWFtbA== #clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    path: ./providers/rule-provider_ChinaDomain.yaml
     interval: 86400
   ChinaIp:
     type: http
     behavior: ipcidr
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaIp.yaml
-    path: ./Rules/ChinaIp
-    interval: 86400
-  ChinaCompanyIp:
-    type: http
-    behavior: ipcidr
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaCompanyIp.yaml
-    path: ./Rules/ChinaDomain
+    url: https://api.dler.io/getruleset?type=4&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvQ2hpbmFJUHMvQ2hpbmFJUHNfUmVzb2x2ZS5saXN0 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs_Resolve.list
+    path: ./providers/rule-provider_ChinaIp.yaml
     interval: 86400
 ...
