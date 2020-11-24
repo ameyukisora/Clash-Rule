@@ -1,0 +1,170 @@
+---
+port: 8888
+socks-port: 8889
+mixed-port: 8899
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:6170
+experimental:
+  ignore-resolve-fail: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:5450
+  enhanced-mode: fake-ip
+  default-nameserver:
+  - 119.29.29.29
+  - 119.28.28.28
+  fake-ip-filter:
+  - '*.lan'
+  - '*.edu.cn'
+  - localhost.ptlogin2.qq.com
+  - '*.*.*.srv.nintendo.net'
+  - '*.*.stun.playstation.net'
+  - xbox.*.*.microsoft.com
+  - '*.*.xboxlive.com'
+  - '*.msftncsi.com'
+  - www.msftconnecttest.com
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://dns.pub/dns-query
+clash-for-android:
+  ui-subtitle-pattern: '[一-龥]{2,4}'
+proxy-providers:
+  All:
+    type: http
+    path: ./providers/proxy/Proxy-all.yaml
+    url: #http://example.com/files/example.yaml
+    interval: 3600
+    health-check:
+      enable: false
+      url: http://cp.cloudflare.com/generate_204
+      interval: 1800
+  JP:
+    type: http
+    path: ./providers/proxy/Proxy-jp.yaml
+    url: #http://example.com/files/example.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 1800
+  HK:
+    type: http
+    path: ./providers/proxy/Proxy-hk.yaml
+    url: #http://example.com/files/example.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 1800
+  NeteaseMusic:
+    type: http
+    path: ./providers/proxy/Netease_Music.yaml
+    url: #http://example.com/files/example.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      url: http://cp.cloudflare.com/generate_204
+      interval: 1800
+proxy-groups:
+  - name: 🔰 Proxy
+    type: select
+    use:
+      - All
+  - name: 🗻 JPweb
+    type: select
+    use:
+      - JP
+  - name: 🖼️ EH
+    type: select
+    use:
+      - HK
+    proxies:
+      - DIRECT
+  - name: 🎵 Netease Music
+    type: select
+    use:
+      - NeteaseMusic
+    proxies:
+      - DIRECT
+  - name: 🕹️ Steam
+    type: select
+    use:
+      - HK
+    proxies:
+      - DIRECT
+  - name: ⛔ AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 🔰 Proxy
+rules:
+- RULE-SET,Reject,⛔ AdBlock
+- RULE-SET,Special,DIRECT
+- RULE-SET,ExHentai,🖼️ EH
+- RULE-SET,JPlist,🗻 JPweb
+- RULE-SET,Steam,🕹️ Steam
+- RULE-SET,Netease Music,🎵 Netease Music
+- RULE-SET,Proxy,🔰 Proxy
+- RULE-SET,ChinaDomain,DIRECT
+- RULE-SET,ChinaIp,DIRECT
+- MATCH,🔰 Proxy
+rule-providers:
+  Reject:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q= #url=base64 encode，original address：https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list 
+    path: ./providers/rule-provider_Reject.yaml
+    interval: 86400
+  Special:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1NwZWNpYWwueWFtbA== #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Special.yaml
+    path: ./providers/rule-provider_Special.yaml
+    interval: 86400
+  ExHentai:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvZXhoZW50YWkubGlzdA== #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/exhentai.list
+    path: ./providers/rule-provider_ExHentai.yaml
+    interval: 86400
+  JPlist:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvanBsaXN0Lmxpc3Q= #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/jplist.list
+    path: ./providers/rule-provider_JPlist.yaml
+    interval: 86400
+  Steam:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1N0ZWFtLnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml
+    path: ./providers/rule-provider_Steam.yaml
+    interval: 86400
+  Netease Music:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL01lZGlhL05ldGVhc2UlMjBNdXNpYy55YW1s #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
+    path: ./providers/rule-provider_Netease_Music.yaml
+    interval: 86400
+  Proxy:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1Byb3h5LnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Proxy.yaml
+    path: ./providers/rule-provider_Proxy.yaml
+    interval: 86400
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQUNMNFNTUi9BQ0w0U1NSL21hc3Rlci9DbGFzaC9Qcm92aWRlcnMvQ2hpbmFEb21haW4ueWFtbA== #clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    path: ./providers/rule-provider_ChinaDomain.yaml
+    interval: 86400
+  ChinaIp:
+    type: http
+    behavior: classical
+    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvQ2hpbmFJUHMvQ2hpbmFJUHNfUmVzb2x2ZS5saXN0 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs_Resolve.list
+    path: ./providers/rule-provider_ChinaIp.yaml
+    interval: 86400
+...
