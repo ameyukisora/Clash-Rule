@@ -38,7 +38,7 @@ proxy-providers:
     url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
-      enable: true
+      enable: false
       url: http://cp.cloudflare.com/generate_204
       interval: 1800
   JP:
