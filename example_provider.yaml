@@ -34,7 +34,7 @@ clash-for-android:
 proxy-providers:
   All:
     type: http
-    path: ./providers/proxy/Proxy-all.yaml
+    path: ./Providers/Proxy/Proxy-all.yaml
     url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
@@ -43,7 +43,7 @@ proxy-providers:
       interval: 1800
   JP:
     type: http
-    path: ./providers/proxy/Proxy-jp.yaml
+    path: ./Providers/Proxy/Proxy-jp.yaml
     url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
@@ -52,7 +52,7 @@ proxy-providers:
       interval: 1800
   HK:
     type: http
-    path: ./providers/proxy/Proxy-hk.yaml
+    path: ./Providers/Proxy/Proxy-hk.yaml
     url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
@@ -61,7 +61,7 @@ proxy-providers:
       interval: 1800
   NeteaseMusic:
     type: http
-    path: ./providers/proxy/Netease_Music.yaml
+    path: ./Providers/Proxy/Netease_Music.yaml
     url: #http://example.com/files/example.yaml
     interval: 3600
     health-check:
@@ -116,55 +116,69 @@ rule-providers:
   Reject:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2xoaWUxL1J1bGVzL21hc3Rlci9TdXJnZS9TdXJnZSUyMDMvUHJvdmlkZXIvUmVqZWN0Lmxpc3Q= #url=base64 encode，original address：https://raw.githubusercontent.com/lhie1/Rules/master/Surge/Surge%203/Provider/Reject.list 
-    path: ./providers/rule-provider_Reject.yaml
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Reject.yaml
+    #use jsDelivr CDN
+    #original address：https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Reject.yaml
+    path: ./Providers/rule_Reject.yaml
     interval: 86400
   Special:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1NwZWNpYWwueWFtbA== #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Special.yaml
-    path: ./providers/rule-provider_Special.yaml
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Special.yaml
+    #https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Special.yaml
+    path: ./Providers/rule_Special.yaml
     interval: 86400
   ExHentai:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvZXhoZW50YWkubGlzdA== #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/exhentai.list
-    path: ./providers/rule-provider_ExHentai.yaml
+    url: https://cdn.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/provider/exhentai.yaml
+    #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/exhentai.yaml
+    path: ./Providers/rule_ExHentai.yaml
     interval: 86400
   JPlist:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FtZXl1a2lzb3JhL0NsYXNoLVJ1bGUvbWFzdGVyL3J1bGUvanBsaXN0Lmxpc3Q= #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/rule/jplist.list
-    path: ./providers/rule-provider_JPlist.yaml
+    url: https://cdn.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/provider/jplist.yaml
+    #https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/jplist.yaml
+    path: ./Providers/rule_JPlist.yaml
     interval: 86400
   Steam:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1N0ZWFtLnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml
-    path: ./providers/rule-provider_Steam.yaml
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Steam.yaml
+    #https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Steam.yaml
+    path: ./Providers/rule_Steam.yaml
     interval: 86400
   Netease Music:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL01lZGlhL05ldGVhc2UlMjBNdXNpYy55YW1s #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
-    path: ./providers/rule-provider_Netease_Music.yaml
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netease%20Music.yaml
+    #https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
+    path: ./Providers/rule_Netease_Music.yaml
     interval: 86400
   Proxy:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vbGhpZTEvUnVsZXMvbWFzdGVyL0NsYXNoL1Byb3ZpZGVyL1Byb3h5LnlhbWw= #clash-classic:https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Proxy.yaml
-    path: ./providers/rule-provider_Proxy.yaml
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Proxy.yaml
+    #https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Proxy.yaml
+    path: ./Providers/rule_Proxy.yaml
     interval: 86400
   ChinaDomain:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQUNMNFNTUi9BQ0w0U1NSL21hc3Rlci9DbGFzaC9Qcm92aWRlcnMvQ2hpbmFEb21haW4ueWFtbA== #clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
-    path: ./providers/rule-provider_ChinaDomain.yaml
+    url: https://subcon.dlj.tf/getruleset?type=6&url=Y2xhc2gtY2xhc3NpYzpodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vQUNMNFNTUi9BQ0w0U1NSL21hc3Rlci9DbGFzaC9Qcm92aWRlcnMvQ2hpbmFEb21haW4ueWFtbA==
+    #url=base64 encode，must with types.
+    #Format: type:URL
+    #where "type" supports the following value: surge, quanx, clash-domain, clash-ipcidr, clash-classic
+    #type defaults to surge if omitted
+    #original address：clash-classic:https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml
+    path: ./Providers/rule_ChinaDomain.yaml
     interval: 86400
   ChinaIp:
     type: http
     behavior: classical
-    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvQ2hpbmFJUHMvQ2hpbmFJUHNfUmVzb2x2ZS5saXN0 #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs_Resolve.list
-    path: ./providers/rule-provider_ChinaIp.yaml
+    url: https://subcon.dlj.tf/getruleset?type=6&url=aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2JsYWNrbWF0cml4Ny9pb3NfcnVsZV9zY3JpcHQvbWFzdGVyL3J1bGUvU3VyZ2UvQ2hpbmFJUHMvQ2hpbmFJUHNfUmVzb2x2ZS5saXN0
+    #https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/ChinaIPs/ChinaIPs_Resolve.list
+    path: ./Providers/rule_ChinaIp.yaml
     interval: 86400
 ...
