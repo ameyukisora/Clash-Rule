@@ -35,45 +35,45 @@ proxy-providers:
   All:
     type: http
     path: ./Providers/Proxy/Proxy-all.yaml
-    url: #http://example.com/files/example.yaml
-    interval: 3600
+    url: #example
+    interval: 21600
     health-check:
       enable: false
       url: http://cp.cloudflare.com/generate_204
-      interval: 1800
+      interval: 3600
   JP:
     type: http
     path: ./Providers/Proxy/Proxy-jp.yaml
-    url: #http://example.com/files/example.yaml
-    interval: 3600
+    url: #example
+    interval: 21600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
-      interval: 1800
+      interval: 3600
   HK:
     type: http
     path: ./Providers/Proxy/Proxy-hk.yaml
-    url: #http://example.com/files/example.yaml
-    interval: 3600
+    url: #example
+    interval: 21600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
-      interval: 1800
+      interval: 3600
   NeteaseMusic:
     type: http
     path: ./Providers/Proxy/Netease_Music.yaml
-    url: #http://example.com/files/example.yaml
-    interval: 3600
+    url: #example
+    interval: 21600
     health-check:
       enable: true
       url: http://cp.cloudflare.com/generate_204
-      interval: 1800
+      interval: 3600
 proxy-groups:
   - name: 🔰 Proxy
     type: select
     use:
       - All
-  - name: 🗻 JPweb
+  - name: 🌸 JPweb
     type: select
     use:
       - JP
@@ -95,23 +95,33 @@ proxy-groups:
       - HK
     proxies:
       - DIRECT
+  - name: 🏠 Domestic
+    type: select
+    proxies:
+      - DIRECT
+      - 🔰 Proxy
   - name: ⛔ AdBlock
     type: select
     proxies:
       - REJECT
       - DIRECT
       - 🔰 Proxy
+  - name: 🐟 Other
+    type: select
+    proxies:
+      - 🔰 Proxy
+      - DIRECT
 rules:
 - RULE-SET,Reject,⛔ AdBlock
 - RULE-SET,Special,DIRECT
 - RULE-SET,ExHentai,🖼️ EH
-- RULE-SET,JPlist,🗻 JPweb
+- RULE-SET,JPlist,🌸 JPweb
 - RULE-SET,Steam,🕹️ Steam
 - RULE-SET,Netease Music,🎵 Netease Music
 - RULE-SET,Proxy,🔰 Proxy
-- RULE-SET,ChinaDomain,DIRECT
-- RULE-SET,ChinaIp,DIRECT
-- MATCH,🔰 Proxy
+- RULE-SET,ChinaDomain,🏠 Domestic
+- RULE-SET,ChinaIp,🏠 Domestic
+- MATCH,🐟 Other
 rule-providers:
   Reject:
     type: http
