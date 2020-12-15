@@ -7,6 +7,10 @@ payload:
   # DMM
   - DOMAIN-SUFFIX,dmm.com
 
+  # pixiv
+  - DOMAIN-SUFFIX,pixiv.net
+  - DOMAIN-SUFFIX,pximg.net
+
   # 千年戦争アイギス
   - DOMAIN-SUFFIX,millennium-war.net
 
