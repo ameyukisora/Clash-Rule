@@ -122,6 +122,7 @@ rules:
 - RULE-SET,Proxy,🔰 Proxy
 - RULE-SET,ChinaDomain,🏠 Domestic
 - RULE-SET,ChinaIp,🏠 Domestic
+#- GEOIP,CN,🏠 Domestic
 - MATCH,🐟 Other
 rule-providers:
   Reject:
