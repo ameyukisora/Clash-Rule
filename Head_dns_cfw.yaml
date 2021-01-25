@@ -27,6 +27,7 @@ dns:
 #    - '*.msftncsi.com'
 #    - 'www.msftconnecttest.com'
   nameserver:
-    - 'https://doh.pub/dns-query'
+    - 192.168.50.1 #Asus router
+#    - 'https://doh.pub/dns-query'
 #    - 'https://dns.alidns.com/dns-query'
 #    - 'tls://dns.alidns.com:853'
