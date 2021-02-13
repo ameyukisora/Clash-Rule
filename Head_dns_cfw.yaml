@@ -27,5 +27,5 @@ dns:
     - '*.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver:
-#    - 'https://doh.pub/dns-query'
+    - 'https://doh.pub/dns-query'
     - 'https://dns.alidns.com/dns-query'
