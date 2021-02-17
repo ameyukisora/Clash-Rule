@@ -1,0 +1,20 @@
+mixed-port: 7880
+allow-lan: true
+log-level: info
+external-controller: 127.0.0.1:50447
+secret: ''
+ipv6: false
+
+# Will be ignored after profile selection
+proxies:
+  - name: Debug
+    type: socks5
+    server: 192.168.50.204
+    port: 7890
+proxy-groups:
+  - name: Proxy
+    type: select
+    proxies:
+      - Debug
+rules:
+  - 'MATCH,Proxy'
