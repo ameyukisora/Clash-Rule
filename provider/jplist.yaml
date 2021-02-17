@@ -20,3 +20,6 @@ payload:
   # フラワーナイトガール(Flower Knight Girl)
   - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
   - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com
+
+  # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
+  - DOMAIN-KEYWORD,bluearchive
