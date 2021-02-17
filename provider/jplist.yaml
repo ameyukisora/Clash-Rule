@@ -23,3 +23,4 @@ payload:
 
   # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
   - DOMAIN-KEYWORD,bluearchive
+  - DOMAIN-SUFFIX,cdp.cloud.unity3d.com
