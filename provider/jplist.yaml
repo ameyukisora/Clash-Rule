@@ -1,25 +1,10 @@
 payload:
 
-  # 日区游戏与网站
-  # 限制日本ip的日本网站，以及加速部分网站的访问
-  - DOMAIN-SUFFIX,jp
-  
-  # DMM
-  - DOMAIN-SUFFIX,dmm.com
+  # 日区游戏（暂不含网页游戏）
+  # 限制日本ip的手游，加速游戏内加载
 
-  # pixiv
-  - DOMAIN-SUFFIX,pixiv.net
-  - DOMAIN-SUFFIX,pximg.net
-
-  # 千年戦争アイギス
-  - DOMAIN-SUFFIX,millennium-war.net
-
-  # Getchu.com
-  - DOMAIN-SUFFIX,getchu.com
-
-  # フラワーナイトガール(Flower Knight Girl)
-  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
-  - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com
+  # プリンセスコネクト！Re:Dive，公主连结
+  - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
 
   # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
   - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
