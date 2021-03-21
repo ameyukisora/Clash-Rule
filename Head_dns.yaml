@@ -13,6 +13,7 @@ dns:
   listen: '0.0.0.0:5450'
   enhanced-mode: fake-ip #redir-host
   default-nameserver:
+    - 223.5.5.5
     - 223.6.6.6
   fake-ip-filter:
     - '*.lan'
@@ -25,8 +26,7 @@ dns:
     - '*.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver:
-#    - 'https://doh.pub/dns-query'
-    - 'https://223.6.6.6/dns-query'
+    - 'https://dns.alidns.com/dns-query'
 clash-for-android: 
   #append-system-dns: true # 追加系统 DNS 到 nameserver 
   ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
