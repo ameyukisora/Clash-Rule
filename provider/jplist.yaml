@@ -9,3 +9,4 @@ payload:
   # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
   - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
   - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
