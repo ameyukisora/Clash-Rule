@@ -5,28 +5,29 @@ allow-lan: true
 mode: Rule
 log-level: info
 external-controller: '127.0.0.1:6170'
+ipv6: false
 experimental:
   ignore-resolve-fail: true
-dns:
-  enable: true
-  ipv6: false
-  listen: '0.0.0.0:5450'
-  enhanced-mode: fake-ip #redir-host
-  default-nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
-  fake-ip-filter:
-    - '*.lan'
-    - '*.edu.cn'
-    - localhost.ptlogin2.qq.com
-    - '*.*.*.srv.nintendo.net'
-    - '*.*.stun.playstation.net'
-    - xbox.*.*.microsoft.com
-    - '*.*.xboxlive.com'
-    - '*.msftncsi.com'
-    - 'www.msftconnecttest.com'
-  nameserver:
-    - 'https://dns.alidns.com/dns-query'
+#dns:
+#  enable: true
+#  ipv6: false
+#  listen: '0.0.0.0:5450'
+#  enhanced-mode: fake-ip
+#  default-nameserver:
+#    - 223.5.5.5
+#    - 223.6.6.6
+#  fake-ip-filter:
+#    - '*.lan'
+#    - '*.edu.cn'
+#    - localhost.ptlogin2.qq.com
+#    - '*.*.*.srv.nintendo.net'
+#    - '*.*.stun.playstation.net'
+#    - xbox.*.*.microsoft.com
+#    - '*.*.xboxlive.com'
+#    - '*.msftncsi.com'
+#    - 'www.msftconnecttest.com'
+#  nameserver:
+#    - 'https://dns.alidns.com/dns-query'
 clash-for-android: 
-  #append-system-dns: true # 追加系统 DNS 到 nameserver 
+  # append-system-dns: true # 追加系统 DNS 到 nameserver 
   ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
