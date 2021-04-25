@@ -13,10 +13,6 @@ dns:
   ipv6: false
   listen: '0.0.0.0:5450'
   enhanced-mode: fake-ip
-  default-nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
-    - 223.6.6.6
   fake-ip-filter:
     - '*.lan'
     - '*.edu.cn'
@@ -28,10 +24,8 @@ dns:
     - '*.msftncsi.com'
     - 'www.msftconnecttest.com'
   nameserver:
-    - 'https://doh.pub/dns-query'
-clash-for-android: 
-  # append-system-dns: true # 追加系统 DNS 到 nameserver 
-  ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
+    - 223.6.6.6
+    - 223.5.5.5
 proxy-providers:
   JP:
     type: http
