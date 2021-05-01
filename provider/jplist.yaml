@@ -1,6 +1,6 @@
 payload:
 
-  # 日区游戏（暂不含网页游戏）
+  # 日区游戏
   # 限制日本ip的手游，加速游戏内加载
 
   # プリンセスコネクト！Re:Dive，公主连结
@@ -10,3 +10,7 @@ payload:
   - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
   - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
   - DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
+  
+  # フラワーナイトガール(Flower Knight Girl)
+  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
+  - DOMAIN-SUFFIX,s3-ap-northeast-1.amazonaws.com
