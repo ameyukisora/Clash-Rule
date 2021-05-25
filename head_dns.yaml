@@ -9,17 +9,7 @@ dns:
   enable: true
   ipv6: false
   listen: '0.0.0.0:5353'
-  enhanced-mode: fake-ip
-  fake-ip-filter:
-    - '*.lan'
-    - '*.edu.cn'
-    - localhost.ptlogin2.qq.com
-    - '*.*.*.srv.nintendo.net'
-    - '*.*.stun.playstation.net'
-    - xbox.*.*.microsoft.com
-    - '*.*.xboxlive.com'
-    - '*.msftncsi.com'
-    - 'www.msftconnecttest.com'
+  enhanced-mode: redir-host
   nameserver:
     - 119.29.29.29
     - 119.28.28.28
