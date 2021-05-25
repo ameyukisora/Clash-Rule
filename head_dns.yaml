@@ -10,6 +10,8 @@ dns:
   ipv6: false
   listen: '0.0.0.0:5353'
   enhanced-mode: redir-host
-  nameserver:
+  default-nameserver:
     - 119.29.29.29
-    - 119.28.28.28
+    - 223.5.5.5
+  nameserver:
+    - 'https://doh.pub/dns-query'
