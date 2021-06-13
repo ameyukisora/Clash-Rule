@@ -8,10 +8,17 @@ experimental:
 dns:
   enable: true
   ipv6: false
-  listen: '0.0.0.0:5353'
   enhanced-mode: redir-host
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
     - 'https://doh.pub/dns-query'
+# interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
+tun:
+  enable: true
+  stack: gvisor # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
+  dns-hijack:
+    - 198.18.0.2:53
+  auto-route: true
+  auto-detect-interface: true # 自动检测出口网卡
