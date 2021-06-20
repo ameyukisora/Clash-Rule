@@ -9,8 +9,8 @@ dns:
   listen: '0.0.0.0:53'
   enhanced-mode: redir-host
   nameserver:
+    - 119.29.29.29
     - 223.5.5.5
-    - 223.6.6.6
 # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
 tun:
   enable: true
