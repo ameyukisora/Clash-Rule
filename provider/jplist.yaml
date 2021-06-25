@@ -2,6 +2,7 @@ payload:
 
   # 日区游戏
   # 限制日本ip的手游，加速游戏内加载
+  # 高倍率
 
   # プリンセスコネクト！Re:Dive，公主连结
   - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
@@ -12,5 +13,5 @@ payload:
   - DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
   
   # DMM
-  - DOMAIN-SUFFIX,dmm.com
-  - DOMAIN-SUFFIX,dmm.co.jp
+  #- DOMAIN-SUFFIX,dmm.com
+  #- DOMAIN-SUFFIX,dmm.co.jp
