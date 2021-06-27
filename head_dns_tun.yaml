@@ -12,7 +12,7 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
-    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
 # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
 tun:
   enable: true
