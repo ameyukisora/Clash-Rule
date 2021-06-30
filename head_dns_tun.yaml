@@ -8,11 +8,10 @@ dns:
   ipv6: false
   listen: '0.0.0.0:53'
   enhanced-mode: redir-host
-  default-nameserver:
+  nameserver:
     - 119.29.29.29
     - 223.5.5.5
-  nameserver:
-    - 'https://dns.alidns.com/dns-query'
+    - 117.50.10.10
 # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
 tun:
   enable: true
