@@ -8,9 +8,16 @@ dns:
   ipv6: false
   listen: '0.0.0.0:53'
   enhanced-mode: redir-host
-  nameserver:
-    - 223.6.6.6
+  default-nameserver:
     - 223.5.5.5
+    - 223.6.6.6
+  nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+  fallback:
+    - https://cloudflare-dns.com/dns-query
+    - https://dns-unfiltered.adguard.com/dns-query
+    - https://doh.dns.sb/dns-query
 # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
 tun:
   enable: true
