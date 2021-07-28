@@ -8,12 +8,11 @@ mixin:
       - 223.5.5.5
       - 223.6.6.6
     nameserver:
-      - https://doh.pub/dns-query
-      #- https://dns.alidns.com/dns-query
+      - https://dns.alidns.com/dns-query
   # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
   tun:
     enable: true
-    stack: gvisor # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
+    stack: system # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
     dns-hijack:
       - 198.18.0.2:53
     auto-route: true
