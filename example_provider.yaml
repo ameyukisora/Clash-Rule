@@ -118,10 +118,9 @@ rules:
 rule-providers:
   Reject:
     type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-clash.yaml
-    #use jsDelivr CDN
-    #original address：https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-clash.yaml
+    behavior: classical
+    url: https://cdn.jsdelivr.net/gh/lhie1/Rules/Clash/Provider/Reject.yaml
+    #original address：https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Reject.yaml
     path: ./Providers/rule/Reject.yaml
     interval: 86400
   Special:
