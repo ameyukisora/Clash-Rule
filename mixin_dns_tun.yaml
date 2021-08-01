@@ -5,11 +5,10 @@ mixin:
     listen: '0.0.0.0:53'
     enhanced-mode: redir-host
     default-nameserver:
-      - 223.5.5.5
+      - 119.29.29.29
       - 223.6.6.6
     nameserver:
-      - 223.5.5.5
-      - 223.6.6.6
+      - https://doh.pub/dns-query
   # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
   tun:
     enable: true
