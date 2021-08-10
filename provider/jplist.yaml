@@ -13,5 +13,5 @@ payload:
   - DOMAIN-SUFFIX,ba-jp-sdk.bluearchive.jp
   
   # DMM
-  #- DOMAIN-SUFFIX,dmm.com
-  #- DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.com
+  - DOMAIN-SUFFIX,dmm.co.jp
