@@ -138,8 +138,8 @@ rule-providers:
   Netease Music:
     type: http
     behavior: classical
-    url: https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Clash/Provider/Media/Netease%20Music.yaml
-    # https://raw.githubusercontent.com/lhie1/Rules/master/Clash/Provider/Media/Netease%20Music.yaml
+    url: https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
+    # https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/NetEaseMusic/NetEaseMusic.yaml
     path: ./providers/rule/NeteaseMusic.yaml
     interval: 86400
   Proxy:
