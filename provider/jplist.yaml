@@ -1,8 +1,6 @@
 payload:
 
-  # 日区游戏
-  # 限制日本ip的手游，加速游戏内加载
-  # 高倍率
+  # 限制日本ip
 
   # プリンセスコネクト！Re:Dive，公主连结
   - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
