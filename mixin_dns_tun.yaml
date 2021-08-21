@@ -8,7 +8,7 @@ mixin:
       - 223.5.5.5
       - 119.29.29.29
     nameserver:
-      - https://i.passcloud.xyz/dns-query
+      - 223.5.5.5
 
   # interface-name: WLAN # 出口网卡名称，或者使用下方的自动检测
   tun:
