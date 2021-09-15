@@ -1,0 +1,10 @@
+payload:
+  # tun模式下直连的程序和域名
+
+  # Wargaming.net Game Center
+  - PROCESS-NAME,wargamingerrormonitor.exe
+  - PROCESS-NAME,wgc.exe
+  - PROCESS-NAME,wgc_renderer_host.exe
+
+  # BitComet
+  - PROCESS-NAME,BitComet_x64.exe
