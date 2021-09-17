@@ -1,0 +1,38 @@
+payload:
+  # 直连的程序和域名
+  
+  # Google
+  - DOMAIN-KEYWORD,mtalk.google.com
+  - DOMAIN,safebrowsing.googleapis.com
+  - DOMAIN-SUFFIX,dl.google.com
+  
+  # Microsoft
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,windows.com
+  - DOMAIN-SUFFIX,windows.net
+  - DOMAIN-SUFFIX,windowsupdate.com
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,xboxlive.com
+  
+  # Wargaming.net Game Center
+  - PROCESS-NAME,wargamingerrormonitor.exe
+  - PROCESS-NAME,wgc.exe
+  - PROCESS-NAME,wgc_renderer_host.exe
+  
+  # Downloader
+  - PROCESS-NAME,aria2c.exe
+  - PROCESS-NAME,BitComet.exe
+  - PROCESS-NAME,BitComet_x64.exe
+  - PROCESS-NAME,fdm.exe
+  - PROCESS-NAME,NetTransport.exe
+  - PROCESS-NAME,qbittorrent.exe
+  - PROCESS-NAME,Thunder.exe
+  - PROCESS-NAME,transmission-daemon.exe
+  - PROCESS-NAME,transmission-qt.exe
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,WebTorrent.exe
+  
+  
+  - DOMAIN-KEYWORD,announce
+  - DOMAIN-KEYWORD,torrent
+  - DOMAIN-SUFFIX,smtp
