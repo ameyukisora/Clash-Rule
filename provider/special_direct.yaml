@@ -19,6 +19,8 @@ payload:
   - PROCESS-NAME,wgc.exe
   - PROCESS-NAME,wgc_renderer_host.exe
   
+  - PROCESS-NAME,WorldOfWarships64.exe
+  
   # Downloader
   - PROCESS-NAME,aria2c.exe
   - PROCESS-NAME,BitComet.exe
