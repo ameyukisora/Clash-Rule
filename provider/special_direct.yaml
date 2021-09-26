@@ -20,6 +20,7 @@ payload:
   - PROCESS-NAME,wgc_renderer_host.exe
   
   - PROCESS-NAME,WorldOfWarships64.exe
+  - DOMAIN-SUFFIX,worldofwarships.jp
   
   # Downloader
   - PROCESS-NAME,aria2c.exe
