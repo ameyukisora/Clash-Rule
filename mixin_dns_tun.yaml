@@ -6,12 +6,12 @@ mixin:
     enhanced-mode: redir-host
     default-nameserver: [223.5.5.5,119.29.29.29]
     nameserver:
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+    #  - https://doh.pub/dns-query
+      - https://223.5.5.5/dns-query
 
   tun:
     enable: true
-    stack: gvisor # 使用 system 需要 Clash Premium 2021.05.08 及更高版本
+    stack: gvisor # or system
     dns-hijack: [198.18.0.2:53]
     auto-route: true
-    auto-detect-interface: true # 自动检测出口网卡
+    auto-detect-interface: true
