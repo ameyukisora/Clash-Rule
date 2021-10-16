@@ -38,6 +38,6 @@ payload:
   - PROCESS-NAME,WorldOfWarships64.exe
   - DOMAIN-SUFFIX,worldofwarships.jp
   
-
+  - PROCESS-NAME,Netch.exe
   
   - DOMAIN-SUFFIX,smtp
