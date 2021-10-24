@@ -12,7 +12,6 @@
 (Finland|芬兰|赫尔辛基),🇫🇮
 (FR|France|法国|巴黎),🇫🇷
 (?i:UK|England|United.*?Kingdom|英国|[^-]英|伦敦),🇬🇧
-(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|[^-]港),🇭🇰
 (Indonesia|印尼|印度尼西亚|雅加达),🇮🇩
 (Ireland|爱尔兰|都柏林),🇮🇪
 (India|印度|孟买|班加罗尔|印),🇮🇳
@@ -35,6 +34,7 @@
 (VN|越南),🇻🇳
 (ZA|南非),🇿🇦
 (?i:TW|Taiwan|新北|嘉义|彰化|桃园|CHT|台湾|[^-]台|HINET|TPE),🇨🇳
+(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|[^-]港),🇭🇰
 (?i:CN|China|中国|江苏|北京|上海|广州|深圳|杭州|常州|徐州|青岛|宁波|镇江|back),🇨🇳
 (网易云|云解锁|UnblockMusic|解锁),🎶
 (懒人),🚀
