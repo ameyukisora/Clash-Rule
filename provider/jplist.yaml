@@ -13,8 +13,6 @@ payload:
   # DMM
   - DOMAIN-SUFFIX,dmm.com
   - DOMAIN-SUFFIX,dmm.co.jp
-  
-  # 以下为DMM GAMES
-  # エンジェリックリンク，Angelic link，天使链接
-  # https://games.dmm.com/zh-CHS/detail/angelic/
-  - DOMAIN-SUFFIX,ancl.jp
+
+  # .jp域名
+  - DOMAIN-SUFFIX,jp
