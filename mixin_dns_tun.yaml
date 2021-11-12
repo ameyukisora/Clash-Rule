@@ -65,7 +65,8 @@ mixin:
     - 'xbox.*.microsoft.com'
     - 'xnotify.xboxlive.com'
     ## Wargaming
-    - '*.worldofwarships.*'
+    - '+.worldofwarships.*'
+    - '+.worldoftanks.*'
     - '+.wargaming.net'
     # === Other ===
     ## QQ Quick Login
