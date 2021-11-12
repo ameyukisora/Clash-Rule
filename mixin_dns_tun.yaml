@@ -66,6 +66,7 @@ mixin:
     - 'xnotify.xboxlive.com'
     ## Wargaming
     - '*.worldofwarships.*'
+    - '+.wargaming.net'
     # === Other ===
     ## QQ Quick Login
     - 'localhost.ptlogin2.qq.com'
