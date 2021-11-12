@@ -65,7 +65,7 @@ mixin:
     - 'xbox.*.microsoft.com'
     - 'xnotify.xboxlive.com'
     ## Wargaming
-    - 'login1.worldofwarships.jp'
+    - '*.worldofwarships.*'
     # === Other ===
     ## QQ Quick Login
     - 'localhost.ptlogin2.qq.com'
