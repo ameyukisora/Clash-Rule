@@ -5,8 +5,8 @@ mixin:
     listen: :53
     enhanced-mode: redir-host
     nameserver:
+    - 119.29.29.29
     - 223.5.5.5
-    - 223.6.6.6
 
   tun:
     enable: true
