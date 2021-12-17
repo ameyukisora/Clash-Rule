@@ -5,12 +5,13 @@ mixin:
     listen: :53
     enhanced-mode: redir-host
     nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
+      - 119.29.29.29
+      - 223.5.5.5
 
   tun:
     enable: true
     stack: gvisor # or system
-    dns-hijack: [198.18.0.2:53]
+    dns-hijack: 
+      - 198.18.0.2:53
     auto-route: true
     auto-detect-interface: true
