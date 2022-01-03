@@ -78,6 +78,7 @@ mixin:
       - "+.wggames.cn"
       - "+.wowsgame.cn"
       - "+.wargaming.net"
+      - "+.worldofwarships.jp"
       - "proxy.golang.org"
       - "stun.*.*"
       - "stun.*.*.*"
