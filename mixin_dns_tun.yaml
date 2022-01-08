@@ -1,14 +1,17 @@
 mixin:
   dns:
     enable: true
+    ipv6: false
+    listen: 0.0.0.0:53
     enhanced-mode: fake-ip
-    fake-ip-range: 198.18.0.1/16
     default-nameserver:
       - 223.5.5.5
       - 119.29.29.29
     nameserver:
-      - https://doh.pub/dns-query
-      - https://dns.alidns.com/dns-query
+      #- https://doh.pub/dns-query
+      #- https://dns.alidns.com/dns-query
+      #- tls://c.passcloud.xyz
+      - https://i.passcloud.xyz/dns-query
     fake-ip-filter:
       - "*.lan"
       - "*.localdomain"
@@ -68,7 +71,7 @@ mixin:
       - "msftconnecttest.com"
       - "msftncsi.com"
       - "localhost.ptlogin2.qq.com"
-      - "localhost.sec.qq.com"
+      - "localhost.sec.qq.com" 
       - "+.srv.nintendo.net"
       - "+.stun.playstation.net"
       - "xbox.*.microsoft.com"
@@ -104,7 +107,7 @@ mixin:
 
   tun:
     enable: true
-    stack: system # or gvisor
+    stack: system # system or gvisor
     dns-hijack: 
       - 198.18.0.2:53
     auto-route: true
