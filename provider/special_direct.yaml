@@ -1,7 +1,7 @@
 payload:
-  # 直连的程序和域名
+  # 补充 lhie1/Rules/master/Clash/Provider/Special.yaml
   
-  # 本地/局域网地址
+  # local
   - DOMAIN-SUFFIX,ip6-localhost
   - DOMAIN-SUFFIX,ip6-loopback
   - DOMAIN-SUFFIX,local
@@ -17,40 +17,13 @@ payload:
   - IP-CIDR6,fe80::/10,no-resolve
   - IP-CIDR6,fd00::/8,no-resolve
   
-  # BT下载器
-  - PROCESS-NAME,aria2c.exe
-  - PROCESS-NAME,BitComet.exe
+  # BT
   - PROCESS-NAME,BitComet_x64.exe
-  - PROCESS-NAME,fdm.exe
-  - PROCESS-NAME,NetTransport.exe
-  - PROCESS-NAME,qbittorrent.exe
-  - PROCESS-NAME,Thunder.exe
-  - PROCESS-NAME,transmission-daemon.exe
-  - PROCESS-NAME,transmission-qt.exe
-  - PROCESS-NAME,uTorrent.exe
-  - PROCESS-NAME,WebTorrent.exe
-  
-  # Google
-  - DOMAIN-KEYWORD,mtalk.google.com
-  - DOMAIN,safebrowsing.googleapis.com
-  - DOMAIN-SUFFIX,dl.google.com
-  
-  # Microsoft
-  - DOMAIN-SUFFIX,msftconnecttest.com
-  - DOMAIN-SUFFIX,windows.com
-  - DOMAIN-SUFFIX,windows.net
-  - DOMAIN-SUFFIX,windowsupdate.com
-  - DOMAIN-SUFFIX,xbox.com
-  - DOMAIN-SUFFIX,xboxlive.com
-  
-  # Wargaming.net Game Center
+
+  # Wargaming.net
   - PROCESS-NAME,wargamingerrormonitor.exe
   - PROCESS-NAME,wgc.exe
   - PROCESS-NAME,wgc_renderer_host.exe
-  
   - PROCESS-NAME,WorldOfWarships64.exe
-  - DOMAIN-SUFFIX,worldofwarships.jp
-  
+
   - PROCESS-NAME,Netch.exe
-  
-  - DOMAIN-SUFFIX,smtp
