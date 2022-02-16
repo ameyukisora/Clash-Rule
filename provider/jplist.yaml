@@ -17,10 +17,10 @@ payload:
   - DOMAIN-SUFFIX,dmm.co.jp
 
   # .jp域名
-  - DOMAIN-SUFFIX,jp
+  #- DOMAIN-SUFFIX,jp
 
   # pixiv
-  - DOMAIN-SUFFIX,booth.pm
-  - DOMAIN-SUFFIX,fanbox.cc
-  - DOMAIN-SUFFIX,pixiv.net
-  - DOMAIN-SUFFIX,pximg.net
+  #- DOMAIN-SUFFIX,booth.pm
+  #- DOMAIN-SUFFIX,fanbox.cc
+  #- DOMAIN-SUFFIX,pixiv.net
+  #- DOMAIN-SUFFIX,pximg.net
