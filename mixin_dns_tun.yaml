@@ -102,7 +102,7 @@ mixin:
 
   tun:
     enable: true
-    stack: system # system or gvisor
+    stack: gvisor # system or gvisor
     dns-hijack: 
       - 198.18.0.2:53
     auto-route: true
