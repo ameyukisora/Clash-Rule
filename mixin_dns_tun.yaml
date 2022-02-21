@@ -7,7 +7,6 @@ mixin:
       - 223.6.6.6
     nameserver:
       - https://dns.alidns.com/dns-query
-      - https://doh.pub/dns-query
     fake-ip-filter:
       - "*.lan"
       - "*.localdomain"
