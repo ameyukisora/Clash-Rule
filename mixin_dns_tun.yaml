@@ -1,12 +1,11 @@
 mixin:
   dns:
     enable: true
+    listen: 0.0.0.0:53
     enhanced-mode: fake-ip
-    default-nameserver:
+    nameserver:
       - 223.5.5.5
       - 223.6.6.6
-    nameserver:
-      - https://dns.alidns.com/dns-query
     fake-ip-filter:
       - "*.lan"
       - "*.localdomain"
