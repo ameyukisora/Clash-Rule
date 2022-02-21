@@ -2,8 +2,6 @@ mixed-port: 7890
 allow-lan: false
 log-level: info
 mode: Rule
-experimental:
-  ignore-resolve-fail: true
 dns:
   enable: true
   listen: 0.0.0.0:53
