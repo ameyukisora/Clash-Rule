@@ -25,6 +25,10 @@ payload:
   - DOMAIN-SUFFIX,xbox.com
   - DOMAIN-SUFFIX,xboxlive.com
   
+  # > Google
+  - DOMAIN,safebrowsing.googleapis.com
+  - DOMAIN-SUFFIX,dl.google.com
+  
   # > Download
   - PROCESS-NAME,aria2c.exe
   - PROCESS-NAME,BitComet.exe
