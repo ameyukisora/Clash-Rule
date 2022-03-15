@@ -64,7 +64,7 @@ payload:
 
   # Majsoul
   - DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
-  - DOMAIN-SUFFIX,game.maj-soul.com
+  #- DOMAIN-SUFFIX,game.maj-soul.com
   - DOMAIN-SUFFIX,lb-hw.maj-soul.com
   - DOMAIN-SUFFIX,lb-sy.maj-soul.com
   - DOMAIN-SUFFIX,lb-cdn.maj-soul.com
