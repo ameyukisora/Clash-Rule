@@ -7,11 +7,9 @@ dns:
   ipv6: false
   listen: 0.0.0.0:53
   enhanced-mode: fake-ip
-  default-nameserver:
+  nameserver:
     - 119.29.29.29
     - 223.6.6.6
-  nameserver:
-    - https://doh.pub/dns-query
   fake-ip-filter:
     - "*.lan"
     - "*.localdomain"
