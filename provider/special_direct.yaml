@@ -61,7 +61,8 @@ payload:
   - PROCESS-NAME,WorldOfWarships64.exe
 
   - PROCESS-NAME,Netch.exe
-
+  - PROCESS-NAME,Shadowsocks.exe
+  
   # Majsoul
   - DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
   #- DOMAIN-SUFFIX,game.maj-soul.com
