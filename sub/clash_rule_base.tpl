@@ -12,7 +12,6 @@ dns:
 proxies: ~
 proxy-groups: ~
 rules:
-  # Local
   - DOMAIN-SUFFIX,ip6-localhost,DIRECT
   - DOMAIN-SUFFIX,ip6-loopback,DIRECT
   - DOMAIN-SUFFIX,local,DIRECT
@@ -23,9 +22,6 @@ rules:
   - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
-  
-  # > Microsoft
-  # - USER-AGENT,Microsoft%20Remote%20Desktop*
   - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
   - DOMAIN-SUFFIX,msftncsi.com,DIRECT
   - DOMAIN-SUFFIX,windows.com,DIRECT
@@ -33,28 +29,18 @@ rules:
   - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
   - DOMAIN-SUFFIX,xbox.com,DIRECT
   - DOMAIN-SUFFIX,xboxlive.com,DIRECT
-  
-  # > Google
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
   - DOMAIN-SUFFIX,dl.google.com,DIRECT
-  
-  # > Download
   - PROCESS-NAME,aria2c.exe,DIRECT
   - PROCESS-NAME,BitComet.exe,DIRECT
   - PROCESS-NAME,BitComet_x64.exe,DIRECT
-
-  # Wargaming.net
   - PROCESS-NAME,wargamingerrormonitor.exe,DIRECT
   - PROCESS-NAME,wgc.exe,DIRECT
   - PROCESS-NAME,wgc_renderer_host.exe,DIRECT
   - PROCESS-NAME,WorldOfWarships64.exe,DIRECT
-
   - PROCESS-NAME,Netch.exe,DIRECT
   - PROCESS-NAME,Shadowsocks.exe,DIRECT
-  
-  # Majsoul
   - DOMAIN-SUFFIX,majsoul-hk-client.cn-hongkong.log.aliyuncs.com,DIRECT
-  #- DOMAIN-SUFFIX,game.maj-soul.com,DIRECT
   - DOMAIN-SUFFIX,lb-hw.maj-soul.com,DIRECT
   - DOMAIN-SUFFIX,lb-sy.maj-soul.com,DIRECT
   - DOMAIN-SUFFIX,lb-cdn.maj-soul.com,DIRECT
