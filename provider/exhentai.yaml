@@ -1,0 +1,13 @@
+payload:
+
+  # 部分IP无法显示部分画廊（版权争议）
+  - DOMAIN-SUFFIX,exhentai.org
+  - DOMAIN-SUFFIX,e-hentai.org
+  - DOMAIN-SUFFIX,ehgt.org
+  - DOMAIN-SUFFIX,hath.network
+  - IP-CIDR,178.175.128.252,no-resolve
+  - IP-CIDR,178.175.128.254,no-resolve
+  - IP-CIDR,178.175.129.252,no-resolve
+  - IP-CIDR,178.175.129.254,no-resolve
+  - IP-CIDR,178.175.132.20,no-resolve
+  - IP-CIDR,178.175.132.22,no-resolve
