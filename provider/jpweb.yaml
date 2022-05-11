@@ -6,6 +6,13 @@ payload:
   - DOMAIN-SUFFIX,dmm.com
   - DOMAIN-SUFFIX,dmm.co.jp
   
+  # プリンセスコネクト！Re:Dive，公主连结
+  - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
+  
+  # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
+  - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+  
   # .jp域名
   - DOMAIN-SUFFIX,jp
   
