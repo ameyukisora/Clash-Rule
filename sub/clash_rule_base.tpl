@@ -126,4 +126,5 @@ rules:
   - PROCESS-NAME,WorldOfWarships64.exe,DIRECT
   - PROCESS-NAME,Netch.exe,DIRECT
   - PROCESS-NAME,Shadowsocks.exe,DIRECT
+  - PROCESS-NAME,ShadowsocksR.exe,DIRECT
   - PROCESS-NAME,Trojan.exe,DIRECT
