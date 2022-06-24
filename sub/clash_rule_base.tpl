@@ -8,8 +8,8 @@ dns:
   listen: '127.0.0.1:8053'
   enhanced-mode: fake-ip
   nameserver:
-    - 'https://223.5.5.5/dns-query'
-    - 'https://223.6.6.6/dns-query'
+    - 'https://doh.pub/dns-query'
+    - 'https://dns.alidns.com/dns-query'
   fake-ip-filter:
     - '*.lan'
     - '*.localdomain'
