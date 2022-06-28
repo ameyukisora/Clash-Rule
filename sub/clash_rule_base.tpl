@@ -7,6 +7,9 @@ dns:
   ipv6: false
   listen: '127.0.0.1:8053'
   enhanced-mode: fake-ip
+  default-nameserver:
+    - 119.29.29.29
+    - 223.5.5.5
   nameserver:
     - 'https://doh.pub/dns-query'
     - 'https://dns.alidns.com/dns-query'
