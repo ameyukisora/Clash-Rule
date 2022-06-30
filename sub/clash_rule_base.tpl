@@ -11,7 +11,7 @@ dns:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
-    - 'https://dns.alidns.com/dns-query'
+    - 'https://doh.pub/dns-query'
   fake-ip-filter:
     - '*.lan'
     - '*.localdomain'
