@@ -96,7 +96,7 @@ mixin:
       - '*.ffxiv.com'
   tun:
     enable: true
-    stack: gvisor
+    stack: system #需设置系统防火墙
     dns-hijack:
       - '198.18.0.2:53'
     auto-route: true
