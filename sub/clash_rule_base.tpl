@@ -129,3 +129,4 @@ rules:
   - PROCESS-NAME,Shadowsocks.exe,DIRECT
   - PROCESS-NAME,ShadowsocksR.exe,DIRECT
   - PROCESS-NAME,Trojan.exe,DIRECT
+  - PROCESS-NAME,v2ray-sn.exe,DIRECT
