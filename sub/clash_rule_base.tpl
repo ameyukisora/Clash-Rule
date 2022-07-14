@@ -10,7 +10,6 @@ dns:
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-    - 8.8.8.8
   fake-ip-filter:
     - '*.lan'
     - '*.localdomain'
