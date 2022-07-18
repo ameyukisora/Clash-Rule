@@ -5,11 +5,10 @@ mode: Rule
 dns:
   enable: true
   ipv6: false
-  listen: '127.0.0.1:8053'
   enhanced-mode: fake-ip
   nameserver:
-    - 223.6.6.6
     - 223.5.5.5
+    - 223.6.6.6
   fake-ip-filter:
     - '*.lan'
     - '*.localdomain'
@@ -61,16 +60,11 @@ dns:
     - '*.msftncsi.com'
     - msftconnecttest.com
     - msftncsi.com
-    - localhost.ptlogin2.qq.com
-    - localhost.sec.qq.com
     - +.srv.nintendo.net
     - +.stun.playstation.net
     - xbox.*.microsoft.com
     - xnotify.xboxlive.com
     - +.battlenet.com.cn
-    - +.wotgame.cn
-    - +.wggames.cn
-    - +.wowsgame.cn
     - +.wargaming.net
     - +.worldofwarships.*
     - proxy.golang.org
@@ -93,8 +87,6 @@ dns:
     - stun.l.google.com
     - +.nflxvideo.net
     - '*.square-enix.com'
-    - '*.finalfantasyxiv.com'
-    - '*.ffxiv.com'
 proxies: ~
 proxy-groups: ~
 rules:
