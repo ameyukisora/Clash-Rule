@@ -96,6 +96,6 @@ mixin:
     enable: true
     stack: gvisor #system需设置系统防火墙 or gvisor
     dns-hijack:
-      - '198.18.0.2:53'
+      - any:53
     auto-route: true
     auto-detect-interface: true
