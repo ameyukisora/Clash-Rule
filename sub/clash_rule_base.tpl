@@ -8,7 +8,7 @@ dns:
   listen: '127.0.0.1:8053'
   enhanced-mode: fake-ip
   nameserver:
-    - 119.29.29.29
+    - 223.6.6.6
     - 223.5.5.5
   fake-ip-filter:
     - '*.lan'
