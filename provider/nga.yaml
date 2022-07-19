@@ -3,3 +3,6 @@ payload:
   - DOMAIN-SUFFIX,nga.178.com
   - DOMAIN-SUFFIX,ngabbs.com
   - DOMAIN-SUFFIX,ngacn.cc
+
+  #nga数据统计
+  - DOMAIN-SUFFIX,kxlogo.knet.cn
