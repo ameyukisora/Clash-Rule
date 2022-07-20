@@ -108,6 +108,7 @@ rules:
   - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
   - DOMAIN-SUFFIX,xbox.com,DIRECT
   - DOMAIN-SUFFIX,xboxlive.com,DIRECT
+  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
   - PROCESS-NAME,aria2c.exe,DIRECT
   - PROCESS-NAME,BitComet.exe,DIRECT
   - PROCESS-NAME,wargamingerrormonitor.exe,DIRECT
