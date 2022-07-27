@@ -103,6 +103,7 @@ rules:
   - DOMAIN,safebrowsing.googleapis.com,DIRECT
   - DOMAIN-SUFFIX,dl.google.com,DIRECT
   - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
   - DOMAIN-SUFFIX,windows.com,DIRECT
   - DOMAIN-SUFFIX,windows.net,DIRECT
   - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
