@@ -12,83 +12,111 @@ dns:
   nameserver:
     - https://dns.alidns.com/dns-query
   fake-ip-filter:
-    - '*.lan'
-    - '*.localdomain'
+    # === LAN ===
     - '*.example'
+    - '*.home.arpa'
     - '*.invalid'
+    - '*.lan'
+    - '*.local'
+    - '*.localdomain'
     - '*.localhost'
     - '*.test'
-    - '*.local'
-    - '*.home.arpa'
-    - time.*.com
-    - time.*.gov
-    - time.*.edu.cn
-    - time.*.apple.com
-    - time1.*.com
-    - time2.*.com
-    - time3.*.com
-    - time4.*.com
-    - time5.*.com
-    - time6.*.com
-    - time7.*.com
-    - ntp.*.com
-    - ntp1.*.com
-    - ntp2.*.com
-    - ntp3.*.com
-    - ntp4.*.com
-    - ntp5.*.com
-    - ntp6.*.com
-    - ntp7.*.com
-    - '*.time.edu.cn'
-    - '*.ntp.org.cn'
-    - +.pool.ntp.org
-    - time1.cloud.tencent.com
-    - music.163.com
-    - '*.music.163.com'
-    - '*.126.net'
-    - musicapi.taihe.com
-    - music.taihe.com
-    - songsearch.kugou.com
-    - trackercdn.kugou.com
-    - '*.kuwo.cn'
-    - api-jooxtt.sanook.com
-    - api.joox.com
-    - joox.com
-    - +.qq.com
-    - '*.xiami.com'
-    - '*.music.migu.cn'
-    - music.migu.cn
-    - '*.msftconnecttest.com'
-    - '*.msftncsi.com'
-    - msftconnecttest.com
-    - msftncsi.com
-    - +.srv.nintendo.net
-    - +.stun.playstation.net
-    - xbox.*.microsoft.com
-    - xnotify.xboxlive.com
-    - +.battlenet.com.cn
-    - +.wargaming.net
-    - +.worldofwarships.*
-    - proxy.golang.org
-    - stun.*.*
-    - stun.*.*.*
-    - +.stun.*.*
-    - +.stun.*.*.*
-    - +.stun.*.*.*.*
-    - heartbeat.belkin.com
+    # === Apple Software Update Service ===
+    - 'mesu.apple.com'
+    - 'swscan.apple.com'
+    # === ASUS Router ===
+    - '*.router.asus.com'
+    # === Google ===
+    - 'lens.l.google.com'
+    - 'stun.l.google.com'
+    ## Golang
+    - 'proxy.golang.org'
+    # === Linksys Wireless Router ===
     - '*.linksys.com'
     - '*.linksyssmartwifi.com'
-    - '*.router.asus.com'
-    - mesu.apple.com
-    - swscan.apple.com
-    - swquery.apple.com
-    - swdownload.apple.com
-    - swcdn.apple.com
-    - swdist.apple.com
-    - lens.l.google.com
-    - stun.l.google.com
-    - +.nflxvideo.net
-    - '*.square-enix.com'
+    # === Windows 10 Connnect Detection ===
+    - '*.ipv6.microsoft.com'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - 'msftconnecttest.com'
+    - 'msftncsi.com'
+    # === NTP Service ===
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - 'time.*.apple.com'
+    - 'time.*.com'
+    - 'time.*.gov'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'time.*.edu.cn'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    # === Game Service ===
+    ## Microsoft Xbox
+    - 'speedtest.cros.wr.pvp.net'
+    - '*.*.xboxlive.com'
+    - 'xbox.*.*.microsoft.com'
+    - 'xbox.*.microsoft.com'
+    - 'xnotify.xboxlive.com'
+    ## Nintendo Switch
+    - '*.*.*.srv.nintendo.net'
+    - '+.srv.nintendo.net'
+    ## Sony PlayStation
+    - '*.*.stun.playstation.net'
+    - '+.stun.playstation.net'
+    ## STUN Server
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*'
+    - 'stun.*.*.*'
+    - 'stun.*.*'
+    # === Music Service ===
+    ## 咪咕音乐
+    - '*.music.migu.cn'
+    - 'music.migu.cn'
+    ## 太和音乐
+    - 'music.taihe.com'
+    - 'musicapi.taihe.com'
+    ## 腾讯音乐
+    - 'songsearch.kugou.com'
+    - 'trackercdn.kugou.com'
+    - '*.kuwo.cn'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'joox.com'
+    - 'y.qq.com'
+    - '*.y.qq.com'
+    - 'amobile.music.tc.qq.com'
+    - 'aqqmusic.tc.qq.com'
+    - 'mobileoc.music.tc.qq.com'
+    - 'streamoc.music.tc.qq.com'
+    - 'dl.stream.qqmusic.qq.com'
+    - 'isure.stream.qqmusic.qq.com'
+    ## 网易云音乐
+    - 'music.163.com'
+    - '*.music.163.com'
+    - '*.126.net'
+    ## 虾米音乐
+    - '*.xiami.com'
+    # === Other ===
+    ## QQ Quick Login
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.sec.qq.com'
+    ## BiliBili P2P
+    - '*.mcdn.bilivideo.cn'
 proxies: ~
 proxy-groups: ~
 rules:
