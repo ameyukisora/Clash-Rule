@@ -119,35 +119,35 @@ dns:
     - '*.mcdn.bilivideo.cn'
 proxies: ~
 proxy-groups: ~
-rules:
-  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
-  - DOMAIN-SUFFIX,ip6-loopback,DIRECT
-  - DOMAIN-SUFFIX,local,DIRECT
-  - DOMAIN-SUFFIX,localhost,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
-  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
-  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
-  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
-  - IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
-  - DOMAIN,safebrowsing.googleapis.com,DIRECT
-  - DOMAIN-SUFFIX,dl.google.com,DIRECT
-  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
-  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
-  - DOMAIN-SUFFIX,windows.com,DIRECT
-  - DOMAIN-SUFFIX,windows.net,DIRECT
-  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
-  - DOMAIN-SUFFIX,xbox.com,DIRECT
-  - DOMAIN-SUFFIX,xboxlive.com,DIRECT
-  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
-  - PROCESS-NAME,aria2c.exe,DIRECT
-  - PROCESS-NAME,BitComet.exe,DIRECT
-  - PROCESS-NAME,wargamingerrormonitor.exe,DIRECT
-  - PROCESS-NAME,wgc.exe,DIRECT
-  - PROCESS-NAME,wgc_renderer_host.exe,DIRECT
-  - PROCESS-NAME,WorldOfWarships64.exe,DIRECT
-  - PROCESS-NAME,Netch.exe,DIRECT
-  - PROCESS-NAME,Shadowsocks.exe,DIRECT
-  - PROCESS-NAME,ShadowsocksR.exe,DIRECT
-  - PROCESS-NAME,Trojan.exe,DIRECT
-  - PROCESS-NAME,v2ray-sn.exe,DIRECT
+rules: ~
+#  - DOMAIN-SUFFIX,ip6-localhost,DIRECT
+#  - DOMAIN-SUFFIX,ip6-loopback,DIRECT
+#  - DOMAIN-SUFFIX,local,DIRECT
+#  - DOMAIN-SUFFIX,localhost,DIRECT
+#  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+#  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+#  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+#  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+#  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+#  - IP-CIDR,198.18.0.0/16,DIRECT,no-resolve
+#  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+#  - DOMAIN-SUFFIX,dl.google.com,DIRECT
+#  - DOMAIN-SUFFIX,msftconnecttest.com,DIRECT
+#  - DOMAIN-SUFFIX,msftncsi.com,DIRECT
+#  - DOMAIN-SUFFIX,windows.com,DIRECT
+#  - DOMAIN-SUFFIX,windows.net,DIRECT
+#  - DOMAIN-SUFFIX,windowsupdate.com,DIRECT
+#  - DOMAIN-SUFFIX,xbox.com,DIRECT
+#  - DOMAIN-SUFFIX,xboxlive.com,DIRECT
+#  - DOMAIN-SUFFIX,pool.ntp.org,DIRECT
+#  - PROCESS-NAME,aria2c.exe,DIRECT
+#  - PROCESS-NAME,BitComet.exe,DIRECT
+#  - PROCESS-NAME,wargamingerrormonitor.exe,DIRECT
+#  - PROCESS-NAME,wgc.exe,DIRECT
+#  - PROCESS-NAME,wgc_renderer_host.exe,DIRECT
+#  - PROCESS-NAME,WorldOfWarships64.exe,DIRECT
+#  - PROCESS-NAME,Netch.exe,DIRECT
+#  - PROCESS-NAME,Shadowsocks.exe,DIRECT
+#  - PROCESS-NAME,ShadowsocksR.exe,DIRECT
+#  - PROCESS-NAME,Trojan.exe,DIRECT
+#  - PROCESS-NAME,v2ray-sn.exe,DIRECT
