@@ -24,12 +24,6 @@ payload:
   - DOMAIN-SUFFIX,xbox.com
   - DOMAIN-SUFFIX,xboxlive.com
 
-  # > Microsoft Edge
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,edge.activity.windows.com
-  - DOMAIN,msedge.api.cdp.microsoft.com
-  - DOMAIN,iecvlist.microsoft.com
-
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.org.cn
