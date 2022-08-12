@@ -112,8 +112,12 @@ mixin:
       ## QQ Quick Login
       - 'localhost.ptlogin2.qq.com'
       - 'localhost.sec.qq.com'
+      - '*.qq.com'
       ## BiliBili P2P
       - '*.mcdn.bilivideo.cn'
+      ## wows
+      - '+.worldofwarships.*'
+      - '+.wargaming.*'
   tun:
     enable: true
     stack: gvisor #system需设置系统防火墙
