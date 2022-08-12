@@ -116,7 +116,7 @@ mixin:
       - '*.mcdn.bilivideo.cn'
   tun:
     enable: true
-    stack: system #需设置系统防火墙
+    stack: gvisor #system需设置系统防火墙
     dns-hijack:
       - any:53
     auto-route: true
