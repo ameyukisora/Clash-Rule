@@ -8,7 +8,7 @@ dns:
   enhanced-mode: fake-ip
   default-nameserver:
     - 223.5.5.5
-    - 223.6.6.6
+    - 119.29.29.29
   nameserver:
     - https://dns.alidns.com/dns-query
   fake-ip-filter:
