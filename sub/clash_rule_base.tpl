@@ -117,6 +117,16 @@ dns:
     - 'localhost.sec.qq.com'
     ## BiliBili P2P
     - '*.mcdn.bilivideo.cn'
+
+# Clash for Windows
+cfw-latency-timeout: 3000
+cfw-latency-url: http://cp.cloudflare.com/generate_204
+cfw-conn-break-strategy: true
+
+# Clash for Android
+clash-for-android: 
+  ui-subtitle-pattern: "[\u4e00-\u9fa5]{2,4}"
+
 proxies: ~
 proxy-groups: ~
 rules: ~
