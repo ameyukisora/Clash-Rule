@@ -1,6 +1,6 @@
 mixed-port: 7890
 allow-lan: false
-log-level: info
+log-level: debug
 mode: Rule
 dns:
   enable: true
