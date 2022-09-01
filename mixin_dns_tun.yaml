@@ -5,11 +5,10 @@ mixin:
     enhanced-mode: fake-ip
     default-nameserver:
       - 223.5.5.5
-      - 119.29.29.29
+      - 8.8.8.8
     nameserver:
-      - tls://c.passcloud.xyz:853
-    #  - https://doh.pub/dns-query
-    #  - https://dns.alidns.com/dns-query
+      - tls://223.5.5.5:853
+      - tls://dot.pub:853
     fake-ip-filter:
       # === LAN ===
       - '*.example'
