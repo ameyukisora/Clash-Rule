@@ -10,6 +10,7 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver:
+    - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   fake-ip-filter:
     # === LAN ===
