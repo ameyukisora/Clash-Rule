@@ -10,8 +10,8 @@ dns:
     - 223.5.5.5
     - 8.8.8.8
   nameserver:
-    - tls://223.5.5.5:853
-    - tls://dot.pub:853
+    - https://223.5.5.5/dns-query
+    - https://doh.pub/dns-query
   fake-ip-filter:
     # === LAN ===
     - '*.example'
