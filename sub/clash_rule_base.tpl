@@ -8,7 +8,7 @@ dns:
   enhanced-mode: fake-ip
   nameserver:
     - 223.5.5.5
-    - 119.29.29.29
+    - 223.6.6.6
   fake-ip-filter:
     # === LAN ===
     - '*.example'
