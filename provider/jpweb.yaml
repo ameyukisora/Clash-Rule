@@ -1,23 +1,26 @@
 payload:
 
   # 使用jp地区ip
-    
+
+  # .jp域名
+  - DOMAIN-SUFFIX,jp
+
   # DMM
   - DOMAIN-SUFFIX,dmm.com
-  - DOMAIN-SUFFIX,dmm.co.jp
+  # - DOMAIN-SUFFIX,dmm.co.jp
   
   # プリンセスコネクト！Re:Dive，公主连结
-  - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
+  # - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
   
   # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
   - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
   - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
   
-  # .jp域名
-  - DOMAIN-SUFFIX,jp
+  # フラワーナイトガール，花骑士
+  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
   
   # pixiv
-  # - DOMAIN-SUFFIX,booth.pm
-  # - DOMAIN-SUFFIX,fanbox.cc
-  # - DOMAIN-SUFFIX,pixiv.net
-  # - DOMAIN-SUFFIX,pximg.net
+  - DOMAIN-SUFFIX,booth.pm
+  - DOMAIN-SUFFIX,fanbox.cc
+  - DOMAIN-SUFFIX,pixiv.net
+  - DOMAIN-SUFFIX,pximg.net
