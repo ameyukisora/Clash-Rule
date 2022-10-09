@@ -28,10 +28,6 @@ payload:
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.org.cn
 
-  # > Download
-  - PROCESS-NAME,aria2c.exe
-  - PROCESS-NAME,BitComet.exe
-
   # > Wargaming
   - PROCESS-NAME,wargamingerrormonitor.exe
   - PROCESS-NAME,wgc.exe
