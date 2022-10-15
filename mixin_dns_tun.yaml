@@ -4,7 +4,7 @@ mixin:
     ipv6: false
     enhanced-mode: fake-ip
     nameserver:
-      - https://doh.pub/dns-query
+      - 8.8.8.8
     fake-ip-filter:
       # === LAN ===
       - '*.example'
