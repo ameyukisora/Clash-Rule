@@ -120,4 +120,5 @@ dns:
     - '+.wargaming.*'
 proxies: ~
 proxy-groups: ~
-rules: ~
+rules: 
+ - IP-CIDR,0.0.0.0/32,⛔ AdBlock
