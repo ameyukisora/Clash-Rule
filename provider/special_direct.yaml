@@ -29,10 +29,7 @@ payload:
   - DOMAIN-SUFFIX,ntp.org.cn
 
   # > Wargaming
-  - PROCESS-NAME,wargamingerrormonitor.exe
   - PROCESS-NAME,wgc.exe
-  - PROCESS-NAME,wgc_renderer_host.exe
-  - DOMAIN-KEYWORD,worldofwarships
 
   # > LocalProxies
   - PROCESS-NAME,Netch.exe
