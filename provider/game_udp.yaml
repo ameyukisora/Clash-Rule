@@ -1,3 +1,4 @@
 payload:
   # > WoWs
-  - PROCESS-NAME,WorldOfWarships64.exe
+  - DOMAIN,login2.worldofwarships.jp
+  - DOMAIN,login1.worldofwarships.jp
