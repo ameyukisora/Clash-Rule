@@ -6,7 +6,7 @@ proxies: ~
 proxy-groups: ~
 script:
   shortcuts: 
-    Game: network == "udp" and match_provider("game_udp")
+    Game: network == udp and match_provider(game_udp)
 rules:
   - SCRIPT,Game,⚓ Game
 rule-providers:
