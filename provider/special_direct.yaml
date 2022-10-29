@@ -32,7 +32,7 @@ payload:
   - PROCESS-NAME,wargamingerrormonitor.exe
   - PROCESS-NAME,wgc.exe
   - PROCESS-NAME,wgc_renderer_host.exe
-  - PROCESS-NAME,WorldOfWarships64.exe
+  - DOMAIN-KEYWORD,worldofwarships
 
   # > LocalProxies
   - PROCESS-NAME,Netch.exe
