@@ -5,9 +5,4 @@ payload:
   - DOMAIN-SUFFIX,e-hentai.org
   - DOMAIN-SUFFIX,ehgt.org
   - DOMAIN-SUFFIX,hath.network
-  - IP-CIDR,178.175.128.252/32,no-resolve
-  - IP-CIDR,178.175.128.254/32,no-resolve
-  - IP-CIDR,178.175.129.252/32,no-resolve
-  - IP-CIDR,178.175.129.254/32,no-resolve
-  - IP-CIDR,178.175.132.20/32,no-resolve
-  - IP-CIDR,178.175.132.22/32,no-resolve
+  - IP-CIDR,178.175.128.0/21
