@@ -14,19 +14,6 @@ mixin:
       - '*.localdomain'
       - '*.localhost'
       - '*.test'
-      # === Apple Software Update Service ===
-      - 'mesu.apple.com'
-      - 'swscan.apple.com'
-      # === ASUS Router ===
-      - '*.router.asus.com'
-      # === Google ===
-      - 'lens.l.google.com'
-      - 'stun.l.google.com'
-      ## Golang
-      - 'proxy.golang.org'
-      # === Linksys Wireless Router ===
-      - '*.linksys.com'
-      - '*.linksyssmartwifi.com'
       # === Windows 10 Connnect Detection ===
       - '*.ipv6.microsoft.com'
       - '*.msftconnecttest.com'
@@ -57,19 +44,6 @@ mixin:
       - '*.ntp.org.cn'
       - '+.pool.ntp.org'
       - 'time1.cloud.tencent.com'
-      # === Game Service ===
-      ## Microsoft Xbox
-      - 'speedtest.cros.wr.pvp.net'
-      - '*.*.xboxlive.com'
-      - 'xbox.*.*.microsoft.com'
-      - 'xbox.*.microsoft.com'
-      - 'xnotify.xboxlive.com'
-      ## Nintendo Switch
-      - '*.*.*.srv.nintendo.net'
-      - '+.srv.nintendo.net'
-      ## Sony PlayStation
-      - '*.*.stun.playstation.net'
-      - '+.stun.playstation.net'
       ## STUN Server
       - '+.stun.*.*.*.*'
       - '+.stun.*.*.*'
@@ -77,12 +51,6 @@ mixin:
       - 'stun.*.*.*'
       - 'stun.*.*'
       # === Music Service ===
-      ## 咪咕音乐
-      - '*.music.migu.cn'
-      - 'music.migu.cn'
-      ## 太和音乐
-      - 'music.taihe.com'
-      - 'musicapi.taihe.com'
       ## 腾讯音乐
       - 'songsearch.kugou.com'
       - 'trackercdn.kugou.com'
@@ -102,21 +70,14 @@ mixin:
       - 'music.163.com'
       - '*.music.163.com'
       - '*.126.net'
-      ## 虾米音乐
-      - '*.xiami.com'
       # === Other ===
       ## QQ Quick Login
       - 'localhost.ptlogin2.qq.com'
       - 'localhost.sec.qq.com'
-      - '*.qq.com'
-      ## BiliBili P2P
-      - '*.mcdn.bilivideo.cn'
-      ## wows
-      - '+.worldofwarships.*'
-      - '+.wargaming.*'
+      - '+.qq.com'
   tun:
     enable: true
-    stack: gvisor #system需设置系统防火墙
+    stack: system
     dns-hijack:
       - any:53
     auto-route: true
