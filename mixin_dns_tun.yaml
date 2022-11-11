@@ -83,6 +83,6 @@ mixin:
     enable: true
     stack: gvisor
     dns-hijack:
-      - any:53
+      - 198.18.0.2:53
     auto-route: true
     auto-detect-interface: true
