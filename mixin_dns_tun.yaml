@@ -6,7 +6,7 @@ mixin:
     default-nameserver:
       - 119.29.29.29
     nameserver:
-      - https://cn-east.lele233.com/cdn
+      - https://doh.pub/dns-query
     fake-ip-filter:
       # === LAN ===
       - '*.example'
