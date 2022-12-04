@@ -3,10 +3,8 @@ mixin:
     enable: true
     ipv6: false
     enhanced-mode: fake-ip
-    default-nameserver:
-      - 119.29.29.29
     nameserver:
-      - https://doh.pub/dns-query
+      - 223.5.5.5
     fake-ip-filter:
       # === LAN ===
       - '*.example'
