@@ -79,8 +79,6 @@ mixin:
       ## WoWs
       - +.wargaming.net
       - '+.worldofwarships.*'
-      ## Bank
-      - +.abchina.com.cn
   tun:
     enable: true
     stack: gvisor

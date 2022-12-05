@@ -82,8 +82,6 @@ dns:
     ## WoWs
     - +.wargaming.net
     - '+.worldofwarships.*'
-    ## Bank
-    - +.abchina.com.cn
 proxies: ~
 proxy-groups: ~
 rules: ~
