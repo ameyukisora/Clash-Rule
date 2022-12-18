@@ -7,7 +7,7 @@ dns:
   ipv6: false
   enhanced-mode: fake-ip
   nameserver:
-    - https://cn-east.lele233.com/cdn
+    - 223.5.5.5
   fake-ip-filter:
     # === LAN ===
     - '*.example'
