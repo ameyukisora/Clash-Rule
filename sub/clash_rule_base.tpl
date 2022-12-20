@@ -7,7 +7,7 @@ dns:
   ipv6: false
   enhanced-mode: fake-ip
   nameserver:
-    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
   fake-ip-filter:
     # === LAN ===
     - '*.example'
