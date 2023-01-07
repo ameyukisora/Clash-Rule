@@ -59,6 +59,8 @@ payload:
   - DOMAIN,steamstore-a.akamaihd.net
   - DOMAIN,steamusercontent-a.akamaihd.net
   - DOMAIN,steamuserimages-a.akamaihd.net
+
+  - PROCESS-NAME,Steam++.exe
   
   # > Wargaming
   - PROCESS-NAME,wgc.exe
