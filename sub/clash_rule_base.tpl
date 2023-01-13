@@ -2,6 +2,7 @@ mixed-port: 8889
 allow-lan: false
 log-level: info
 mode: Rule
+enable-process: true
 dns:
   enable: true
   ipv6: false
