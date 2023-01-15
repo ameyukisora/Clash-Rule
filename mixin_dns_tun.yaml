@@ -1,19 +1,18 @@
 mixin:
   dns:
-  enable: true
-  ipv6: false
-  enhanced-mode: redir-host
-  default-nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
-  nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
-    - 119.29.29.29
+    enable: true
+    ipv6: false
+    enhanced-mode: redir-host
+    default-nameserver:          #解析非IP的dns用的dns服务器,只支持纯IP
+      - 223.5.5.5
+      - 223.6.6.6
+    nameserver:
+      - 223.5.5.5
+      - 223.6.6.6
   tun:
     enable: true
-    stack: gvisor
+    stack: system             #system / gvisor / lwip liwp仅为1.13.2以上的功能
     dns-hijack:
-      - 198.18.0.2:53
+      - 'any:53'
     auto-route: true
     auto-detect-interface: true
