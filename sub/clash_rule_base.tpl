@@ -12,8 +12,9 @@ dns:
     - 223.5.5.5
     - 119.29.29.29
   nameserver:
-    - 'quic://cn-south.ovo.glass'
-    - 'quic://cn-east.ovo.glass'
+    - 223.5.5.5
+    - 223.6.6.6
+    - 119.29.29.29
   fake-ip-filter:
     ## STUN Server
     - '+.stun.*.*.*.*'
