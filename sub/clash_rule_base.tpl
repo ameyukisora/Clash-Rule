@@ -15,13 +15,6 @@ dns:
     - 223.5.5.5
     - 223.6.6.6
     - 119.29.29.29
-  fake-ip-filter:
-    ## STUN Server
-    - '+.stun.*.*.*.*'
-    - '+.stun.*.*.*'
-    - '+.stun.*.*'
-    - 'stun.*.*.*'
-    - 'stun.*.*'
 proxies: ~
 proxy-groups: ~
 rules: ~
