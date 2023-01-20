@@ -12,8 +12,9 @@ dns:
     - 223.5.5.5
     - 223.6.6.6
   nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~

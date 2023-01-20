@@ -7,12 +7,13 @@ mixin:
       - 223.5.5.5
       - 223.6.6.6
     nameserver:
-      - 223.5.5.5
-      - 223.6.6.6
+      - https://223.5.5.5/dns-query
+      - https://223.6.6.6/dns-query
+      - https://doh.pub/dns-query
   tun:
     enable: true
     stack: gvisor             #system / gvisor / lwip liwp仅为1.13.2以上的功能
     dns-hijack:
-      - 'any:53'
+      - any:53
     auto-route: true
     auto-detect-interface: true
