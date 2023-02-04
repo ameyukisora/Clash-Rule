@@ -9,8 +9,8 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
-    - 223.5.5.5
-    - 223.6.6.6
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
