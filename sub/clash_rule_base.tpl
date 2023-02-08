@@ -14,8 +14,7 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
-    - https://223.5.5.5/dns-query
-    - https://223.6.6.6/dns-query
+    - https://doh.pub/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
