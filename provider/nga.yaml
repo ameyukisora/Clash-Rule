@@ -1,6 +1,6 @@
 payload: 
-  # > NGA
-  - DOMAIN-SUFFIX,bbs.nga.cn
+  # > nga
   - DOMAIN,nga.178.com
+  - DOMAIN-SUFFIX,bbs.nga.cn
   - DOMAIN-SUFFIX,ngabbs.com
   - DOMAIN-SUFFIX,ngacn.cc
