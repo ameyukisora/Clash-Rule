@@ -1,4 +1,5 @@
 payload: 
+  # > NGA
   - DOMAIN-SUFFIX,bbs.nga.cn
   - DOMAIN,nga.178.com
   - DOMAIN-SUFFIX,ngabbs.com
