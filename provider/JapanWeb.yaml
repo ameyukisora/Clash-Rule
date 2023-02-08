@@ -15,12 +15,3 @@ payload:
   # ブルーアーカイブ（ブルアカ），Blue Archive，碧蓝档案
   - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
   - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
-  
-  # フラワーナイトガール，花骑士
-  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
-  
-  # pixiv
-  - DOMAIN-SUFFIX,booth.pm
-  - DOMAIN-SUFFIX,fanbox.cc
-  - DOMAIN-SUFFIX,pixiv.net
-  - DOMAIN-SUFFIX,pximg.net
