@@ -3,5 +3,9 @@ payload:
   - DOMAIN-SUFFIX,exhentai.org
   - DOMAIN-SUFFIX,e-hentai.org
   - DOMAIN-SUFFIX,ehgt.org
+  - DOMAIN-SUFFIX,ehtracker.org
+  - DOMAIN-SUFFIX,ehwiki.org
+  - DOMAIN-SUFFIX,hentaiathome.net
   - DOMAIN-SUFFIX,hath.network
+  - DOMAIN-SUFFIX,hentaiverse.org
   - IP-CIDR,178.175.128.0/21
