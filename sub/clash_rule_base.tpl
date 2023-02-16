@@ -4,6 +4,7 @@ log-level: info
 mode: Rule
 ipv6: false
 enable-process: true
+tcp-concurrent: true
 dns:
   enable: true
   ipv6: false
