@@ -10,8 +10,8 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
+    - 8.8.8.8
     - 119.29.29.29
-    - 223.5.5.5
   fallback:
     - https://cn-east.iqiqzz.com/dns-query
     - https://cn-south.iqiqzz.com/dns-query
