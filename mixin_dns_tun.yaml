@@ -19,7 +19,7 @@ mixin:
         - 255.255.255.255/32
   tun:
     enable: true
-    stack: gvisor       #system / gvisor / lwip liwp仅为1.13.2以上的功能
+    stack: system       #system / gvisor / lwip liwp仅为1.13.2以上的功能
     dns-hijack:
       - any:53
     auto-route: true
