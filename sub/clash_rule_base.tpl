@@ -9,19 +9,8 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
-    - 8.8.8.8
-    - 119.29.29.29
-  fallback:
-    - https://cn-east.iqiqzz.com/dns-query
-    - https://cn-south.iqiqzz.com/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 0.0.0.0/32
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 240.0.0.0/4
-      - 255.255.255.255/32
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
