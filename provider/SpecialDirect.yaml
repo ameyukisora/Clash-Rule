@@ -61,7 +61,7 @@ payload:
   - DOMAIN,steamuserimages-a.akamaihd.net
   
   # > Wargaming
-  - PROCESS-NAME,wgc.exe
+  #- PROCESS-NAME,wgc.exe
 
   # > LocalProxies
   - PROCESS-NAME,Netch.exe

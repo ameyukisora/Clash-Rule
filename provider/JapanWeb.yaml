@@ -3,11 +3,11 @@ payload:
   # 使用jp地区ip
 
   # .jp域名
-  - DOMAIN-SUFFIX,jp
+  #- DOMAIN-SUFFIX,jp
 
   # DMM
   - DOMAIN-SUFFIX,dmm.com
-  # - DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.co.jp
   
   # プリンセスコネクト！Re:Dive，公主连结
   # - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
