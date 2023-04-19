@@ -75,7 +75,6 @@ dns:
     - "msftncsi.com"
     - "localhost.ptlogin2.qq.com"
     - "localhost.sec.qq.com"
-    - "local.adguard.com"
     - "+.srv.nintendo.net"
     - "+.stun.playstation.net"
     - "xbox.*.microsoft.com"
