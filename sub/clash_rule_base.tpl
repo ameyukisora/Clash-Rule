@@ -3,6 +3,12 @@ allow-lan: false
 log-level: info
 mode: Rule
 ipv6: false
+profile: 
+  # 存储 select 选择记录
+  # store-selected: false
+  
+  # 持久化 fake-ip
+  store-fake-ip: true
 dns:
   enable: true
   ipv6: false
