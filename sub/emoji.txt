@@ -81,7 +81,7 @@
 (?i:\bP[O]?L\b|Poland|波兰),🇵🇱
 (?i:\bUAE\b|Dubai|阿联酋|迪拜),🇦🇪
 (?i:\bCA[N]?\b|Canada|Toronto|Montreal|Vancouver|加拿大|蒙特利尔|温哥华|楓葉|枫叶|加(?!州|坡|拉).*(?!▷|回|转)),🇨🇦
-(?i:\bJP[N]?\b|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日|日.*(?!▷|回|转)|沪日|穗日|川日|中日|泉日|杭日),🇯🇵
+(?i:\bJP[N]?\b|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日|沪日|穗日|川日|中日|泉日|杭日),🇯🇵
 (?i:\bK[O]?R\b|Korea|首尔|韩|韓),🇰🇷
 (?i:\bRU[S]?\b|Russia|Moscow|Petersburg|Siberia|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄罗斯|[^-]俄|俄.*(?!▷|回|转)|京俄|杭俄),🇷🇺
 (?i:\bSG[P]?\b|Singapore|新加坡|狮城|[^-]新|新(?!▷|西)|沪新|京新|泉新|穗新|深新|杭新),🇸🇬
