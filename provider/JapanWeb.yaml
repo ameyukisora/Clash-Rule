@@ -17,3 +17,5 @@ payload:
   #wows（临时）
   - DOMAIN-KEYWORD,worldofwarships
   - DOMAIN-KEYWORD,wargaming
+  - DOMAIN-SUFFIX,wgcdn.co
+  - DOMAIN-KEYWORD,wows-
