@@ -56,6 +56,8 @@
 (Puerto.*?Rico|波多黎各),🇵🇷
 (Switzerland|Zurich|瑞士|苏黎世),🇨🇭
 (Venezuela|委内瑞拉),🇻🇪
+(Vatican|梵蒂冈),🇻🇦
+(Antarctica|南极),🐧
 (\bAR\b|阿根廷|Argentina),🇦🇷
 (\bBE\b|Belgium|比利时),🇧🇪
 (\bBR\b|Brazil|Paulo|巴西|圣保罗),🇧🇷
