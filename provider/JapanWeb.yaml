@@ -1,7 +1,7 @@
 payload:
 
   # .jp域名
-  #- DOMAIN-SUFFIX,jp
+  - DOMAIN-SUFFIX,jp
 
   # DMM
   - DOMAIN-SUFFIX,dmm.com
