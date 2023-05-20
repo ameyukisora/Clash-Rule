@@ -3,6 +3,7 @@ allow-lan: false
 log-level: info
 mode: Rule
 ipv6: false
+global-client-fingerprint: chrome
 dns:
   enable: true
   ipv6: false
