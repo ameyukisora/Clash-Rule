@@ -14,7 +14,18 @@ payload:
   #- DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
   #- DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
 
-  #wows（临时）
+  # pixiv
+  - DOMAIN-SUFFIX,ads-pixiv.net
+  - DOMAIN-SUFFIX,booth.pm
+  - DOMAIN-SUFFIX,fanbox.cc
+  - DOMAIN-SUFFIX,pixiv.cat
+  - DOMAIN-SUFFIX,pixiv.co.jp
+  - DOMAIN-SUFFIX,pixiv.me
+  - DOMAIN-SUFFIX,pixiv.net
+  - DOMAIN-SUFFIX,pixiv.org
+  - DOMAIN-SUFFIX,pximg.net
+
+  # wows（临时）
   - DOMAIN-KEYWORD,worldofwarships
   - DOMAIN-KEYWORD,wargaming
   - DOMAIN-SUFFIX,wgcdn.co
