@@ -10,6 +10,9 @@ dns:
   enhanced-mode: redir-host
   nameserver:
     - https://doh-pure.onedns.net/dns-query
+  proxy-server-nameserver:
+    - 117.50.11.11
+    - 117.50.10.10
 proxies: ~
 proxy-groups: ~
 rules: ~
