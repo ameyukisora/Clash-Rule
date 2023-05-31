@@ -9,7 +9,7 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
-    - https://doh-pure.onedns.net/dns-query
+    - https://223.5.5.5/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
