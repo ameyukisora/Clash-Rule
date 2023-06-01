@@ -4,7 +4,8 @@ mixin:
     ipv6: false
     enhanced-mode: redir-host
     nameserver:
-      - https://doh-pure.onedns.net/dns-query
+      - https://doh.pub/dns-query
+      - https://dns.alidns.com/dns-query
   tun:
     enable: true
     stack: system   #system / gvisor

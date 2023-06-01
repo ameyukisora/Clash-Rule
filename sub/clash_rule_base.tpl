@@ -9,7 +9,8 @@ dns:
   ipv6: false
   enhanced-mode: redir-host
   nameserver:
-    - https://doh-pure.onedns.net/dns-query
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
