@@ -3,37 +3,50 @@ name: AdGuard DNS filter
 on: workflow_dispatch
 
 jobs:
-  extract_domains:
+  extract_lines:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@main
-
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
       - name: Install dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y jq
-
-      - name: Fetch filter.txt
+          python -m pip install --upgrade pip
+          pip install requests
+      
+      - name: Extract lines and create DNS file
         run: |
-          curl -o filter.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+          python - <<EOF
+          import requests
+          import os
 
-      - name: Extract domains
-        id: extract
-        run: |
-          cat filter.txt | grep '^\|\|' | awk -F '^\|\|' '{print $2}' | sed 's/\^//' > domains.txt
-          total_domains=$(wc -l < domains.txt)
+          url = "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+          response = requests.get(url)
+          lines = response.text.split("\n")
 
-      - name: Create dns.yaml
-        run: |
-          echo "payload:" > autoupdate/AdGuard.yaml
-          echo "  #get $total_domains domain" >> autoupdate/AdGuard.yaml
-          echo "  " >> autoupdate/AdGuard.yaml
-          while IFS= read -r line; do
-            echo "  - '+.$line'" >> autoupdate/AdGuard.yaml
-          done < domains.txt
+          # 过滤出以 "||" 开头的行
+          filtered_lines = [line[2:-1] for line in lines if line.startswith("||")]
 
+          # 创建 dns.yaml 文件
+          output_dir = "autoupdate"
+          os.makedirs(output_dir, exist_ok=True)
+          output_file = os.path.join(output_dir, "AdGuard.yaml")
+
+          with open(output_file, "w") as f:
+              f.write("payload:\n")
+              f.write(f"  #get {len(filtered_lines)} domain\n")
+              
+              for line in filtered_lines:
+                  f.write(f"  - '+{line}'\n")
+
+          print("Extraction complete.")
+          EOF
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
