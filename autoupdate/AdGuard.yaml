@@ -1,5 +1,5 @@
 payload:
-  #get 52040 domain from AdGuard DNS filter
+  # get 52040 domain from AdGuard DNS filter
   - '+.soodihee.net'
   - '+.biubxxaxucyou.com'
   - '+.scptp1.com'
