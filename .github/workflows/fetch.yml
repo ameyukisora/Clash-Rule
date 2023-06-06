@@ -1,0 +1,29 @@
+name: Fetch and convert chnroutes.txt
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+
+jobs:
+  fetch_and_convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Fetch chnroutes.txt
+      run: |
+        curl -o chnroutes.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+
+    - name: Convert and save to Clash-Rule/provider
+      run: |
+        awk '/#/{print $0} !/#/{print "    - '\''"$0"'\''"}' chnroutes.txt > Clash-Rule/provider/chnroutes.yaml
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add Clash-Rule/provider/chnroutes.yaml
+        git commit -m "Update chnroutes.yaml"
+        git push
