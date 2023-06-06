@@ -1,0 +1,50 @@
+name: AdGuard DNS filter
+
+on: workflow_dispatch
+
+jobs:
+  extract_domains:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@main
+
+    - name: Install Python
+      uses: actions/setup-python@main
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install requests
+
+    - name: Extract domains
+      run: |
+        #!/usr/bin/env python
+
+        import requests
+        import re
+
+        url = 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt'
+        response = requests.get(url)
+        lines = response.text.split('\n')
+
+        domains = []
+        for line in lines:
+            if re.match(r'\|\|.*\^$', line):
+                domain = line[2:-1]
+                domains.append(domain)
+
+        with open('autoupdate/AdGuard.yaml', 'w') as file:
+            file.write('payload:\n')
+            file.write(f'  #get {len(domains)} domain\n')
+            for domain in domains:
+                file.write(f'  - \'+{domain}\'\n')
+
+    - name: Commit and push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add autoupdate/AdGuard.yaml
+        git commit -m 'AdGuard.yaml'
+        git push
