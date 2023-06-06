@@ -23,5 +23,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add autoupdate/chnroutes.yaml
-        git commit -m "Autoupdate chnroutes.yaml"
+        git commit -m "chnroutes.yaml" --no-verify
         git push
