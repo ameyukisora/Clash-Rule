@@ -23,5 +23,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add autoupdate/chnroutes.yaml
-        git commit -m "Update chnroutes.yaml - $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S %Z')"
+        git commit -m "Update chnroutes.yaml - $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S %z')"
         git push
