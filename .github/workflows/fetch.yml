@@ -3,7 +3,7 @@ name: Fetch and Convert chnroutes.txt
 on: workflow_dispatch
 
 jobs:
-  fetch_convert:
+  fetch_and_convert:
     runs-on: ubuntu-latest
 
     steps:
@@ -11,14 +11,15 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Fetch chnroutes.txt
+      run: curl -o chnroutes.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+
+    - name: Convert and Save to Clash-Rule/provider
       run: |
-        curl -o chnroutes.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
+        echo 'payload:' > chnroutes.yaml
+        sed -n '1,2p' chnroutes.txt >> chnroutes.yaml
+        sed -n '4,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
         mkdir -p Clash-Rule/provider
-        mv chnroutes.txt Clash-Rule/provider
-        sed -i '1s/^/payload:\n/' Clash-Rule/provider/chnroutes.txt
-        sed -i '2,${s/^- /  - /}' Clash-Rule/provider/chnroutes.txt
-        sed -i '/^  - / s/$/\r/' Clash-Rule/provider/chnroutes.txt
-        mv Clash-Rule/provider/chnroutes.txt Clash-Rule/provider/chnroutes.yaml
+        mv chnroutes.yaml Clash-Rule/provider/
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add Clash-Rule/provider/chnroutes.yaml
