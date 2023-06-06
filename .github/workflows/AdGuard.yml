@@ -7,44 +7,37 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@main
+      - name: Checkout repository
+        uses: actions/checkout@main
 
-    - name: Install Python
-      uses: actions/setup-python@main
-      with:
-        python-version: '3.x'
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
 
-    - name: Install dependencies
-      run: pip install requests
+      - name: Fetch filter.txt
+        run: |
+          curl -o filter.txt https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 
-    - name: Extract domains
-      run: |
-        #!/usr/bin/env python
+      - name: Extract domains
+        id: extract
+        run: |
+          cat filter.txt | grep '^\|\|' | awk -F '^\|\|' '{print $2}' | sed 's/\^//' > domains.txt
+          total_domains=$(wc -l < domains.txt)
 
-        import requests
-        import re
+      - name: Create dns.yaml
+        run: |
+          echo "payload:" > autoupdate/AdGuard.yaml
+          echo "  #get $total_domains domain" >> autoupdate/AdGuard.yaml
+          echo "  " >> autoupdate/AdGuard.yaml
+          while IFS= read -r line; do
+            echo "  - '+.$line'" >> autoupdate/AdGuard.yaml
+          done < domains.txt
 
-        url = 'https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt'
-        response = requests.get(url)
-        lines = response.text.split('\n')
-
-        domains = []
-        for line in lines:
-            if re.match(r'\|\|.*\^$', line):
-                domain = line[2:-1]
-                domains.append(domain)
-
-        with open('autoupdate/AdGuard.yaml', 'w') as file:
-            file.write('payload:\n')
-            file.write(f'  #get {len(domains)} domain\n')
-            for domain in domains:
-                file.write(f'  - \'+{domain}\'\n')
-
-    - name: Commit and push changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add autoupdate/AdGuard.yaml
-        git commit -m 'AdGuard.yaml'
-        git push
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add autoupdate/AdGuard.yaml
+          git commit -m "AdGuard"
+          git push
