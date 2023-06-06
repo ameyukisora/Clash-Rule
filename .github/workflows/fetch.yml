@@ -15,13 +15,13 @@ jobs:
 
     - name: Convert and Save to autoupdate
       run: |
-        echo 'payload:' > chnroutes.yaml
         sed -n '1,2p' chnroutes.txt >> chnroutes.yaml
+        echo 'payload:' > chnroutes.yaml
         sed -n '4,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
         mkdir -p autoupdate
         mv chnroutes.yaml autoupdate/
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add autoupdate/chnroutes.yaml
-        git commit -m "Update chnroutes.yaml"
+        git commit -m "chnroutes.yaml"
         git push
