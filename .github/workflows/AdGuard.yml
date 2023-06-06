@@ -33,14 +33,14 @@ jobs:
           # 过滤出以 "||" 开头的行
           filtered_lines = [line[2:-1] for line in lines if line.startswith("||")]
 
-          # 创建 dns.yaml 文件
+          # 创建 AdGuard.yaml 文件
           output_dir = "autoupdate"
           os.makedirs(output_dir, exist_ok=True)
           output_file = os.path.join(output_dir, "AdGuard.yaml")
 
           with open(output_file, "w") as f:
               f.write("payload:\n")
-              f.write(f"  #get {len(filtered_lines)} domain from AdGuard DNS filter\n")
+              f.write(f"  # get {len(filtered_lines)} domain from AdGuard DNS filter\n")
               
               for line in filtered_lines:
                   f.write(f"  - '+.{line}'\n")
