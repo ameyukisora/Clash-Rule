@@ -8,20 +8,20 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@main
 
     - name: Fetch chnroutes.txt
       run: curl -o chnroutes.txt https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt
 
-    - name: Convert and Save to Clash-Rule/provider
+    - name: Convert and Save to autoupdate
       run: |
         echo 'payload:' > chnroutes.yaml
-        sed -n '1,2p' chnroutes.txt >> chnroutes.yaml
+        sed -n '1,2s/^/  /p' chnroutes.txt >> chnroutes.yaml
         sed -n '4,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
-        mkdir -p Clash-Rule/provider
-        mv chnroutes.yaml Clash-Rule/provider/
+        mkdir -p autoupdate
+        mv chnroutes.yaml autoupdate/
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add Clash-Rule/provider/chnroutes.yaml
-        git commit -m "Update chnroutes.yaml"
+        git add autoupdate/chnroutes.yaml
+        git commit -m "Update chnroutes.yaml" --no-verify
         git push
