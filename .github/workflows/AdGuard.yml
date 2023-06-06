@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@main
       
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@main
         with:
           python-version: '3.x'
       
@@ -40,10 +40,10 @@ jobs:
 
           with open(output_file, "w") as f:
               f.write("payload:\n")
-              f.write(f"  #get {len(filtered_lines)} domain\n")
+              f.write(f"  #get {len(filtered_lines)} domain from AdGuard DNS filter\n")
               
               for line in filtered_lines:
-                  f.write(f"  - '+{line}'\n")
+                  f.write(f"  - '+.{line}'\n")
 
           print("Extraction complete.")
           EOF
@@ -52,5 +52,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add autoupdate/AdGuard.yaml
-          git commit -m "AdGuard"
+          git commit -m "AdGuard DNS filter"
           git push
