@@ -1,6 +1,8 @@
 name: Fetch and Convert chnroutes.txt
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: "30 22 * * *"
 
 jobs:
   fetch_and_convert:
