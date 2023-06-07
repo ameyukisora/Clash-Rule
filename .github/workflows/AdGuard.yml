@@ -1,8 +1,6 @@
 name: AdGuard DNS filter
 
-on:
-  schedule:
-    - cron: "50 20 * * *"
+on: workflow_dispatch
 
 jobs:
   extract_lines:
@@ -44,6 +42,7 @@ jobs:
               f.write("payload:\n")
               f.write(f"  # https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt\n")
               f.write(f"  # get {len(filtered_lines)} domain from AdGuard DNS filter\n")
+              f.write("  # " + lines[5][2:] + "\n")
               
               for line in filtered_lines:
                   f.write(f"  - '+.{line}'\n")
