@@ -1,6 +1,7 @@
 payload:
   # https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   # get 52082 domain from AdGuard DNS filter
+  # Last modified: 2023-06-07T06:01:27.343Z
   - '+.worshipstubborn.com'
   - '+.unmightboxen.com'
   - '+.sbkuuzozlm.com'
