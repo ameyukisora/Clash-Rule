@@ -1,6 +1,8 @@
 name: AdGuard DNS filter
 
-on: workflow_dispatch
+on:
+  schedule:
+    - cron: "50 20 * * *"
 
 jobs:
   extract_lines:
