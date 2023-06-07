@@ -18,6 +18,7 @@ jobs:
     - name: Convert and Save to autoupdate
       run: |
         echo 'payload:' > chnroutes.yaml
+        echo '  # https://github.com/misakaio/chnroutes2' >> chnroutes.yaml
         sed -n '1,2p' chnroutes.txt | sed 's/.*/  ''&''/' >> chnroutes.yaml
         sed -n '4,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
         mkdir -p autoupdate

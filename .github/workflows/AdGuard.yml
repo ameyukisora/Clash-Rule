@@ -42,6 +42,7 @@ jobs:
 
           with open(output_file, "w") as f:
               f.write("payload:\n")
+              f.write(f"  # https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt\n")
               f.write(f"  # get {len(filtered_lines)} domain from AdGuard DNS filter\n")
               
               for line in filtered_lines:
