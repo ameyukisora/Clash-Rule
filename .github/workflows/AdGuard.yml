@@ -32,8 +32,8 @@ jobs:
           response = requests.get(url)
           lines = response.text.split("\n")
 
-          # 过滤出以 "||" 开头的行
-          filtered_lines = [line[2:-1] for line in lines if line.startswith("||")]
+          # 过滤出以 "||" 开头的行, 且结尾不为特殊符号
+          filtered_lines = [line[2:-1] for line in lines if line.startswith("||") and line[-2].isalpha()]
 
           # 创建 AdGuard.yaml 文件
           output_dir = "autoupdate"
