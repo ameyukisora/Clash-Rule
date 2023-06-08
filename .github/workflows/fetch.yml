@@ -20,7 +20,7 @@ jobs:
         echo 'payload:' > chnroutes.yaml
         echo '  # https://github.com/misakaio/chnroutes2' >> chnroutes.yaml
         sed -n '1,2p' chnroutes.txt | sed 's/.*/  ''&''/' >> chnroutes.yaml
-        sed -n '4,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
+        sed -n '3,$p' chnroutes.txt | sed 's/.*/  - '\''&'\''/' >> chnroutes.yaml
         mkdir -p autoupdate
         mv chnroutes.yaml autoupdate/
         git config --local user.email "action@github.com"
