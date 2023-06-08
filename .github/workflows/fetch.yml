@@ -4,6 +4,8 @@ on:
   schedule:
     - cron: "30 20 * * *"
 
+  workflow_dispatch:
+
 jobs:
   fetch_and_convert:
     runs-on: ubuntu-latest
