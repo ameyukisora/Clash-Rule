@@ -28,5 +28,5 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add autoupdate/chnroutes.yaml
-        git commit -m "misakaio chnroutes2"
+        git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
         git push
