@@ -58,5 +58,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add autoupdate/AdGuard.yaml
-          git commit -m "AdGuard DNS filter"
+          git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
           git push
