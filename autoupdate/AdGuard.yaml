@@ -1,7 +1,8 @@
 payload:
   # https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 52103 domain from AdGuard DNS filter
-  # Last modified: 2023-06-08T18:01:18.984Z
+  # get 52115 domain from AdGuard DNS filter
+  # Last modified: 2023-06-09T06:01:37.630Z
+  - '+.enbclpbyi.com'
   - '+.zwbbkjvzqbyba.top'
   - '+.lmjwqbjmkrzyw.top'
   - '+.worshipstubborn.com'
@@ -5587,7 +5588,6 @@ payload:
   - '+.bigotpenniless.com'
   - '+.bigprizesonline.com'
   - '+.bigrourg.net'
-  - '+.bigsport.today'
   - '+.bijitsoa.com'
   - '+.bijwawr.com'
   - '+.bikehowfaded.com'
@@ -7105,7 +7105,6 @@ payload:
   - '+.click.scour.com'
   - '+.click4free.info'
   - '+.clickadin.com'
-  - '+.clickadu.com'
   - '+.clickagy.com'
   - '+.clickallow.net'
   - '+.clickaslu.com'
@@ -26011,6 +26010,7 @@ payload:
   - '+.clickable.com'
   - '+.clickad.pl'
   - '+.clickadilla.com'
+  - '+.clickadu.com'
   - '+.clickbet88.com'
   - '+.clickcertain.com'
   - '+.clickdaly.com'
@@ -39037,6 +39037,7 @@ payload:
   - '+.ver-pelis.net'
   - '+.xclk-integracion.com'
   - '+.yestorrents.org'
+  - '+.ynlfpyeifc.com'
   - '+.videoprodavec.ru'
   - '+.doprodavec.ru'
   - '+.ippcodepink.com'
@@ -46460,6 +46461,17 @@ payload:
   - '+.zvfaxh.xyz'
   - '+.zxgko.cn'
   - '+.zzqrr.com'
+  - '+.azdxypf.cn'
+  - '+.jciske.top'
+  - '+.fsnpbh.xyz'
+  - '+.pplnjoow.com'
+  - '+.yszpegh.xyz'
+  - '+.dfjd.xyz'
+  - '+.byjykj.xyz'
+  - '+.qsanciy.top'
+  - '+.ssancib.top'
+  - '+.v9gfm.xyz'
+  - '+.v88yaat.xyz'
   - '+.001adafg.xyz'
   - '+.003aldjads.xyz'
   - '+.004fsdljasd.xyz'
