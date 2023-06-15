@@ -35,8 +35,8 @@ jobs:
           lines = response.text.split("\n")
 
           # 过滤
-          filtered_lines = [line[2:-1] for line in lines if line.startswith("||") and line[-2].isalpha()]
-          filtered_lines_whitelist = [line[4:-2] for line in lines if line.startswith("@@||") and line[-3].isalpha()]
+          filtered_lines = [line[2:].rstrip('^') for line in lines if line.startswith("||")]
+          filtered_lines_whitelist = [line[4:].rstrip('|^') for line in lines if line.startswith("@@||")]
 
           # 创建文件
           output_dir = "autoupdate"
