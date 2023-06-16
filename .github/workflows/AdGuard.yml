@@ -39,9 +39,9 @@ jobs:
           filtered_lines_whitelist = []
 
           for line in lines:
-              if line.startswith("||") and line[2:].rstrip('^')[-1].isalpha():
+              if line.startswith("||") and line.rstrip('^')[-1].isalpha():
                   filtered_lines.append(line[2:].rstrip('^'))
-              elif line.startswith("@@||") and line[4:].rstrip('|^')[-1].isalpha():
+              elif line.startswith("@@||") and line.rstrip('|^')[-1].isalpha():
                   filtered_lines_whitelist.append(line[4:].rstrip('|^'))
 
           # 创建文件
