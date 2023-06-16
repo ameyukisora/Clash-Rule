@@ -34,21 +34,23 @@ jobs:
           response = requests.get(url)
           lines = response.text.split("\n")
 
-          # 过滤空元素
+          # filter out empty elements
           lines = list(filter(None, lines))
 
           # create file
-          output_dir = "autoupdate"
           os.makedirs(output_dir, exist_ok=True)
-          output_file = os.path.join(output_dir, "chnroutes.yaml")
+          output_file = "autoupdate/chnroutes.yaml"
+
+          output_lines = [
+              "payload:",
+              "  # https://github.com/misakaio/chnroutes2",
+              f"  {lines[0]}",
+              f"  {lines[1]}"
+          ]
+          output_lines.extend([f"  - '{line}'" for line in lines[2:]])
 
           with open(output_file, "w") as f:
-            f.write("payload:\n")
-            f.write("  # https://github.com/misakaio/chnroutes2\n")
-            f.write(f"  {lines[0]}\n")
-            f.write(f"  {lines[1]}\n")
-            for line in lines[2:]:
-                f.write(f"  - '{line}'\n")
+             f.write("\n".join(output_lines))
 
           EOF
       - name: Commit and push changes
