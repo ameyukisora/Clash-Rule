@@ -45,7 +45,7 @@ jobs:
             f.write(f"  {lines[0]}\n")
             f.write(f"  {lines[1]}\n")
             for line in lines[2:]:
-                f.write(f"  - '{line}'\n)
+                f.write(f"  - '{line}'\n")
 
           EOF
       - name: Commit and push changes
