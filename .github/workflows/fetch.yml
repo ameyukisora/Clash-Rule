@@ -38,7 +38,7 @@ jobs:
           lines = list(filter(None, lines))
 
           # create file
-          os.makedirs(output_dir, exist_ok=True)
+          os.makedirs("autoupdate", exist_ok=True)
           output_file = "autoupdate/chnroutes.yaml"
 
           output_lines = [
