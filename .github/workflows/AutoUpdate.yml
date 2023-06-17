@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  extract_lines:
+  autoupdate_python:
     runs-on: ubuntu-latest
     
     steps:
