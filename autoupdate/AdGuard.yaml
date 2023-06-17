@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 52154 domain from AdGuard DNS filter
-  # Last modified: 2023-06-16T18:01:21.342Z
+  # get 52166 domain from AdGuard DNS filter
+  # Last modified: 2023-06-17T00:02:49.263Z
   - '+.oemifaobrxe.com'
   - '+.eukova.com'
   - '+.beehomemade.com'
@@ -1258,6 +1258,7 @@ payload:
   - '+.d71e6dd31a026d45.com'
   - '+.adrunnr.com'
   - '+.samsungtvads.com'
+  - '+.creative.ytboob.live'
   - '+.advertising.ntuplay.xyz'
   - '+.d10fhz7gnk5369.cloudfront.net'
   - '+.notification.tubecup.net'
@@ -36794,6 +36795,7 @@ payload:
   - '+.wbdx.fr'
   - '+.wdsvc.net'
   - '+.web-stat.fr'
+  - '+.webanalytic.info'
   - '+.webeyez.com'
   - '+.weborama.design'
   - '+.webstat.fr'
@@ -38428,6 +38430,8 @@ payload:
   - '+.rentracks.jp'
   - '+.smart-counter.net'
   - '+.speee-ad.jp'
+  - '+.talpa-analytics.com'
+  - '+.talpa-analytics.work'
   - '+.tgknt.com'
   - '+.thench.net'
   - '+.thesmilingpencils.com'
@@ -44367,6 +44371,8 @@ payload:
   - '+.www.stadiumstage.com'
   - '+.www.air-max.se'
   - '+.www.datadoghq-browser-agent.com'
+  - '+.delosnetwork.it'
+  - '+.eadv.it'
   - '+.rtbuzz.net'
   - '+.shoppydoo.com'
   - '+.yobee.it'
@@ -44413,9 +44419,7 @@ payload:
   - '+.codesour.com'
   - '+.consigli.it'
   - '+.coreg-feed.com'
-  - '+.delosnetwork.it'
   - '+.digitalbees.it'
-  - '+.eadv.it'
   - '+.easymarketcrs.it'
   - '+.ebuzzing.it'
   - '+.edinetadv.com'
@@ -46516,6 +46520,14 @@ payload:
   - '+.caaie.xyz'
   - '+.dadwu.cn'
   - '+.xxhp2iz.icu'
+  - '+.grduswfx.com'
+  - '+.daccp.cn'
+  - '+.hacde6.icu'
+  - '+.lhdlbp.xyz'
+  - '+.dciep.xyz'
+  - '+.mhysbwo.xyz'
+  - '+.lsancil.top'
+  - '+.jbhhxd.xyz'
   - '+.001adafg.xyz'
   - '+.003aldjads.xyz'
   - '+.004fsdljasd.xyz'
