@@ -54,6 +54,7 @@ payload:
   
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
+  - DOMAIN,dl-wows-cdx.wargaming.net
 
   # > LocalProxies
   - PROCESS-NAME,Netch.exe
