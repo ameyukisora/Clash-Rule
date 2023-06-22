@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   # get 118 domain from AdGuard DNS filter
-  # Last modified: 2023-06-21T18:01:28.773Z
+  # Last modified: 2023-06-22T18:01:23.096Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'
@@ -15,7 +15,7 @@ payload:
   - '+.img.ads.tvb.com'
   - '+.go.adjust.com'
   - '+.clickattr.wayup.com'
-  - '+.chathamdailynews.remembering.ca'
+  - '+.remembering.ca'
   - '+.catchup.thisisdax.com'
   - '+.px.a8.net'
   - '+.app-cdn.minepi.com'
