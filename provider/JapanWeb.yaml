@@ -24,9 +24,3 @@ payload:
   - DOMAIN-SUFFIX,pixiv.net
   - DOMAIN-SUFFIX,pixiv.org
   - DOMAIN-SUFFIX,pximg.net
-
-  # wows（临时）
-  - DOMAIN-KEYWORD,worldofwarships
-  - DOMAIN-KEYWORD,wargaming
-  - DOMAIN-SUFFIX,wgcdn.co
-  - DOMAIN-KEYWORD,wows-
