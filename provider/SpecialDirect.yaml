@@ -29,7 +29,6 @@ payload:
 
   # > Steam
   - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steamserver.net
 
   - DOMAIN-SUFFIX,steamchina.com
 
