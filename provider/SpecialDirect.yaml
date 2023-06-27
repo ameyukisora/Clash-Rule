@@ -55,6 +55,9 @@ payload:
   #- PROCESS-NAME,wgc.exe
   - DOMAIN,dl-wows-cdx.wargaming.net
 
+  # > Game Accelerator/Booster
+  - PROCESS-NAME,uu.exe
+
   # > LocalProxies
   - PROCESS-NAME,Netch.exe
   - PROCESS-NAME,Shadowsocks.exe
