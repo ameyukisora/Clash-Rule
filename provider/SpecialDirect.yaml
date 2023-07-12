@@ -14,15 +14,6 @@ payload:
   - IP-CIDR,198.18.0.0/16,no-resolve
   - IP-CIDR,224.0.0.0/4,no-resolve
 
-  # > Windows
-  - DOMAIN-SUFFIX,msftconnecttest.com
-  - DOMAIN-SUFFIX,msftncsi.com
-  - DOMAIN-SUFFIX,windows.com
-  - DOMAIN-SUFFIX,windows.net
-  - DOMAIN-SUFFIX,windowsupdate.com
-  - DOMAIN-SUFFIX,xbox.com
-  - DOMAIN-SUFFIX,xboxlive.com
-
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.org.cn
