@@ -15,8 +15,8 @@ payload:
   - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
 
   # ティンクルスターナイツ，Twinkle Star Knights
-  - DOMAIN-SUFFIX,prod-dmmclientr.twinkle-star-knights.com
-  - DOMAIN-SUFFIX,prod-dmmpcr.twinkle-star-knights.com
+  - DOMAIN-SUFFIX,twinkle-star-knights.com
+  - DOMAIN-SUFFIX,twinklestarknights.jp
 
   # pixiv
   - DOMAIN-SUFFIX,ads-pixiv.net
