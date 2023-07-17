@@ -29,6 +29,6 @@ payload:
   - DOMAIN-SUFFIX,pixiv.org
   - DOMAIN-SUFFIX,pximg.net
 
-  # >wg
+  # > wg
   - DOMAIN-KEYWORD,wargaming
   - DOMAIN-KEYWORD,worldofwarships
