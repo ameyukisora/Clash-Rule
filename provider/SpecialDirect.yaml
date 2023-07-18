@@ -53,3 +53,6 @@ payload:
   - PROCESS-NAME,ShadowsocksR.exe
   - PROCESS-NAME,Trojan.exe
   - PROCESS-NAME,v2ray-sn.exe
+
+  # > GitHub
+  - DOMAIN,raw.gitmirror.com
