@@ -56,6 +56,5 @@ payload:
   - PROCESS-NAME,Trojan.exe
   - PROCESS-NAME,v2ray-sn.exe
 
-  # > GitHub
+  # > GitHub mirror
   - DOMAIN,raw.gitmirror.com
-  - DOMAIN,raw.githubusercontent.com
