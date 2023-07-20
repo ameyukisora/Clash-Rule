@@ -43,6 +43,8 @@ payload:
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
   - DOMAIN,dl-wows-cdx.wargaming.net
+  - DOMAIN-KEYWORD,wargaming
+  - DOMAIN-KEYWORD,worldofwarships
 
   # > Game Accelerator/Booster
   - PROCESS-NAME,uu.exe
