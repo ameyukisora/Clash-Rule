@@ -56,3 +56,4 @@ payload:
 
   # > GitHub
   - DOMAIN,raw.gitmirror.com
+  - DOMAIN,raw.githubusercontents.com
