@@ -5,6 +5,8 @@ mode: Rule
 ipv6: false
 global-client-fingerprint: chrome
 unified-delay: true
+hosts:
+  doh-pure.onedns.net: 106.75.165.71
 dns:
   enable: true
   ipv6: false
