@@ -1,5 +1,4 @@
-### Based on Clash.Meta core  
-
+### Clash providers and remote config
 || Descriptions |
 | - | - |
 | autoupdate | Automatically update every 24 hours using GitHub Actions. |
