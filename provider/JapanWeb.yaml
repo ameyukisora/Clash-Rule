@@ -17,6 +17,8 @@ payload:
   # ティンクルスターナイツ，Twinkle Star Knights
   - DOMAIN-SUFFIX,twinkle-star-knights.com
   - DOMAIN-SUFFIX,twinklestarknights.jp
+  - DOMAIN,dz87n5pasv7ep.cloudfront.net
+
 
   # pixiv
   - DOMAIN-SUFFIX,booth.pm
