@@ -61,3 +61,6 @@ payload:
 
   # > GitHub mirror
   - DOMAIN,raw.gitmirror.com
+
+  # > HIKARI FIELD STORE
+  - DOMAIN-SUFFIX,hikarifield.co.jp
