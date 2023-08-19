@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 54986 domain from AdGuard DNS filter
-  # Last modified: 2023-08-18T18:01:23.931Z
+  # get 54997 domain from AdGuard DNS filter
+  # Last modified: 2023-08-19T12:01:32.676Z
   - '+.watekade.xyz'
   - '+.smervyfenks.com'
   - '+.dr7.biz'
@@ -49103,6 +49103,17 @@ payload:
   - '+.ziravd.xyz'
   - '+.znyjmbh.icu'
   - '+.zonyff.xyz'
+  - '+.lishuaibin.cn'
+  - '+.gvbhae0.com'
+  - '+.vlujojf.icu'
+  - '+.zmdjbl.xyz'
+  - '+.leadc4.icu'
+  - '+.brendanbc.com'
+  - '+.mmtnat.com'
+  - '+.ajtdumo.cn'
+  - '+.bslbahv.top'
+  - '+.dadms.cn'
+  - '+.tqytqdrq.icu'
   - '+.zszhln.xyz'
   - '+.zvasuzb.icu'
   - '+.zxrcfw.com'
