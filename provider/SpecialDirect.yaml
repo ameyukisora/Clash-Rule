@@ -43,6 +43,9 @@ payload:
   - DOMAIN,steamusercontent-a.akamaihd.net
   - DOMAIN,steamuserimages-a.akamaihd.net
 
+  # > Watt Toolkit (Steam++)
+  - DOMAIN,local.steampp.net
+
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
   - DOMAIN,dl-wows-cdx.wargaming.net
