@@ -47,3 +47,6 @@ payload:
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
+
+  # > OneDNS Block
+  - IP-CIDR,23.91.98.132/32
