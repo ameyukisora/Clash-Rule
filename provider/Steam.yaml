@@ -15,3 +15,6 @@ payload:
   - DOMAIN,steamstore-a.akamaihd.net
   - DOMAIN,steamusercontent-a.akamaihd.net
   - DOMAIN,steamuserimages-a.akamaihd.net
+
+  # > Watt Toolkit
+  - DOMAIN-SUFFIX,rmbgame.net
