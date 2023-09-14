@@ -32,16 +32,6 @@ payload:
   - DOMAIN-KEYWORD,wargaming
   - DOMAIN-KEYWORD,worldofwarships
 
-  # > Game Accelerator/Booster
-  - PROCESS-NAME,uu.exe
-
-  # > LocalProxies
-  - PROCESS-NAME,Netch.exe
-  - PROCESS-NAME,Shadowsocks.exe
-  - PROCESS-NAME,ShadowsocksR.exe
-  - PROCESS-NAME,Trojan.exe
-  - PROCESS-NAME,v2ray-sn.exe
-
   # > GitHub mirror
   - DOMAIN,raw.gitmirror.com
 
