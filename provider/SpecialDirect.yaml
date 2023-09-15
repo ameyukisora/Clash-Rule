@@ -26,6 +26,10 @@ payload:
   # > Watt Toolkit (Steam++)
   - DOMAIN,local.steampp.net
 
+  # > Adguard local
+  - DOMAIN,injections.adguard.org
+  - DOMAIN,local.adguard.org
+
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
   - DOMAIN,dl-wows-cdx.wargaming.net
