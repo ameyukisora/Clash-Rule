@@ -1,7 +1,7 @@
 mixin:
   tun:
     enable: true
-    stack: system   #system / gvisor
+    stack: gvisor   #system / gvisor
     dns-hijack:
       - any:53
     auto-route: true
