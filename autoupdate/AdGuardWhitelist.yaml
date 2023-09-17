@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   # get 123 domain from AdGuard DNS filter
-  # Last modified: 2023-09-16T18:00:58.949Z
+  # Last modified: 2023-09-17T00:02:39.545Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'

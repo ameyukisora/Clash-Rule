@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 56004 domain from AdGuard DNS filter
-  # Last modified: 2023-09-16T18:00:58.949Z
+  # get 56011 domain from AdGuard DNS filter
+  # Last modified: 2023-09-17T00:02:39.545Z
   - '+.preciousdoctor.pro'
   - '+.academic-information.com'
   - '+.doweralrostra.com'
@@ -42476,6 +42476,7 @@ payload:
   - '+.hspbotdetection.azurewebsites.net'
   - '+.icu.getstorybox.com'
   - '+.iddu1vvb7sk8-a.akamaihd.net'
+  - '+.identification.hotmart.com'
   - '+.imp.constantcontact.com'
   - '+.impress.vcita.com'
   - '+.inbound-analytics.pixlee.co'
@@ -51245,6 +51246,12 @@ payload:
   - '+.zwfkxb.xyz'
   - '+.zxrcfw.com'
   - '+.zypzzv.xyz'
+  - '+.bxjhlhk.xyz'
+  - '+.dexylv.xyz'
+  - '+.iyybqzv.cn'
+  - '+.cnied.xyz'
+  - '+.bnets1.icu'
+  - '+.nmlfev.icu'
   - '+.zzisnvb.cn'
   - '+.01v62.xyz'
   - '+.0272aa.com'
