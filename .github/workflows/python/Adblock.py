@@ -29,10 +29,17 @@ for url in list_urls:
         print(f"无法下载文件：{url}")
 
 # 统计
-count_domain = sum(1 for line in lines_to_extract if line.startswith("DOMAIN,"))
-count_keyword = sum(1 for line in lines_to_extract if line.startswith("DOMAIN-KEYWORD"))
-count_suffix = sum(1 for line in lines_to_extract if line.startswith("DOMAIN-SUFFIX"))
-count_ipcidr = sum(1 for line in lines_to_extract if line.startswith("IP-CIDR"))
+line_counts = {"DOMAIN": 0, "DOMAIN-KEYWORD": 0, "DOMAIN-SUFFIX": 0, "IP-CIDR": 0}
+
+for line in lines_to_extract:
+    line_type = line.split(",")[0]
+    if line_type in line_counts:
+        line_counts[line_type] += 1
+
+count_domain = line_counts["DOMAIN"]
+count_keyword = line_counts["DOMAIN-KEYWORD"]
+count_suffix = line_counts["DOMAIN-SUFFIX"]
+count_ipcidr = line_counts["IP-CIDR"]
 
 # 当前时间
 tz = pytz.timezone('Asia/Shanghai')  # 设置时区为UTC+8
