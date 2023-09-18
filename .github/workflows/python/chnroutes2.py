@@ -6,7 +6,7 @@ response = requests.get(url)
 lines = response.text.split("\n")
 
 # filter ip
-ip_list = [ip for ip in lines if ip[0].isdigit()]
+ip_list = [ip for ip in lines if ip and ip[0].isdigit()]
 
 # create file
 os.makedirs("autoupdate", exist_ok=True)
