@@ -5,8 +5,8 @@ url = "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.tx
 response = requests.get(url)
 lines = response.text.split("\n")
 
-# filter out empty elements
-lines = list(filter(None, lines))
+# filter ip
+ip_list = [ip for ip in lines if ip[0].isdigit()]
 
 # create file
 os.makedirs("autoupdate", exist_ok=True)
@@ -20,5 +20,4 @@ output_content = f'''payload:
 
 with open(output_file, "w") as f:
     f.write(output_content)
-    for line in lines[2:]:
-        f.write(f"  - '{line}'\n")
+    f.writelines(f"  - '{ip}'\n" for ip in ip_list)
