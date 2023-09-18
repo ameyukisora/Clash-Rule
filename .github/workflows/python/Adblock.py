@@ -51,6 +51,7 @@ content = f'''payload:
   # Merged BanAD, BanProgramAD, BanEasyListChina
   # {current_time}
   # DOMAIN: {count_domain}, DOMAIN-KEYWORD: {count_keyword}, DOMAIN-SUFFIX: {count_suffix}, IP-CIDR: {count_ipcidr}
+  # TOTAL: {sum(line_counts.values())}
 '''
 
 # 将提取的行写入.yaml文件
