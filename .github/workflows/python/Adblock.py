@@ -26,17 +26,13 @@ for url in list_urls:
         print(f"无法下载文件：{url}")
 
 # 统计
-line_counts = {"DOMAIN": 0, "DOMAIN-KEYWORD": 0, "DOMAIN-SUFFIX": 0, "IP-CIDR": 0}
-
+line_counts = {}
 for line in lines_to_extract:
     line_type = line.split(",")[0]
     if line_type in line_counts:
         line_counts[line_type] += 1
-
-count_domain = line_counts["DOMAIN"]
-count_keyword = line_counts["DOMAIN-KEYWORD"]
-count_suffix = line_counts["DOMAIN-SUFFIX"]
-count_ipcidr = line_counts["IP-CIDR"]
+    else:
+        line_counts[line_type] = 1
 
 # 当前时间
 tz = pytz.timezone('Asia/Shanghai')  # 设置时区为UTC+8
@@ -47,7 +43,7 @@ content = f'''payload:
   # Adblock rules from https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
   # Merged BanAD, BanProgramAD, BanEasyListChina
   # {current_time}
-  # DOMAIN: {count_domain}, DOMAIN-KEYWORD: {count_keyword}, DOMAIN-SUFFIX: {count_suffix}, IP-CIDR: {count_ipcidr}
+  # {", ".join(f'{k}: {v}' for k, v in line_counts.items())}
   # TOTAL: {sum(line_counts.values())}
 '''
 
