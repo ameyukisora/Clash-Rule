@@ -12,13 +12,13 @@ lines = list(filter(None, lines))
 os.makedirs("autoupdate", exist_ok=True)
 output_file = "autoupdate/chnroutes.yaml"
 
-output_lines = [
-    "payload:",
-    "  # https://github.com/misakaio/chnroutes2",
-    f"  {lines[0]}",
-    f"  {lines[1]}"
-]
-output_lines.extend([f"  - '{line}'" for line in lines[2:]])
+output_content = f'''payload:
+    # https://github.com/misakaio/chnroutes2"
+    {lines[0]}"
+    {lines[1]}"
+'''
 
 with open(output_file, "w") as f:
-   f.write("\n".join(output_lines))
+    f.write(output_content)
+    for line in lines[2:]:
+        f.write(f"  - '{line}'\n")
