@@ -21,10 +21,7 @@ for url in list_urls:
     response = requests.get(url)
     if response.status_code == 200:
         lines = response.text.splitlines()
-        for line in lines:
-            stripped_line = line.strip()
-            if stripped_line.startswith("DOMAIN") or stripped_line.startswith("IP-CIDR"):
-                lines_to_extract.append(f"{stripped_line}")
+        lines_to_extract.extend([line.strip() for line in lines if line.strip().startswith(("DOMAIN", "IP-CIDR"))])
     else:
         print(f"无法下载文件：{url}")
 
