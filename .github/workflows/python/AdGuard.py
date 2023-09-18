@@ -6,14 +6,13 @@ response = requests.get(url)
 lines = response.text.split("\n")
 
 # 过滤
-filtered_lines = []
-filtered_lines_whitelist = []
+def filter_line(line, prefix, suffix):
+    if line.startswith(prefix) and line.rstrip(suffix)[-1].isalpha():
+        return line[len(prefix):].rstrip(suffix)
+    return None
 
-for line in lines:
-    if line.startswith("||") and line.rstrip('^')[-1].isalpha():
-        filtered_lines.append(line[2:].rstrip('^'))
-    elif line.startswith("@@||") and line.rstrip('|^')[-1].isalpha():
-        filtered_lines_whitelist.append(line[4:].rstrip('|^'))
+filtered_lines = [filter_line(line, "||", '^') for line in lines if filter_line(line, "||", '^') is not None]
+filtered_lines_whitelist = [filter_line(line, "@@||", '|^') for line in lines if filter_line(line, "@@||", '|^') is not None]
 
 # 创建文件
 output_dir = "autoupdate"
