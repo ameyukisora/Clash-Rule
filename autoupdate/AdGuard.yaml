@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 56039 domain from AdGuard DNS filter
-  # Last modified: 2023-09-17T18:01:16.087Z
+  # get 56045 domain from AdGuard DNS filter
+  # Last modified: 2023-09-18T00:02:29.688Z
   - '+.preciousdoctor.pro'
   - '+.academic-information.com'
   - '+.doweralrostra.com'
@@ -51281,6 +51281,12 @@ payload:
   - '+.zxrcfw.com'
   - '+.zypzzv.xyz'
   - '+.zzisnvb.cn'
+  - '+.sgeth1.icu'
+  - '+.rixqlvd.cn'
+  - '+.npnzfri.xyz'
+  - '+.dozwjl.xyz'
+  - '+.rwarwf.icu'
+  - '+.dniwe.xyz'
   - '+.01v62.xyz'
   - '+.0272aa.com'
   - '+.0272bb.com'
