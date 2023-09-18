@@ -13,9 +13,9 @@ os.makedirs("autoupdate", exist_ok=True)
 output_file = "autoupdate/chnroutes.yaml"
 
 output_content = f'''payload:
-    # https://github.com/misakaio/chnroutes2"
-    {lines[0]}"
-    {lines[1]}"
+  # https://github.com/misakaio/chnroutes2
+  {lines[0]}
+  {lines[1]}
 '''
 
 with open(output_file, "w") as f:
