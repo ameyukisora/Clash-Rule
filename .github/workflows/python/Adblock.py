@@ -29,10 +29,7 @@ for url in list_urls:
 line_counts = {}
 for line in lines_to_extract:
     line_type = line.split(",")[0]
-    if line_type in line_counts:
-        line_counts[line_type] += 1
-    else:
-        line_counts[line_type] = 1
+    line_counts[line_type] = line_counts.get(line_type, 0) + 1
 
 # 当前时间
 tz = pytz.timezone('Asia/Shanghai')  # 设置时区为UTC+8
