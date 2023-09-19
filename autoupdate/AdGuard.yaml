@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   # get 56104 domain from AdGuard DNS filter
-  # tcneutwheoioo.xyz
+  # Last modified: 2023-09-19T06:01:01.832Z
   - '+.qhlegkjlnmg.com'
   - '+.haustoam.com'
   - '+.eqvudqracrhalsg.com'

@@ -1,7 +1,7 @@
 payload:
   # Adblock rules from https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
   # Merged BanAD, BanProgramAD, BanEasyListChina
-  # 2023-09-19 17:20:47
+  # 2023-09-19 17:25:35
   # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 6655, DOMAIN: 10, IP-CIDR: 70
   # TOTAL: 6760
   - DOMAIN-KEYWORD,admarvel
