@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 56095 domain from AdGuard DNS filter
-  # Last modified: 2023-09-18T18:01:12.825Z
+  # get 56100 domain from AdGuard DNS filter
+  # Last modified: 2023-09-19T00:02:39.126Z
   - '+.qhlegkjlnmg.com'
   - '+.haustoam.com'
   - '+.eqvudqracrhalsg.com'
@@ -51337,6 +51337,11 @@ payload:
   - '+.zxrcfw.com'
   - '+.zypzzv.xyz'
   - '+.zzisnvb.cn'
+  - '+.zents5.top'
+  - '+.zhrrzug.xyz'
+  - '+.vakdop.icu'
+  - '+.lybxft.xyz'
+  - '+.ecami.xyz'
   - '+.01v62.xyz'
   - '+.0272aa.com'
   - '+.0272bb.com'
