@@ -1,9 +1,10 @@
 import os
 import requests
 
-class AdGuardFilterDownloader:
-    def __init__(self, url):
+class FilterDownloader:
+    def __init__(self, url, output_dir):
         self.url = url
+        self.output_dir = output_dir
 
     def download_filter(self):
         response = requests.get(self.url)
@@ -18,15 +19,19 @@ class AdGuardFilterDownloader:
     def get_filtered_lines(self, lines, prefix, suffix):
         return [self.filter_line(line, prefix, suffix) for line in lines if self.filter_line(line, prefix, suffix) is not None]
 
-    @staticmethod
-    def write_payload_to_file(file_path, content, filtered_lines):
+    def write_payload_to_file(self, file_name, description, lines):
+        file_path = os.path.join(self.output_dir, file_name)
         with open(file_path, "w") as f:
-            f.write(content)
-            for line in filtered_lines:
+            f.write(f'''payload:
+  # {description}
+  # get {len(lines)} domain from AdGuard DNS filter
+  # {lines[5][2:]}
+''')
+            for line in lines:
                 f.write(f"  - '+.{line}'\n")
 
-    def generate_payload_file(self, output_dir):
-        os.makedirs(output_dir, exist_ok=True)
+    def generate_payload_file(self):
+        os.makedirs(self.output_dir, exist_ok=True)
         lines = self.download_filter()
 
         file_data = {
@@ -41,17 +46,11 @@ class AdGuardFilterDownloader:
         }
 
         for file_name, data in file_data.items():
-            file_path = os.path.join(output_dir, file_name)
-            payload_content = f'''payload:
-  # {data["description"]}
-  # get {len(data["lines"])} domain from AdGuard DNS filter
-  # {lines[5][2:]}
-'''
-            self.write_payload_to_file(file_path, payload_content, data["lines"])
+            self.write_payload_to_file(file_name, data["description"], data["lines"])
 
 if __name__ == "__main__":
     url = "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
     output_dir = "autoupdate"
 
-    downloader = AdGuardFilterDownloader(url)
-    downloader.generate_payload_file(output_dir)
+    downloader = FilterDownloader(url, output_dir)
+    downloader.generate_payload_file()
