@@ -1,6 +1,6 @@
 payload:
   # Merged BanAD, BanProgramAD, BanEasyListChina from https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
-  # 2023-09-22 02:07:40
+  # 2023-09-22 09:32:53
   # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 6655, DOMAIN: 10, IP-CIDR: 70
   # TOTAL: 6760
   - DOMAIN-KEYWORD,admarvel
