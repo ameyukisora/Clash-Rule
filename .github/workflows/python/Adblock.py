@@ -24,7 +24,7 @@ class AdblockListProcessor:
         try:
             with open(self.output_yaml_file, "r") as old_file:
                 old_contents = old_file.readlines()[5:]
-                old_rules = [old_rule.strip(' -') for old_rule in old_contents]
+                old_rules = [old_rule.strip(' -\n') for old_rule in old_contents]
                 if self.lines_to_extract == old_rules:
                     return True  # The content is the same
             return False
