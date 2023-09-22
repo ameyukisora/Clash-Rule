@@ -33,8 +33,12 @@ jobs:
       
       - name: Commit and push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add autoupdate/*.yaml
-          git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
-          git push
+          if [[ $(git status --porcelain) ]]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add autoupdate/*.yaml
+            git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
+            git push
+          else
+            echo "No changes to commit."
+          fi
