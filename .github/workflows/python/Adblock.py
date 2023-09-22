@@ -20,7 +20,22 @@ class AdblockListProcessor:
             else:
                 print(f"无法下载文件：{url}")
 
+    def compare_with_old_file(self):
+        try:
+            with open(self.output_yaml_file, "r") as old_file:
+                old_contents = old_file.readlines()[5:]
+                old_rules = [old_rule.strip(' -') for old_rule in old_contents]
+                if self.lines_to_extract == old_rules:
+                    return True  # The content is the same
+            return False
+        except FileNotFoundError:
+            return False
+
     def write_to_yaml_file(self):
+        if self.compare_with_old_file():
+            print("规则没有发生更改")
+            return
+
         line_counts = {}
         for line in self.lines_to_extract:
             line_type = line.split(",")[0]
