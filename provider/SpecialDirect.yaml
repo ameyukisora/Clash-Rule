@@ -21,7 +21,7 @@ payload:
   # > Steam
   - DOMAIN,cm.steampowered.com
   - DOMAIN-SUFFIX,steamcontent.com
-  # - DOMAIN-SUFFIX,steamserver.net
+  - DOMAIN-SUFFIX,steamserver.net
 
   # > Watt Toolkit (Steam++)
   - DOMAIN,local.steampp.net
