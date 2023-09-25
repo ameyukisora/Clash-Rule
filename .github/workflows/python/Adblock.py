@@ -11,14 +11,21 @@ class AdblockListProcessor:
         self.lines_to_extract = []
 
     def download_lists(self):
+        unique_set = set()  # 用于跟踪已经出现过的规则
+        rule_num = 0  # 计数
         for url in self.list_urls:
             response = requests.get(url)
             if response.status_code == 200:
                 lines = response.text.splitlines()
-                self.lines_to_extract.extend(
-                    [line.strip() for line in lines if line.strip().startswith(("DOMAIN", "IP-CIDR"))])
+                rules = [line.strip() for line in lines if line.strip().startswith(("DOMAIN", "IP-CIDR"))]
+                rule_num += len(rules)
+                for rule in rules:
+                    if rule not in unique_set:
+                        unique_set.add(rule)
+                        self.lines_to_extract.append(rule)
             else:
                 print(f"无法下载文件：{url}")
+        print(f'合并规则数量：{rule_num - len(unique_set)}')
 
     def compare_with_old_file(self):
         try:
@@ -46,7 +53,7 @@ class AdblockListProcessor:
 
         with open(self.output_yaml_file, "w") as output:
             output.write(f'''payload:
-  # Merged BanAD, BanProgramAD, BanEasyListChina from https://github.com/ACL4SSR/ACL4SSR/tree/master/Clash
+  # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
   # {current_time}
   # {", ".join(f'{k}: {v}' for k, v in line_counts.items())}
   # TOTAL: {sum(line_counts.values())}
@@ -60,6 +67,7 @@ if __name__ == "__main__":
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list",
+        "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
     ]
 
     os.makedirs("autoupdate", exist_ok=True)
