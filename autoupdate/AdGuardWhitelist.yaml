@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 123 domain from AdGuard DNS filter
-  # Last modified: 2023-10-03T18:01:32.819Z
+  # get 124 domain from AdGuard DNS filter
+  # Last modified: 2023-10-04T18:01:00.985Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'
@@ -13,6 +13,7 @@ payload:
   - '+.buyad.bi-xenon.cn'
   - '+.captcha.su.baidu.com'
   - '+.img.ads.tvb.com'
+  - '+.api.karte.io'
   - '+.sponsor.nitropay.com'
   - '+.click.cptrack.de'
   - '+.gate.first-id.fr'
