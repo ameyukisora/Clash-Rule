@@ -9,8 +9,6 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 22.0.0.0/8
   nameserver:
-    - https://doh.pub/dns-query
-    - https://dns.alidns.com/dns-query
     - https://doh-pure.onedns.net/dns-query
   fake-ip-filter:
     # === LAN ===
