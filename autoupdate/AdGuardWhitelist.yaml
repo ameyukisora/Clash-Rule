@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 126 domain from AdGuard DNS filter
-  # Last modified: 2023-10-10T18:01:22.727Z
+  # get 127 domain from AdGuard DNS filter
+  # Last modified: 2023-10-11T18:01:04.562Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'
@@ -89,6 +89,7 @@ payload:
   - '+.proto2ad.durasite.net'
   - '+.tags.crwdcntrl.net'
   - '+.official.paymaya.com'
+  - '+.www.statcounter.com'
   - '+.gs.statcounter.com'
   - '+.click.virt.s*.exacttarget.com'
   - '+.click.virt.exacttarget.com'
