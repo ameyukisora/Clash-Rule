@@ -9,8 +9,7 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-range: 22.0.0.0/8
   nameserver:
-    - tls://223.5.5.5:853
-    - https://223.6.6.6/dns-query
+    - https://dns.alidns.com/dns-query
   fake-ip-filter:
     # === LAN ===
     - '*.example'
