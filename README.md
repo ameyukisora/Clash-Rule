@@ -1,4 +1,4 @@
-### Clash providers and remote config
+### Clash providers and remote config (clash.meta core)
 || Descriptions |
 | - | - |
 | autoupdate | Automatically update every 24 hours using GitHub Actions. |
