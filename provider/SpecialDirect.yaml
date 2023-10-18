@@ -32,6 +32,7 @@ payload:
 
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
+  - DOMAIN-SUFFIX,wargaming.net
   - DOMAIN-KEYWORD,worldofwarships
 
   # > GitHub mirror
