@@ -7,8 +7,10 @@ dns:
   enable: true
   ipv6: false
   enhanced-mode: redir-host
+  prefer-h3: true
   nameserver:
-    - https://dns.alidns.com/dns-query
+    - https://223.5.5.5/dns-query
+    - https://223.6.6.6/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
