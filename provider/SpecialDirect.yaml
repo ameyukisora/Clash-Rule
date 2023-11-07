@@ -35,6 +35,9 @@ payload:
   - DOMAIN-SUFFIX,wargaming.net
   - DOMAIN-KEYWORD,worldofwarships
 
+  # > Lesta
+  - DOMAIN-SUFFIX,lesta.ru
+
   # > GitHub mirror
   - DOMAIN,raw.gitmirror.com
 
