@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2023-10-24 02:06:55
-  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 13530, DOMAIN: 49, IP-CIDR: 108, IP-CIDR6: 1
-  # TOTAL: 13713
+  # 2023-11-15 02:07:25
+  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 13525, DOMAIN: 49, IP-CIDR: 108, IP-CIDR6: 1
+  # TOTAL: 13708
   - DOMAIN-KEYWORD,admarvel
   - DOMAIN-KEYWORD,admaster
   - DOMAIN-KEYWORD,adsage
@@ -7378,7 +7378,6 @@ payload:
   - DOMAIN-SUFFIX,activation.easeus.com
   - DOMAIN-SUFFIX,active.baofeng.com
   - DOMAIN-SUFFIX,activeqq.3g.qq.com
-  - DOMAIN-SUFFIX,activity.app.autohome.com.cn
   - DOMAIN-SUFFIX,activity.serving-sys.com
   - DOMAIN-SUFFIX,activity.tuifish.com
   - DOMAIN-SUFFIX,activity.yuyiya.com
@@ -9816,7 +9815,6 @@ payload:
   - DOMAIN-SUFFIX,h.irs01.com
   - DOMAIN-SUFFIX,h.laojiayoufang.com
   - DOMAIN-SUFFIX,h.msn.com
-  - DOMAIN-SUFFIX,h.pcd.autohome.com.cn
   - DOMAIN-SUFFIX,h.sora.yoyi.com.cn
   - DOMAIN-SUFFIX,h01.hotrank.com.tw
   - DOMAIN-SUFFIX,h1.18sd.cn
@@ -11631,7 +11629,6 @@ payload:
   - DOMAIN-SUFFIX,pcbrowser.dd.qq.com
   - DOMAIN-SUFFIX,pclog.dftoutiao.com
   - DOMAIN-SUFFIX,pclog.suishenyun.net
-  - DOMAIN-SUFFIX,pcmx.autohome.com.cn
   - DOMAIN-SUFFIX,pcmzn.com
   - DOMAIN-SUFFIX,pcsoftwords.dftoutiao.com
   - DOMAIN-SUFFIX,pcxzo.pluto.sogou.com
@@ -11801,7 +11798,6 @@ payload:
   - DOMAIN-SUFFIX,pub.chinadailyasia.com
   - DOMAIN-SUFFIX,pub1.cope.es
   - DOMAIN-SUFFIX,pubbirdf.com
-  - DOMAIN-SUFFIX,public.app.autohome.com.cn
   - DOMAIN-SUFFIX,public6.com
   - DOMAIN-SUFFIX,publish.ad.youth.cn
   - DOMAIN-SUFFIX,pubnative.net
@@ -11821,7 +11817,6 @@ payload:
   - DOMAIN-SUFFIX,push-android.myzaker.com
   - DOMAIN-SUFFIX,pushapi.lenovomm.com
   - DOMAIN-SUFFIX,push-dc.51y5.net
-  - DOMAIN-SUFFIX,pv.alert.autohome.com.cn
   - DOMAIN-SUFFIX,pv.anzhi.com
   - DOMAIN-SUFFIX,pv.enet.com.cn
   - DOMAIN-SUFFIX,pv.focus.cn
