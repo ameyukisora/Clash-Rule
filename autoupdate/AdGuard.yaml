@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 57638 domain from AdGuard DNS filter
-  # Last modified: 2023-11-19T18:01:00.193Z
+  # get 57649 domain from AdGuard DNS filter
+  # Last modified: 2023-11-20T06:01:20.543Z
   - '+.uueuxygn.com'
   - '+.jaaqbbqbst.com'
   - '+.evenghiougher.com'
@@ -43348,6 +43348,7 @@ payload:
   - '+.tritebadge.com'
   - '+.troubleshade.com'
   - '+.truckstomatoes.com'
+  - '+.truculentrate.com'
   - '+.tumblebirds.com'
   - '+.tumbleicicle.com'
   - '+.tutorthing.com'
@@ -52295,6 +52296,7 @@ payload:
   - '+.zlncvn.xyz'
   - '+.zmfcnlvu.xyz'
   - '+.zndvfrl.xyz'
+  - '+.eypqbjju.xyz'
   - '+.znwzcmd.cn'
   - '+.zpvuugw.cn'
   - '+.zuugfj.cn'
@@ -52304,6 +52306,15 @@ payload:
   - '+.zyzo.cn'
   - '+.zzyy17.top'
   - '+.zzyy18.top'
+  - '+.f4nfg.site'
+  - '+.ckmbig.xyz'
+  - '+.oxrvfsi.xyz'
+  - '+.rgpujh.xyz'
+  - '+.haxqxd.xyz'
+  - '+.feijied.xyz'
+  - '+.rett.top'
+  - '+.zhangyuting04.cn'
+  - '+.holdntlc.com'
   - '+.zzyy19.top'
   - '+.zzyy20.top'
   - '+.01v62.xyz'
