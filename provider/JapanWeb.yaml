@@ -18,3 +18,7 @@ payload:
   - DOMAIN-SUFFIX,twinkle-star-knights.com
   #- DOMAIN-SUFFIX,twinklestarknights.jp
   - DOMAIN,dz87n5pasv7ep.cloudfront.net
+
+  # pixiv
+  - DOMAIN-SUFFIX,pixiv.net
+  - DOMAIN-SUFFIX,pximg.net
