@@ -1,11 +1,10 @@
 payload:
-
   # .jp
   - DOMAIN-SUFFIX,jp
 
   # DMM
   - DOMAIN-SUFFIX,dmm.com
-  - DOMAIN-SUFFIX,dmm.co.jp
+  #- DOMAIN-SUFFIX,dmm.co.jp
   - DOMAIN-SUFFIX,dmmgames.com
   
   # プリンセスコネクト！Re:Dive
@@ -17,14 +16,5 @@ payload:
 
   # ティンクルスターナイツ，Twinkle Star Knights
   - DOMAIN-SUFFIX,twinkle-star-knights.com
-  - DOMAIN-SUFFIX,twinklestarknights.jp
+  #- DOMAIN-SUFFIX,twinklestarknights.jp
   - DOMAIN,dz87n5pasv7ep.cloudfront.net
-
-
-  # pixiv
-  - DOMAIN-SUFFIX,booth.pm
-  - DOMAIN-SUFFIX,fanbox.cc
-  - DOMAIN-SUFFIX,pixiv.me
-  - DOMAIN-SUFFIX,pixiv.net
-  - DOMAIN-SUFFIX,pixiv.org
-  - DOMAIN-SUFFIX,pximg.net
