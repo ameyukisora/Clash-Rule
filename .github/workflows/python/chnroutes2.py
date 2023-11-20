@@ -15,8 +15,8 @@ def download_and_filter_ips(url, output_file):
   # https://github.com/misakaio/chnroutes2
   {lines[0]}
   {lines[1]}
+{"".join(f"  - '{ip}'\n" for ip in ip_list)}
 ''')
-        f.writelines(f"  - '{ip}'\n" for ip in ip_list)
 
 if __name__ == "__main__":
     url = "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt"
