@@ -10,8 +10,8 @@ mixin:
     enable: true
     ipv6: false
     enhanced-mode: redir-host
-    default-nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
-    nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
+    default-nameserver: [119.29.29.29, 223.5.5.5]
+    nameserver: [119.29.29.29, 223.5.5.5]
     nameserver-policy: {+.tmall.com: 223.5.5.5, +.taobao.com: 223.5.5.5, +.alicdn.com: 223.5.5.5, +.aliyun.com: 223.5.5.5, +.alipay.com: 223.5.5.5, +.alibaba.com: 223.5.5.5, +.qq.com: 119.29.29.29, +.tencent.com: 119.29.29.29, +.weixin.com: 119.29.29.29, +.qpic.cn: 119.29.29.29, +.jd.com: 119.29.29.29, +.bilibili.com: 119.29.29.29, +.hdslb.com: 119.29.29.29, +.netease.com: 119.29.29.29, +.baidu.com: 223.5.5.5, +.bdstatic.com: 223.5.5.5, +.bilivideo.+: 119.29.29.29}
     fallback:
       - https://dns.alidns.com/dns-query
