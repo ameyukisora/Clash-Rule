@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 128 domain from AdGuard DNS filter
-  # Last modified: 2023-11-28T12:01:19.502Z
+  # get 129 domain from AdGuard DNS filter
+  # Last modified: 2023-11-29T18:01:11.264Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'
@@ -13,6 +13,7 @@ payload:
   - '+.buyad.bi-xenon.cn'
   - '+.captcha.su.baidu.com'
   - '+.img.ads.tvb.com'
+  - '+.cmp.inmobi.com'
   - '+.cdn.us*.exponea.com'
   - '+.data.digital.costco.ca'
   - '+.data.digital.costco.com'
