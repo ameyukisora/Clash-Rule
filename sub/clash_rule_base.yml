@@ -9,19 +9,9 @@ dns:
   prefer-h3: true
   enhanced-mode: redir-host
   default-nameserver: [119.29.29.29, 223.5.5.5]
-  nameserver: [119.29.29.29, 223.5.5.5]
-  nameserver-policy: {+.tmall.com: 223.5.5.5, +.taobao.com: 223.5.5.5, +.alicdn.com: 223.5.5.5, +.aliyun.com: 223.5.5.5, +.alipay.com: 223.5.5.5, +.alibaba.com: 223.5.5.5, +.qq.com: 119.29.29.29, +.tencent.com: 119.29.29.29, +.weixin.com: 119.29.29.29, +.qpic.cn: 119.29.29.29, +.jd.com: 119.29.29.29, +.bilibili.com: 119.29.29.29, +.hdslb.com: 119.29.29.29, +.netease.com: 119.29.29.29, +.baidu.com: 223.5.5.5, +.bdstatic.com: 223.5.5.5, +.bilivideo.+: 119.29.29.29}
-  fallback:
+  nameserver:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 0.0.0.0/32
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 240.0.0.0/4
-      - 255.255.255.255/32
 proxies: ~
 proxy-groups: ~
 rules: ~
