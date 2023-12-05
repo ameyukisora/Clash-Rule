@@ -57,7 +57,7 @@
 (Switzerland|Zurich|瑞士|苏黎世),🇨🇭
 (Venezuela|委内瑞拉),🇻🇪
 (Vatican|梵蒂冈),🇻🇦
-(Antarctica|南极),🐧
+(Antarctica|南极),🇦🇶
 (Myanmar|缅甸),🇲🇲
 (\bAR\b|阿根廷|Argentina),🇦🇷
 (\bBE\b|Belgium|比利时),🇧🇪
