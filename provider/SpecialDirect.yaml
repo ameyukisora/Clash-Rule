@@ -13,9 +13,6 @@ payload:
   - IP-CIDR,192.168.0.0/16,no-resolve
   - IP-CIDR,198.18.0.0/16,no-resolve
   - IP-CIDR,224.0.0.0/4,no-resolve
-
-  # > AdGuard
-  - DOMAIN-SUFFIX,local.adguard.org
   
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
