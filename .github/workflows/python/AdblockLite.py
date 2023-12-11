@@ -69,7 +69,7 @@ if __name__ == "__main__":
     ]
 
     os.makedirs("autoupdate", exist_ok=True)
-    output_yaml_file = "autoupdate/Adblock.yaml"
+    output_yaml_file = "autoupdate/AdblockLite.yaml"
 
     adblock_processor = AdblockListProcessor(list_urls, output_yaml_file)
     adblock_processor.download_lists()
