@@ -28,8 +28,11 @@ jobs:
       - name: chnroutes2
         run: python .github/workflows/python/chnroutes2.py
 
-      - name: ACL4SSR Adblock
+      - name: Adblock
         run: python .github/workflows/python/Adblock.py
+
+      - name: AdblockLite
+        run: python .github/workflows/python/AdblockLite.py
       
       - name: Commit and push changes
         run: |
