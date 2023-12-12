@@ -18,3 +18,6 @@ payload:
 
   # > Watt Toolkit
   - DOMAIN-SUFFIX,rmbgame.net
+
+  # > SteamDB
+  - DOMAIN-SUFFIX,steamdb.info
