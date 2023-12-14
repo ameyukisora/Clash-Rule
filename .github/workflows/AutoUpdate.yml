@@ -33,6 +33,9 @@ jobs:
 
       - name: AdblockLite
         run: python .github/workflows/python/AdblockLite.py
+
+      - name: Reject
+        run: python .github/workflows/python/Reject.py
       
       - name: Commit and push changes
         run: |
