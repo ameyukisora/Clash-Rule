@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD
-  # 2023-12-11 11:32:49
-  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 1551, DOMAIN: 10, IP-CIDR: 19
-  # TOTAL: 1605
+  # 2023-12-15 02:08:11
+  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 1552, DOMAIN: 10, IP-CIDR: 19
+  # TOTAL: 1606
   - DOMAIN-KEYWORD,admarvel
   - DOMAIN-KEYWORD,admaster
   - DOMAIN-KEYWORD,adsage
@@ -421,6 +421,7 @@ payload:
   - DOMAIN-SUFFIX,zhjfad.com
   - DOMAIN-SUFFIX,zqzxz.com
   - DOMAIN-SUFFIX,zzsx8.com
+  - DOMAIN-SUFFIX,wwads.cn
   - DOMAIN-SUFFIX,acuityplatform.com
   - DOMAIN-SUFFIX,ad-stir.com
   - DOMAIN-SUFFIX,ad-survey.com
