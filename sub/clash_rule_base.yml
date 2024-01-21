@@ -3,13 +3,14 @@ allow-lan: false
 log-level: info
 mode: Rule
 ipv6: false
+tcp-concurrent: true
 dns:
   enable: true
   ipv6: false
   prefer-h3: true
   enhanced-mode: redir-host
   nameserver:
-    - https://doh-pure.onedns.net/dns-query
+    - https://dns.alidns.com/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~

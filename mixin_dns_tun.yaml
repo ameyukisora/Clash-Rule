@@ -12,4 +12,4 @@ mixin:
     prefer-h3: true
     enhanced-mode: redir-host
     nameserver:
-      - https://doh-pure.onedns.net/dns-query
+      - https://dns.alidns.com/dns-query
