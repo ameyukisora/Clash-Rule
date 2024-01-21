@@ -12,5 +12,4 @@ mixin:
     prefer-h3: true
     enhanced-mode: redir-host
     nameserver:
-      - https://223.5.5.5/dns-query
-      - https://223.6.6.6/dns-query
+      - https://doh-pure.onedns.net/dns-query
