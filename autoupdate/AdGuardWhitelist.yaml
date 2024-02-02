@@ -1,7 +1,7 @@
 payload:
   # Whitelist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 134 domain from AdGuard DNS filter
-  # Last modified: 2024-02-01T18:00:57.944Z
+  # get 135 domain from AdGuard DNS filter
+  # Last modified: 2024-02-02T18:01:21.914Z
   - '+.ad.10010.com'
   - '+.ad.abchina.com'
   - '+.ad.kazakinfo.com'
@@ -13,6 +13,7 @@ payload:
   - '+.buyad.bi-xenon.cn'
   - '+.captcha.su.baidu.com'
   - '+.img.ads.tvb.com'
+  - '+.redir.ownpage.fr'
   - '+.tr.rdrtr.com'
   - '+.media-consumer365.desigual.com'
   - '+.cdn.us*.exponea.com'
