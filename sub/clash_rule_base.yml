@@ -3,7 +3,6 @@ allow-lan: false
 log-level: info
 mode: Rule
 ipv6: false
-tcp-concurrent: true
 keep-alive-interval: 300
 unified-delay: true
 dns:
