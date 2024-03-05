@@ -1,15 +1,14 @@
 mixin:
   tun:
     enable: true
-    stack: system   #system / gvisor
+    stack: mixed   #system / gvisor / mixed
     dns-hijack:
       - any:53
     auto-route: true
     auto-detect-interface: true
   dns:
     enable: true
-    ipv6: false
-    prefer-h3: true
     enhanced-mode: redir-host
     nameserver:
-      - https://dns.alidns.com/dns-query
+      - https://dns.alidns.com/dns-query#h3=true
+      - quic://223.6.6.6:853
