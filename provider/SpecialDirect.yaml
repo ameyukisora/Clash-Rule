@@ -45,6 +45,9 @@ payload:
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
 
+  # > Wormhole
+  - DOMAIN-SUFFIX,wormhole.app
+
   # > Download
   - PROCESS-NAME,aria2c.exe
   - PROCESS-NAME,BitComet.exe
