@@ -9,6 +9,6 @@ mixin:
   dns:
     enable: true
     enhanced-mode: redir-host
+    prefer-h3: true
     nameserver:
-      - quic://223.5.5.5:853
-      - quic://223.6.6.6:853
+      - https://dns.alidns.com/dns-query#h3=true
