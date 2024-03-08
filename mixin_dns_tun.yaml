@@ -7,6 +7,7 @@ mixin:
     auto-route: true
     auto-detect-interface: true
   dns:
+    cache-algorithm: arc
     enable: true
     enhanced-mode: redir-host
     prefer-h3: true
