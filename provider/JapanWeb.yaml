@@ -23,3 +23,6 @@ payload:
   # pixiv
   - DOMAIN-SUFFIX,pixiv.net
   - DOMAIN-SUFFIX,pximg.net
+
+  # yande.re
+  - DOMAIN-SUFFIX,yande.re
