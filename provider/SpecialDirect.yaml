@@ -50,6 +50,10 @@ payload:
   # > Wormhole
   - DOMAIN-SUFFIX,wormhole.app
 
+  # > Kaspersky
+  - DOMAIN-SUFFIX,ksn.kaspersky-labs.com
+  - DOMAIN,ipm-klca.kaspersky.com
+
   # > Download
   - PROCESS-NAME,aria2c.exe
   - PROCESS-NAME,BitComet.exe
