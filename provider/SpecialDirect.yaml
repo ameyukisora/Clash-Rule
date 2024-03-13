@@ -34,6 +34,7 @@ payload:
   #- PROCESS-NAME,wgc.exe
   - DOMAIN-SUFFIX,wargaming.net
   - DOMAIN-KEYWORD,worldofwarships
+  - DOMAIN,perfops.gcorelabs.com
 
   # > Lesta
   - DOMAIN-SUFFIX,lesta.ru
