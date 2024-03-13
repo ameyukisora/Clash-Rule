@@ -35,6 +35,7 @@ payload:
   - DOMAIN-SUFFIX,wargaming.net
   - DOMAIN-KEYWORD,worldofwarships
   - DOMAIN,perfops.gcorelabs.com
+  - DOMAIN,dht.transmissionbt.com
 
   # > Lesta
   - DOMAIN-SUFFIX,lesta.ru
