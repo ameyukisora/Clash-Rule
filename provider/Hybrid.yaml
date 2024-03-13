@@ -7,3 +7,7 @@ payload:
 
   # > yande.re
   - DOMAIN-SUFFIX,yande.re
+
+  # > Kemono
+  - DOMAIN-SUFFIX,kemono.su
+  - DOMAIN-SUFFIX,kemono.party
