@@ -6,11 +6,16 @@ ipv6: false
 keep-alive-interval: 300
 unified-delay: true
 tcp-concurrent: true
+hosts:
+  'dl-wows-gc.wargaming.net': 92.223.63.254
+  'dl-wows-cdx.wargaming.net': 92.223.63.254
+  'perfops.gcorelabs.com': 92.223.63.254
 dns:
   cache-algorithm: arc
   enable: true
   enhanced-mode: redir-host
   prefer-h3: true
+  use-hosts: true
   nameserver:
     - https://dns.alidns.com/dns-query#h3=true
 proxies: ~
