@@ -7,9 +7,11 @@ keep-alive-interval: 300
 unified-delay: true
 tcp-concurrent: true
 hosts:
-  'dl-wows-gc.wargaming.net': 92.223.63.254
-  'dl-wows-cdx.wargaming.net': 92.223.63.254
-  'perfops.gcorelabs.com': 92.223.63.254
+  dl-wows-gc.wargaming.net: 92.223.63.254
+  dl-wows-cdx.wargaming.net: 92.223.63.254
+  perfops.gcorelabs.com: 92.223.63.254
+  '*.ksn.kaspersky-labs.com': 119.255.133.28
+  ipm-klca.kaspersky.com: 40.118.235.113
 dns:
   cache-algorithm: arc
   enable: true
