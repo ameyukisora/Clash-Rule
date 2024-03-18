@@ -36,7 +36,7 @@ timestamp = now.astimezone(timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%
 total_count = domain_suffix_count + domain_count
 
 # 写入目标文件
-with open("/autoupdate/Reject.yaml", "w") as f:
+with open("autoupdate/Reject.yaml", "w") as f:
     f.write("payload:\n")
     f.write("  # " + timestamp + "\n")
     f.write("  # DOMAIN-SUFFIX: " + str(domain_suffix_count) + ", DOMAIN: " + str(domain_count) + "\n")
