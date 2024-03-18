@@ -1,4 +1,5 @@
 mixin:
+  find-process-mode: always
   tun:
     enable: true
     stack: mixed   #system / gvisor
