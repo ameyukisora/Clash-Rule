@@ -39,7 +39,7 @@ payload:
 
   # > Lesta
   - DOMAIN-SUFFIX,lesta.ru
-  - PROCESS-NAME,lgc.exe
+  #- PROCESS-NAME,lgc.exe
 
   # > GitHub mirror
   - DOMAIN,raw.gitmirror.com
