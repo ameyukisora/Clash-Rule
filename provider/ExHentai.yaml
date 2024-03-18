@@ -6,7 +6,7 @@ payload:
   - DOMAIN-SUFFIX,ehtracker.org
   - DOMAIN-SUFFIX,ehwiki.org
   - DOMAIN-SUFFIX,hentaiathome.net
-  - DOMAIN-SUFFIX,hath.network
+  #- DOMAIN-SUFFIX,hath.network
   - DOMAIN-SUFFIX,hentaiverse.org
   - IP-CIDR,37.48.89.16/32,no-resolve
   - IP-CIDR,81.171.10.48/32,no-resolve
