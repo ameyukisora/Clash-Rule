@@ -41,4 +41,4 @@ with open("autoupdate/Reject.yaml", "w") as f:
     f.write("  # " + timestamp + "\n")
     f.write("  # DOMAIN-SUFFIX: " + str(domain_suffix_count) + ", DOMAIN: " + str(domain_count) + "\n")
     f.write("  # TOTAL: " + str(total_count) + "\n")
-    f.writelines(results)
+    f.write('\n'.join(results))
