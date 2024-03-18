@@ -1,7 +1,7 @@
 payload:
   # Blocklist of https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
-  # get 63339 domain from AdGuard DNS filter
-  # Last modified: 2024-03-17T18:01:05.482Z
+  # get 63345 domain from AdGuard DNS filter
+  # Last modified: 2024-03-18T06:01:17.846Z
   - '+.pekroace.net'
   - '+.vikaez.xyz'
   - '+.nodreewy.net'
@@ -57592,6 +57592,12 @@ payload:
   - '+.zjrtxt.xyz'
   - '+.znhlxvb.xyz'
   - '+.zojyob.icu'
+  - '+.lnifdlal.top'
+  - '+.vabzndw.cn'
+  - '+.uqwbcm.xyz'
+  - '+.onifdlak.top'
+  - '+.nlhpxj.xyz'
+  - '+.rghqrj.xyz'
   - '+.zopuqv.icu'
   - '+.zsjpi.cn'
   - '+.zttuvj.xyz'
