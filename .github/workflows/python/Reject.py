@@ -37,8 +37,9 @@ total_count = domain_suffix_count + domain_count
 
 # 写入目标文件
 with open("autoupdate/Reject.yaml", "w") as f:
-    f.write("payload:\n")
-    f.write("  # " + timestamp + "\n")
-    f.write("  # DOMAIN-SUFFIX: " + str(domain_suffix_count) + ", DOMAIN: " + str(domain_count) + "\n")
-    f.write("  # TOTAL: " + str(total_count) + "\n")
-    f.write('\n'.join(results))
+    f.write(f'''payload:
+  # {timestamp}
+  # DOMAIN-SUFFIX: {str(domain_suffix_count)}, DOMAIN: {str(domain_count)}
+  # TOTAL: {str(total_count)}
+{'\n'.join(results)}
+''')
