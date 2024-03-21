@@ -5,7 +5,6 @@ mode: Rule
 ipv6: false
 keep-alive-interval: 300
 unified-delay: true
-tcp-concurrent: true
 hosts:
   dl-wows-gc.wargaming.net: 92.223.63.254
   dl-wows-cdx.wargaming.net: 92.223.63.254
