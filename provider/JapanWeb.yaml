@@ -6,6 +6,7 @@ payload:
   - DOMAIN-SUFFIX,dmm.com
   #- DOMAIN-SUFFIX,dmm.co.jp
   - DOMAIN-SUFFIX,dmmgames.com
+  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
   
   # プリンセスコネクト！Re:Dive
   #- DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
