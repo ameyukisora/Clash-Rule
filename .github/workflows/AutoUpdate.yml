@@ -36,6 +36,9 @@ jobs:
 
       - name: Reject
         run: python .github/workflows/python/Reject.py
+
+      - name: force proxy
+        run: python .github/workflows/python/Proxy_urls.py
       
       - name: Commit and push changes
         run: |
