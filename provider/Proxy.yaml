@@ -1,3 +1,4 @@
 payload:
   # Supplemental proxy rules list
   - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,south-plus.net
