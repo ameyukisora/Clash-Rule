@@ -52,8 +52,7 @@ dns:
     - time1.cloud.tencent.com
     - music.163.com
     - "*.music.163.com"
-    - y.qq.com
-    - "*.y.qq.com"
+    - +.qq.com
     - streamoc.music.tc.qq.com
     - mobileoc.music.tc.qq.com
     - isure.stream.qqmusic.qq.com
