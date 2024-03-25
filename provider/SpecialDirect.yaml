@@ -32,9 +32,9 @@ payload:
 
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
-  - DOMAIN-SUFFIX,wargaming.net
-  - DOMAIN-KEYWORD,worldofwarships
-  - DOMAIN,perfops.gcorelabs.com
+  #- DOMAIN-SUFFIX,wargaming.net
+  #- DOMAIN-KEYWORD,worldofwarships
+  #- DOMAIN,perfops.gcorelabs.com
   - DOMAIN,dht.transmissionbt.com
 
   # > Lesta

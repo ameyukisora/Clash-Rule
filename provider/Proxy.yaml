@@ -2,3 +2,26 @@ payload:
   # Supplemental proxy rules list
   - DOMAIN-SUFFIX,bing.com
   - DOMAIN-SUFFIX,south-plus.net
+  
+  # > Cloudflare
+  - DOMAIN-SUFFIX,cf-ipfs.com
+  - DOMAIN-SUFFIX,cloudflare-dns.com
+  - DOMAIN-SUFFIX,cloudflare-ipfs.com
+  - DOMAIN-SUFFIX,cloudflare-quic.com
+  - DOMAIN-SUFFIX,cloudflare.com
+  - DOMAIN-SUFFIX,cloudflare.net
+  - DOMAIN-SUFFIX,cloudflare.tv
+  - DOMAIN-SUFFIX,cloudflareaccess.com
+  - DOMAIN-SUFFIX,cloudflareapps.com
+  - DOMAIN-SUFFIX,cloudflarebolt.com
+  - DOMAIN-SUFFIX,cloudflareclient.com
+  - DOMAIN-SUFFIX,cloudflareinsights.com
+  - DOMAIN-SUFFIX,cloudflareok.com
+  - DOMAIN-SUFFIX,cloudflarepreview.com
+  - DOMAIN-SUFFIX,cloudflareresolve.com
+  - DOMAIN-SUFFIX,cloudflaressl.com
+  - DOMAIN-SUFFIX,cloudflarestatus.com
+  - DOMAIN-SUFFIX,cloudflarestorage.com
+  - DOMAIN-SUFFIX,cloudflarestream.com
+  - DOMAIN-SUFFIX,cloudflaretest.com
+  - DOMAIN-SUFFIX,cloudflarewarp.com
