@@ -5,16 +5,11 @@ mode: Rule
 ipv6: false
 keep-alive-interval: 300
 unified-delay: true
-hosts:
-  dl-wows-gc.wargaming.net: 92.223.63.254
-  dl-wows-cdx.wargaming.net: 92.223.63.254
-  perfops.gcorelabs.com: 92.223.63.254
 dns:
   cache-algorithm: arc
   enable: true
   enhanced-mode: fake-ip
   prefer-h3: true
-  use-hosts: true
   nameserver:
     - quic://223.6.6.6
   fake-ip-filter:

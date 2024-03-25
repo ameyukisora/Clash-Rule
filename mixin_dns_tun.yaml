@@ -12,7 +12,6 @@ mixin:
     enable: true
     enhanced-mode: fake-ip
     prefer-h3: true
-    use-hosts: true
     nameserver:
       - quic://223.6.6.6
     fake-ip-filter:
