@@ -1,56 +1,25 @@
-import os
 import requests
 
-class AdGuardFilterDownloader:
-    def __init__(self, url):
-        self.url = url
+# 下载文件
+url = "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
+response = requests.get(url)
+if response.status_code == 200:
+    text = response.text.splitlines()
+    adguard = [adg[2:-1] for adg in text if adg.startswith('||') and '*' not in adg and adg.endswith('^')]
+    whitelist = [adgw[4:-2] for adgw in text if adgw.startswith('@@||') and '*' not in adgw and adgw.endswith('^|')]
 
-    def download_filter(self):
-        response = requests.get(self.url)
-        return response.text.split("\n")
+# 输出新文件
+with open('autoupdate/AdGuard.yaml', 'w') as f:
+    f.write(f'''payload:
+{'\n'.join(f'  # {description[2:]}' for description in text[1:6])}
+  # Total: {len(adguard)}
+{'\n'.join(f"  - '+.{rule}'" for rule in adguard)}
+''')
 
-    @staticmethod
-    def filter_line(line, prefix, suffix):
-        if line.startswith(prefix) and line.rstrip(suffix)[-1].isalpha():
-            return line[len(prefix):].rstrip(suffix)
-        return None
-    def get_filtered_lines(self, lines, prefix, suffix):
-        return [self.filter_line(line, prefix, suffix) for line in lines if self.filter_line(line, prefix, suffix) is not None]
-
-    @staticmethod
-    def write_payload_to_file(file_path, content, filtered_lines):
-        with open(file_path, "w") as f:
-            f.write(content)
-            for line in filtered_lines:
-                f.write(f"  - '+.{line}'\n")
-
-    def generate_payload_file(self, output_dir):
-        os.makedirs(output_dir, exist_ok=True)
-        lines = self.download_filter()
-
-        file_data = {
-            "AdGuard.yaml": {
-                "description": "Blocklist of " + self.url,
-                "lines": self.get_filtered_lines(lines, "||", '^'),
-            },
-            "AdGuardWhitelist.yaml": {
-                "description": "Whitelist of " + self.url,
-                "lines": self.get_filtered_lines(lines, "@@||", '|^'),
-            },
-        }
-
-        for file_name, data in file_data.items():
-            file_path = os.path.join(output_dir, file_name)
-            payload_content = f'''payload:
-  # {data["description"]}
-  # get {len(data["lines"])} domain from AdGuard DNS filter
-  # {lines[5][2:]}
-'''
-            self.write_payload_to_file(file_path, payload_content, data["lines"])
-
-if __name__ == "__main__":
-    url = "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
-    output_dir = "autoupdate"
-
-    downloader = AdGuardFilterDownloader(url)
-    downloader.generate_payload_file(output_dir)
+with open('autoupdate/AdGuardWhitelist.yaml', 'w') as f:
+    f.write(f'''payload:
+  # Use with AdGuard.yaml
+{'\n'.join(f'  # {description[2:]}' for description in text[1:6])}
+  # Total: {len(whitelist)}
+{'\n'.join(f"  - '+.{rule}'" for rule in whitelist)}
+''')
