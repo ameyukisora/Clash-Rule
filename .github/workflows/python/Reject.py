@@ -1,45 +1,21 @@
-import re
 import requests
 from datetime import datetime
-from pytz import timezone
+import pytz
 
-# 下载文件
-response = requests.get("https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list")
+url = "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+response = requests.get(url)
+if response.status_code == 200:
+    text = response.text.splitlines()
+    domain = [rule[7:] for rule in text if rule.startswith('DOMAIN,')]
+    domain_suffix = [rule[14:] for rule in text if rule.startswith('DOMAIN-SUFFIX,')]
 
-# 读取文件内容
-lines = response.text.splitlines()
+time = datetime.now(pytz.timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%S")
 
-# 定义正则表达式
-domain_suffix_regex = re.compile(r"^DOMAIN-SUFFIX,(.*)")
-domain_regex = re.compile(r"^DOMAIN,(.*)")
-
-# 提取内容
-results = []
-domain_suffix_count = 0
-domain_count = 0
-for line in lines:
-    match = domain_suffix_regex.match(line)
-    if match:
-        domain_suffix_count += 1
-        domain = match.group(1)
-        results.append("  - '+." + domain + "'")
-    else:
-        match = domain_regex.match(line)
-        if match:
-            domain_count += 1
-            domain = match.group(1)
-            results.append("  - '" + domain + "'")
-
-# 生成统计数据
-now = datetime.now(timezone('UTC'))
-timestamp = now.astimezone(timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%S")
-total_count = domain_suffix_count + domain_count
-
-# 写入目标文件
-with open("autoupdate/Reject.yaml", "w") as f:
+with open('autoupdate/Reject.yaml', 'w') as f:
     f.write(f'''payload:
-  # {timestamp}
-  # DOMAIN-SUFFIX: {str(domain_suffix_count)}, DOMAIN: {str(domain_count)}
-  # TOTAL: {str(total_count)}
-{'\n'.join(results)}
+  # {time}
+  # DOMAIN-SUFFIX: {len(domain_suffix)}, DOMAIN: {len(domain)}
+  # TOTAL: {len(domain) + len(domain_suffix)}
+{'\n'.join(f"  - '{url}'" for url in domain)}
+{'\n'.join(f"  - '+.{url}'" for url in domain_suffix)}
 ''')
