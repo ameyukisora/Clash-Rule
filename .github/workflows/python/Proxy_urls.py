@@ -1,6 +1,6 @@
 import requests
 from datetime import datetime
-from pytz import timezone
+import pytz
 
 response = requests.get("https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/gfw.txt")
 urls = response.text.splitlines()[1:]
