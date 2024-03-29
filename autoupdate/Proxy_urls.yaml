@@ -1,6 +1,6 @@
 payload:
-  # 2024-03-27 02:07:48
-  # TOTAL: 6165 urls
+  # 2024-03-29 08:33:06
+  # TOTAL: 6171 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -341,6 +341,7 @@ payload:
   - '+.appledaily.com'
   - '+.appledaily.com.hk'
   - '+.appledaily.com.tw'
+  - '+.apps.evozi.com'
   - '+.appshopper.com'
   - '+.appsocks.net'
   - '+.appspot.com'
@@ -350,6 +351,7 @@ payload:
   - '+.archive.fo'
   - '+.archive.is'
   - '+.archive.li'
+  - '+.archive.md'
   - '+.archive.org'
   - '+.archive.ph'
   - '+.archive.today'
@@ -820,6 +822,7 @@ payload:
   - '+.c-spanvideo.org'
   - '+.c100tibet.org'
   - '+.c2cx.com'
+  - '+.cableav.tv'
   - '+.cablegatesearch.net'
   - '+.cachinese.com'
   - '+.cacnw.com'
@@ -1048,6 +1051,7 @@ payload:
   - '+.chubun.com'
   - '+.churchinhongkong.org'
   - '+.chushigangdrug.ch'
+  - '+.ciciai.com'
   - '+.cienen.com'
   - '+.cineastentreff.de'
   - '+.cipfg.org'
@@ -1177,6 +1181,7 @@ payload:
   - '+.cotweet.com'
   - '+.counter.social'
   - '+.coursehero.com'
+  - '+.coze.com'
   - '+.cpj.org'
   - '+.cq99.us'
   - '+.crackle.com'
@@ -3658,6 +3663,7 @@ payload:
   - '+.newmitbbs.com'
   - '+.newnews.ca'
   - '+.news.cnyes.com'
+  - '+.news.ebc.net.tw'
   - '+.news.hk.msn.com'
   - '+.news.msn.com.tw'
   - '+.news.nationalgeographic.com'
