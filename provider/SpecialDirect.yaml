@@ -27,7 +27,6 @@ payload:
   - DOMAIN,local.steampp.net
 
   # > Adguard local
-  - DOMAIN,injections.adguard.org
   - DOMAIN,local.adguard.org
 
   # > Wargaming
