@@ -36,12 +36,5 @@ payload:
   #- DOMAIN,perfops.gcorelabs.com
   - DOMAIN,dht.transmissionbt.com
 
-  # > Lesta
-  - DOMAIN-SUFFIX,lesta.ru
-  #- PROCESS-NAME,lgc.exe
-
-  # > GitHub mirror
-  - DOMAIN,raw.gitmirror.com
-
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
