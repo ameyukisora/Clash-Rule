@@ -28,6 +28,9 @@ jobs:
       - name: chnroutes2
         run: python .github/workflows/python/chnroutes2.py
 
+      - name: chn-operator-ip
+        run: python .github/workflows/python/chn-operator-ip.py
+
       - name: Adblock
         run: python .github/workflows/python/Adblock.py
 
