@@ -5,6 +5,7 @@ mode: Rule
 ipv6: false
 keep-alive-interval: 300
 unified-delay: true
+global-client-fingerprint: chrome
 dns:
   cache-algorithm: arc
   enable: true
