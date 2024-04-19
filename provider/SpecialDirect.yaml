@@ -38,3 +38,18 @@ payload:
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
+
+  # > Majsoul
+  - DOMAIN,common-v2.maj-soul.com
+  - DOMAIN,game.maj-soul.com
+  - DOMAIN,gateway-cdn.maj-soul.com
+  - DOMAIN,gateway-hw.maj-soul.com
+  - DOMAIN,gateway-sy.catmjstudio.com
+  - DOMAIN,gateway-sy.maj-soul.com
+  - DOMAIN,gateway-v2.maj-soul.com
+  - DOMAIN,lb-cdn.maj-soul.com
+  - DOMAIN,lb-hw.maj-soul.com
+  - DOMAIN,lb-sy.maj-soul.com
+  - DOMAIN,lb-v2.maj-soul.com
+  - DOMAIN,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
+  - DOMAIN,majsoul-hk-game.oss-accelerate.aliyuncs.com
