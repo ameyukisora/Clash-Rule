@@ -6,6 +6,8 @@ ipv6: false
 keep-alive-interval: 300
 unified-delay: true
 global-client-fingerprint: chrome
+hosts:
+  game.maj-soul.com: 210.65.162.145
 dns:
   cache-algorithm: arc
   enable: true
