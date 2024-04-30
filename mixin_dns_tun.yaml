@@ -13,4 +13,4 @@ mixin:
     enhanced-mode: redir-host
     default-nameserver: [223.5.5.5,223.6.6.6]
     nameserver:
-      - https://doh.onedns.net/dns-query
+      - https://doh-pure.onedns.net/dns-query
