@@ -41,6 +41,7 @@ payload:
   - DOMAIN-SUFFIX,hikarifield.co.jp
 
   # > Majsoul
+  - PROCESS-NAME,Jantama_MahjongSoul.exe
   - DOMAIN-SUFFIX,maj-soul.com
   - DOMAIN-SUFFIX,catmjstudio.com
   #- DOMAIN,common-v2.maj-soul.com
