@@ -11,3 +11,6 @@ payload:
   # > Kemono
   - DOMAIN-SUFFIX,kemono.su
   - DOMAIN-SUFFIX,kemono.party
+  
+  # Other
+  - DOMAIN-SUFFIX,hanime1.me
