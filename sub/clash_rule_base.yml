@@ -1,4 +1,4 @@
-mixed-port: 8889
+mixed-port: 8899
 allow-lan: false
 log-level: info
 mode: Rule
