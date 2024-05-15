@@ -18,9 +18,6 @@ payload:
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.org.cn
 
-   # > cn
-  - DOMAIN-SUFFIX,cn
-
   # > Steam
   - DOMAIN,cm.steampowered.com
   - DOMAIN-SUFFIX,steamcontent.com

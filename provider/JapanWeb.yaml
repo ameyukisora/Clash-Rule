@@ -1,25 +1,15 @@
 payload:
-  # .jp
-  - DOMAIN-SUFFIX,jp
-
   # DMM
   - DOMAIN-SUFFIX,dmm.com
-  #- DOMAIN-SUFFIX,dmm.co.jp
+  - DOMAIN-SUFFIX,dmm.co.jp
   - DOMAIN-SUFFIX,dmmgames.com
-  - DOMAIN-SUFFIX,dugrqaqinbtcq.cloudfront.net
   
   # プリンセスコネクト！Re:Dive
-  #- DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
-  - DOMAIN-SUFFIX,prd-priconne-redive.akamaized.net
-  
-  # ブルーアーカイブ（ブルアカ），Blue Archive
-  - DOMAIN-SUFFIX,prod-game.bluearchiveyostar.com
-  - DOMAIN-SUFFIX,prod-gateway.bluearchiveyostar.com
+  - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
 
   # ティンクルスターナイツ，Twinkle Star Knights
   - DOMAIN-SUFFIX,twinkle-star-knights.com
-  #- DOMAIN-SUFFIX,twinklestarknights.jp
-  - DOMAIN,dz87n5pasv7ep.cloudfront.net
+  - DOMAIN-SUFFIX,twinklestarknights.jp
 
   # pixiv
   - DOMAIN-SUFFIX,pixiv.net
