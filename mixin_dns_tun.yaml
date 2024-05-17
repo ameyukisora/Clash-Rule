@@ -1,9 +1,9 @@
 mixin:
   find-process-mode: always
-  tcp-concurrent: true
   tun:
     enable: true
-    stack: system   #system / gvisor / mixed
+    stack: mixed   #system / gvisor / mixed
+    strict-route: true
     dns-hijack:
       - any:53
     auto-route: true
@@ -13,5 +13,5 @@ mixin:
     enable: true
     enhanced-mode: redir-host
     nameserver:
-      - 223.6.6.6
       - 223.5.5.5
+      - 223.6.6.6
