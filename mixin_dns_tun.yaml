@@ -11,7 +11,7 @@ mixin:
   dns:
     cache-algorithm: arc
     enable: true
+    prefer-h3: true
     enhanced-mode: redir-host
     nameserver:
-      - 223.6.6.6
-      - 180.76.76.76
+      - https://dns.alidns.com/dns-query
