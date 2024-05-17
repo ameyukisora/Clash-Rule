@@ -14,7 +14,7 @@ dns:
   enhanced-mode: redir-host
   nameserver:
     - 223.6.6.6
-    - 223.5.5.5
+    - 180.76.76.76
 proxies: ~
 proxy-groups: ~
 rules: ~
