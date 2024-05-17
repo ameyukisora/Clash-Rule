@@ -11,10 +11,9 @@ hosts:
 dns:
   cache-algorithm: arc
   enable: true
-  prefer-h3: true
   enhanced-mode: redir-host
   nameserver:
-    - https://dns.alidns.com/dns-query
+    - https://dns.alidns.com/dns-query#h3=true
 proxies: ~
 proxy-groups: ~
 rules: ~
