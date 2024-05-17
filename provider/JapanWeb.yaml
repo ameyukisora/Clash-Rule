@@ -12,5 +12,5 @@ payload:
   - DOMAIN-SUFFIX,twinklestarknights.jp
 
   # pixiv
-  #- DOMAIN-SUFFIX,pixiv.net
-  #- DOMAIN-SUFFIX,pximg.net
+  - DOMAIN-SUFFIX,pixiv.net
+  - DOMAIN-SUFFIX,pximg.net
