@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2024-05-08 02:08:39
-  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 13941, DOMAIN: 49, IP-CIDR: 62, IP-CIDR6: 1
-  # TOTAL: 14078
+  # 2024-05-30 02:08:20
+  # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 13942, DOMAIN: 49, IP-CIDR: 62, IP-CIDR6: 1
+  # TOTAL: 14079
   - DOMAIN-KEYWORD,admarvel
   - DOMAIN-KEYWORD,admaster
   - DOMAIN-KEYWORD,adsage
@@ -12653,6 +12653,7 @@ payload:
   - DOMAIN-SUFFIX,setting.rayjump.com
   - DOMAIN-SUFFIX,setting.snswin.qq.com
   - DOMAIN-SUFFIX,settings.crashlytics.com
+  - DOMAIN-SUFFIX,sf3-fe-tos.pglstatp-toutiao.com
   - DOMAIN-SUFFIX,sfloushi.com
   - DOMAIN-SUFFIX,sg536.cn
   - DOMAIN-SUFFIX,sgbfjs.info

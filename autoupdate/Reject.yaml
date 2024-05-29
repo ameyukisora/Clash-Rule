@@ -1,7 +1,7 @@
 payload:
-  # 2024-05-29 02:07:57
-  # DOMAIN-SUFFIX: 8145, DOMAIN: 39
-  # TOTAL: 8184
+  # 2024-05-30 02:08:21
+  # DOMAIN-SUFFIX: 8146, DOMAIN: 39
+  # TOTAL: 8185
   - 'duclick.baidu.com'
   - 'hm.baidu.com'
   - 'hmma.baidu.com'
@@ -6603,6 +6603,7 @@ payload:
   - '+.setting.snswin.qq.com'
   - '+.settings.crashlytics.com'
   - '+.sezvc.com'
+  - '+.sf3-fe-tos.pglstatp-toutiao.com'
   - '+.sfloushi.com'
   - '+.sg536.cn'
   - '+.sgbfjs.info'
