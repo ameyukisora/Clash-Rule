@@ -1,6 +1,6 @@
 payload:
-  # 2024-05-31 02:10:29
-  # TOTAL: 6180 urls
+  # 2024-06-01 02:08:48
+  # TOTAL: 6181 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -5911,6 +5911,7 @@ payload:
   - '+.x-berry.com'
   - '+.x-wall.org'
   - '+.x.co'
+  - '+.x.com'
   - '+.x.company'
   - '+.x1949x.com'
   - '+.x24hr.com'
