@@ -1,4 +1,6 @@
 payload:
+  - DOMAIN-SUFFIX,jp
+  
   # DMM
   - DOMAIN-SUFFIX,dmm.com
   - DOMAIN-SUFFIX,dmm.co.jp
