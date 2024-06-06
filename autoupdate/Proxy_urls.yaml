@@ -1,6 +1,6 @@
 payload:
-  # 2024-06-06 02:08:36
-  # TOTAL: 6181 urls
+  # 2024-06-07 02:08:56
+  # TOTAL: 6183 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -329,6 +329,7 @@ payload:
   - '+.apkmonk.com'
   - '+.apkplz.com'
   - '+.apkpure.com'
+  - '+.apkpure.net'
   - '+.aplusvpn.com'
   - '+.app.box.com'
   - '+.app.cloudcone.com'
@@ -1343,6 +1344,7 @@ payload:
   - '+.deviantart.net'
   - '+.devio.us'
   - '+.devpn.com'
+  - '+.devv.ai'
   - '+.dfas.mil'
   - '+.dfn.org'
   - '+.dharamsalanet.com'
