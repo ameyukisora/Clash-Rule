@@ -2,7 +2,7 @@ mixed-port: 8899
 allow-lan: false
 log-level: info
 mode: Rule
-ipv6: true
+ipv6: false
 keep-alive-interval: 300
 unified-delay: true
 global-client-fingerprint: chrome
@@ -10,7 +10,6 @@ hosts:
   game.maj-soul.com: 210.65.162.145
 dns:
   cache-algorithm: arc
-  ipv6: true
   enable: true
   enhanced-mode: redir-host
   nameserver:
