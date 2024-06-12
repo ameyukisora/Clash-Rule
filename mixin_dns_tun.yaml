@@ -9,6 +9,7 @@ mixin:
     auto-detect-interface: true
   dns:
     cache-algorithm: arc
+    ipv6: true
     enable: true
     enhanced-mode: redir-host
     nameserver:
