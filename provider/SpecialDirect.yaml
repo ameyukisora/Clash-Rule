@@ -62,3 +62,6 @@ payload:
   #- DOMAIN,lb-v2.maj-soul.com
   - DOMAIN,majsoul-hk-client.cn-hongkong.log.aliyuncs.com
   - DOMAIN,majsoul-hk-game.oss-accelerate.aliyuncs.com
+
+  # > Other
+  - DOMAIN-SUFFIX,senhewenhua.com
