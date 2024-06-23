@@ -1,5 +1,6 @@
 mixin:
   find-process-mode: always
+  tcp-concurrent: true
   tun:
     enable: true
     stack: mixed   #system / gvisor / mixed
@@ -8,8 +9,8 @@ mixin:
     auto-route: true
     auto-detect-interface: true
   dns:
-    cache-algorithm: arc
     enable: true
+    prefer-h3: true
     enhanced-mode: redir-host
     nameserver:
-      - https://dns.alidns.com/dns-query#h3=true
+      - https://dns.alidns.com/dns-query
