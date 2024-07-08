@@ -1,6 +1,6 @@
 payload:
   # https://github.com/gaoyifan/china-operator-ip
-  # 2024-07-08 02:08:22
+  # 2024-07-09 02:09:12
   # TOTAL: 1625
   - '2001:250::/30'
   - '2001:254::/31'

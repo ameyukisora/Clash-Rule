@@ -3,8 +3,10 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2024-07-07T18:01:09.216Z
-  # Total: 67228
+  # Last modified: 2024-07-08T18:08:35.589Z
+  # Total: 67244
+  - '+.femqrjwnk.xyz'
+  - '+.routowoashie.xyz'
   - '+.xlvul.ajscdn.com'
   - '+.ahmar2four.xyz'
   - '+.ser678uikl.xyz'
@@ -1268,6 +1270,7 @@ payload:
   - '+.revrtb.com'
   - '+.newbluetrue.xyz'
   - '+.onemediawork.com'
+  - '+.srtb.msn.cn'
   - '+.advertising-cdn.dpgmedia.cloud'
   - '+.d2lg0swrp15nsj.cloudfront.net'
   - '+.dpeqm8xv96fuc.cloudfront.net'
@@ -40601,6 +40604,7 @@ payload:
   - '+.ec44.site'
   - '+.f090.site'
   - '+.f2f8.xyz'
+  - '+.f33d11b5.xyz'
   - '+.f417a726.xyz'
   - '+.f4c9a0fb.xyz'
   - '+.f6176563.site'
@@ -42940,6 +42944,8 @@ payload:
   - '+.ib.snssdk.com'
   - '+.xlog.snssdk.com'
   - '+.log.snssdk.com'
+  - '+.exacttarget.com'
+  - '+.analytics.launch.bz'
   - '+.qobuz.surveysparrow.com'
   - '+.srvr.dmvs-apac.com'
   - '+.dash.zintrack.com'
@@ -46428,6 +46434,7 @@ payload:
   - '+.wizaly.com'
   - '+.d1udjti6mtxz9q.cloudfront.net'
   - '+.tagman.britishairways.com'
+  - '+.trc.r25.jp'
   - '+.anal.doubledouble.top'
   - '+.peach-analytics.vercel.app'
   - '+.lfmetrics.loyalfans.com'
@@ -60466,6 +60473,15 @@ payload:
   - '+.xxxx88xxxx.com'
   - '+.xxxx96xxxx.com'
   - '+.bdfjw.cn'
+  - '+.acqaghx.icu'
+  - '+.nyfstb.xyz'
+  - '+.lgpjw.cn'
+  - '+.eqkvks.xyz'
+  - '+.sdipsumb.top'
+  - '+.wuisaq.top'
+  - '+.jgvkxp.xyz'
+  - '+.mrtlisx.top'
+  - '+.fbqrt.cn'
   - '+.0322cfmtl.cc'
   - '+.07dy.cc'
   - '+.0940088.com'
