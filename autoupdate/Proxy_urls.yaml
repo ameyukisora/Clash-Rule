@@ -1,6 +1,6 @@
 payload:
-  # 2024-07-21 02:09:03
-  # TOTAL: 6185 urls
+  # 2024-07-22 02:08:06
+  # TOTAL: 6189 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -295,6 +295,7 @@ payload:
   - '+.anpopo.com'
   - '+.answering-islam.org'
   - '+.anthonycalzadilla.com'
+  - '+.anthropic.com'
   - '+.anti1984.com'
   - '+.antichristendom.com'
   - '+.antiwave.net'
@@ -714,6 +715,7 @@ payload:
   - '+.blubrry.com'
   - '+.blueangellive.com'
   - '+.bmfinn.com'
+  - '+.bnbstatic.com'
   - '+.bnews.co'
   - '+.bnext.com.tw'
   - '+.bnn.co'
@@ -1078,6 +1080,7 @@ payload:
   - '+.cl.d0z.net'
   - '+.clarionproject.org'
   - '+.classicalguitarblog.net'
+  - '+.claude.ai'
   - '+.clb.org.hk'
   - '+.cldr.unicode.org'
   - '+.cleansite.biz'
@@ -4031,6 +4034,7 @@ payload:
   - '+.perfect-privacy.com'
   - '+.perfectgirls.net'
   - '+.periscope.tv'
+  - '+.perplexity.ai'
   - '+.persecutionblog.com'
   - '+.persiankitty.com'
   - '+.phapluan.org'
