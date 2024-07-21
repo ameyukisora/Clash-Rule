@@ -11,7 +11,7 @@
 
 1. Download the latest Mihomo Core (mihomo-windows-amd64-xx.xx.xx.zip)
 
-2. Rename it to "clash-win64.exe" and replace the file at:
+2. Rename .exe file to "clash-win64.exe" and replace the file at:
    [CFW installation directory]\resources\static\files\win\x64\clash-win64.exe
 
 3. Download the resources.7z file from this repository
