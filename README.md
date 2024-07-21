@@ -18,4 +18,4 @@
    - Extract the "`resources`" folder
    - Drag and drop it into the CFW installation root directory
    - Choose to merge folders and replace files when prompted
-4. Copy the folder `C:\Users\YourUsername\.config\clash`, rename it to `mihomo`, and paste it in the same location.
+4. Copy the folder `C:\Users\YourUsername\.config\clash`, rename it to `mihomo`, and paste it in the same `\.config` location.
