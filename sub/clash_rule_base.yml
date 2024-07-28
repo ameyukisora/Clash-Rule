@@ -10,7 +10,6 @@ dns:
   enable: true
   enhanced-mode: redir-host
   nameserver:
-    - https://doh-pure.onedns.net/dns-query
     - https://223.6.6.6/dns-query
     - https://120.53.53.53/dns-query
 proxies: ~
