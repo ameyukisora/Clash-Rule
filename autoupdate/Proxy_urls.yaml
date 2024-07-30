@@ -1,6 +1,6 @@
 payload:
-  # 2024-07-30 02:09:50
-  # TOTAL: 6189 urls
+  # 2024-07-31 02:09:16
+  # TOTAL: 6192 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -431,6 +431,7 @@ payload:
   - '+.axureformac.com'
   - '+.azerbaycan.tv'
   - '+.azerimix.com'
+  - '+.azirevpn.com'
   - '+.azubu.tv'
   - '+.azurewebsites.net'
   - '+.b-ok.cc'
@@ -1101,6 +1102,7 @@ payload:
   - '+.clubhouseapi.com'
   - '+.clyp.it'
   - '+.cmcn.org'
+  - '+.cmegroup.com'
   - '+.cmi.org.tw'
   - '+.cmp.hku.hk'
   - '+.cms.gov'
@@ -2799,6 +2801,7 @@ payload:
   - '+.imageab.com'
   - '+.imagefap.com'
   - '+.imageflea.com'
+  - '+.imageglass.org'
   - '+.images-gaytube.com'
   - '+.images.comico.tw'
   - '+.imageshack.us'
