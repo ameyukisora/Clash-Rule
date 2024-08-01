@@ -4,10 +4,10 @@ payload:
 
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
-  - DOMAIN-SUFFIX,wargaming.net
+  #- DOMAIN-SUFFIX,wargaming.net
   #- DOMAIN-KEYWORD,worldofwarships
   - DOMAIN,dht.transmissionbt.com
-  - DOMAIN-SUFFIX,worldofwarships.asia
+  #- DOMAIN-SUFFIX,worldofwarships.asia
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
