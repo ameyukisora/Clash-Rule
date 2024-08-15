@@ -1,6 +1,6 @@
 payload:
-  # 2024-08-15 02:09:40
-  # TOTAL: 6194 urls
+  # 2024-08-16 02:10:25
+  # TOTAL: 6195 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1273,7 +1273,6 @@ payload:
   - '+.dalailama.com'
   - '+.dalailama.mn'
   - '+.dalailama.ru'
-  - '+.dalailama.usc.edu'
   - '+.dalailama80.org'
   - '+.dalailamacenter.org'
   - '+.dalailamafellows.org'
@@ -4799,6 +4798,7 @@ payload:
   - '+.store.steampowered.com'
   - '+.stories.google'
   - '+.storify.com'
+  - '+.storj.io'
   - '+.storm.mg'
   - '+.stormmediagroup.com'
   - '+.stoweboyd.com'
@@ -5482,6 +5482,7 @@ payload:
   - '+.us.to'
   - '+.usacn.com'
   - '+.usaip.eu'
+  - '+.uscardforum.com'
   - '+.uscnpm.org'
   - '+.userapi.nytlog.com'
   - '+.users.skynet.be'
