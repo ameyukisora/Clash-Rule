@@ -12,6 +12,9 @@ dns:
   nameserver:
     - https://223.6.6.6/dns-query
     - https://120.53.53.53/dns-query
+  proxy-server-nameserver:
+    - 223.5.5.5
+    - 117.50.10.10
 proxies: ~
 proxy-groups: ~
 rules: ~
