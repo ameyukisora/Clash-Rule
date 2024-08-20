@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2024-08-19T18:01:16.071Z
-  # Total: 64399
+  # Last modified: 2024-08-20T18:01:29.160Z
+  # Total: 64403
   - '+.avlcc.ajscdn.com'
   - '+.endowmentoverhangutmost.com'
   - '+.pawhiqsi.com'
@@ -37595,6 +37595,7 @@ payload:
   - '+.adteractive.com'
   - '+.adthrive.com'
   - '+.adtival.network'
+  - '+.adtrafficquality.google'
   - '+.adtrix.com'
   - '+.adultadworld.com'
   - '+.adultimate.net'
@@ -40587,7 +40588,6 @@ payload:
   - '+.tnc16-alisg.isnssdk.com'
   - '+.tnc16-useast1a.isnssdk.com'
   - '+.app.adjust.world'
-  - '+.app.adjust.net.in'
   - '+.ads.feelingtouch.com'
   - '+.ad.tencentmusic.com'
   - '+.ads.iosappsworld.com'
@@ -41074,7 +41074,6 @@ payload:
   - '+.sec.webeyez.com'
   - '+.michiganrobotflower.com'
   - '+.uid.mediacorp.sg'
-  - '+.exacttarget.com'
   - '+.analytics.launch.bz'
   - '+.qobuz.surveysparrow.com'
   - '+.srvr.dmvs-apac.com'
@@ -44553,6 +44552,7 @@ payload:
   - '+.wizaly.com'
   - '+.d1udjti6mtxz9q.cloudfront.net'
   - '+.tagman.britishairways.com'
+  - '+.ninja.data.olxcdn.com'
   - '+.ocular.mydealz.de'
   - '+.tiq.espritshop.pl'
   - '+.abc.espritshop.pl'
@@ -44564,7 +44564,6 @@ payload:
   - '+.trace.mjyx.com'
   - '+.event-router.chime.com'
   - '+.t3.cdnpure.com'
-  - '+.counter.wikiwiki.jp'
   - '+.applytics.nordvpn.com'
   - '+.d.analyticsmania.com'
   - '+.gtm.lercio.it'
@@ -45133,7 +45132,6 @@ payload:
   - '+.cdn-redirector.glopal.com'
   - '+.storelog.kode.co.kr'
   - '+.ampltd2.medal.tv'
-  - '+.l.bfmtv.com'
   - '+.analytics.dugun.com'
   - '+.report2.iciba.com'
   - '+.report.iciba.com'
@@ -51199,7 +51197,6 @@ payload:
   - '+.medyanative.com'
   - '+.61ads.net'
   - '+.apptospace.com'
-  - '+.aybereklam.com'
   - '+.publisher-network.com'
   - '+.dzypro.xyz'
   - '+.storj.cloud'
@@ -58735,6 +58732,13 @@ payload:
   - '+.dqlrfmwp.icu'
   - '+.cewrutf.top'
   - '+.grihaith.com'
+  - '+.dabajd.xyz'
+  - '+.miycoc.xyz'
+  - '+.hewrutu.top'
+  - '+.jyjrbz.xyz'
+  - '+.kjxhd.cn'
+  - '+.doujs08.shop'
+  - '+.baijs08.shop'
   - '+.uloscw.xyz'
   - '+.gahejiao.com'
   - '+.nbfsvreu.icu'
