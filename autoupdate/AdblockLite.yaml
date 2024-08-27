@@ -1,6 +1,6 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD
-  # 2023-12-15 02:08:11
+  # 2024-08-28 02:10:01
   # DOMAIN-KEYWORD: 25, DOMAIN-SUFFIX: 1552, DOMAIN: 10, IP-CIDR: 19
   # TOTAL: 1606
   - DOMAIN-KEYWORD,admarvel
@@ -320,7 +320,6 @@ payload:
   - DOMAIN-SUFFIX,rtbasia.com
   - DOMAIN-SUFFIX,sanya1.com
   - DOMAIN-SUFFIX,scupio.com
-  - DOMAIN-SUFFIX,serving-sys.com
   - DOMAIN-SUFFIX,shuiguo.com
   - DOMAIN-SUFFIX,shuzilm.cn
   - DOMAIN-SUFFIX,similarweb.com
@@ -388,6 +387,7 @@ payload:
   - DOMAIN-SUFFIX,wqmobile.com
   - DOMAIN-SUFFIX,wrating.com
   - DOMAIN-SUFFIX,wumii.cn
+  - DOMAIN-SUFFIX,wwads.cn
   - DOMAIN-SUFFIX,xcy8.com
   - DOMAIN-SUFFIX,xdrig.com
   - DOMAIN-SUFFIX,xiaozhen.com
@@ -421,7 +421,6 @@ payload:
   - DOMAIN-SUFFIX,zhjfad.com
   - DOMAIN-SUFFIX,zqzxz.com
   - DOMAIN-SUFFIX,zzsx8.com
-  - DOMAIN-SUFFIX,wwads.cn
   - DOMAIN-SUFFIX,acuityplatform.com
   - DOMAIN-SUFFIX,ad-stir.com
   - DOMAIN-SUFFIX,ad-survey.com
@@ -546,6 +545,7 @@ payload:
   - DOMAIN-SUFFIX,sape.ru
   - DOMAIN-SUFFIX,scorecardresearch.com
   - DOMAIN-SUFFIX,segment.com
+  - DOMAIN-SUFFIX,serving-sys.com
   - DOMAIN-SUFFIX,sharethis.com
   - DOMAIN-SUFFIX,smaato.com
   - DOMAIN-SUFFIX,smaato.net
