@@ -15,4 +15,3 @@ mixin:
     nameserver: 
       - https://223.6.6.6/dns-query
       - quic://223.6.6.6
-      - tls://223.6.6.6

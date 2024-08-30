@@ -11,23 +11,15 @@ mixin:
   dns:
     enable: true
     enhanced-mode: redir-host
-    respect-rules: true
-    proxy-server-nameserver:
-      - https://223.6.6.6/dns-query
-      - quic://223.6.6.6
-    nameserver: 
-      - https://223.6.6.6/dns-query
-      - quic://223.6.6.6
+    nameserver: [system]
     nameserver-policy:
-      'geosite:geolocation-!cn': quic://xxx.d.adguard-dns.com
-    fallback:
-      - quic://xxx.d.adguard-dns.com
+      'geosite:geolocation-!cn': [https://223.6.6.6/dns-query, quic://223.6.6.6]
+    fallback: [https://223.6.6.6/dns-query, quic://223.6.6.6]
     fallback-filter:
-      geoip: true
-      geoip-code: CN
+      geoip: false
       ipcidr:
+        - 0.0.0.0/32
+        - 100.64.0.0/10
+        - 127.0.0.0/8
         - 240.0.0.0/4
-      domain:
-        - '+.google.com'
-        - '+.facebook.com'
-        - '+.youtube.com'
+        - 255.255.255.255/32
