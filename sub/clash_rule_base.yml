@@ -9,11 +9,18 @@ global-client-fingerprint: chrome
 dns:
   enable: true
   enhanced-mode: redir-host
-  prefer-h3: true
-  nameserver: 
-    - https://223.6.6.6/dns-query
-    - quic://223.6.6.6
-    - tls://223.6.6.6
+  nameserver: [dhcp://system]
+  nameserver-policy:
+    'geosite:geolocation-!cn': [https://223.6.6.6/dns-query, quic://223.6.6.6]
+  fallback: [https://223.6.6.6/dns-query, quic://223.6.6.6]
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 0.0.0.0/32
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 240.0.0.0/4
+      - 255.255.255.255/32
 proxies: ~
 proxy-groups: ~
 rules: ~
