@@ -1,0 +1,33 @@
+mixin:
+  find-process-mode: always
+  unified-delay: true
+  tun:
+    enable: true
+    stack: mixed   #system / gvisor / mixed
+    dns-hijack:
+      - any:53
+    auto-route: true
+    auto-detect-interface: true
+  dns:
+    enable: true
+    enhanced-mode: redir-host
+    respect-rules: true
+    proxy-server-nameserver:
+      - https://223.6.6.6/dns-query
+      - quic://223.6.6.6
+    nameserver: 
+      - https://223.6.6.6/dns-query
+      - quic://223.6.6.6
+    nameserver-policy:
+      'geosite:geolocation-!cn': quic://xxx.d.adguard-dns.com
+    fallback:
+      - quic://xxx.d.adguard-dns.com
+    fallback-filter:
+      geoip: true
+      geoip-code: CN
+      ipcidr:
+        - 240.0.0.0/4
+      domain:
+        - '+.google.com'
+        - '+.facebook.com'
+        - '+.youtube.com'
