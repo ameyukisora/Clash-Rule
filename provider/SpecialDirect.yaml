@@ -33,3 +33,17 @@ payload:
 
   # > Adguard local
   - DOMAIN,local.adguard.org
+
+  # > Wargaming
+  #- PROCESS-NAME,wgc.exe
+  #- DOMAIN-SUFFIX,wargaming.net
+  #- DOMAIN-KEYWORD,worldofwarships
+  - DOMAIN,dht.transmissionbt.com
+  #- DOMAIN-SUFFIX,worldofwarships.asia
+
+  # > HIKARI FIELD STORE
+  - DOMAIN-SUFFIX,hikarifield.co.jp
+
+  # > Other
+  - DOMAIN-SUFFIX,senhewenhua.com
+  - DOMAIN-SUFFIX,cycanime.com
