@@ -6,7 +6,6 @@ payload:
   - DOMAIN-SUFFIX,copilot.microsoft.com
 
   # > Google
-  - DOMAIN-KEYWORD,google
   - DOMAIN-SUFFIX,gstatic.cn
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
