@@ -9,15 +9,9 @@ payload:
   - DOMAIN-SUFFIX,steamstatic.com
   # - DOMAIN-SUFFIX,steamserver.net
 
-  - DOMAIN,steambroadcast.akamaized.net
-  - DOMAIN,steamcdn-a.akamaihd.net
-  - DOMAIN,steamcommunity-a.akamaihd.net
-  - DOMAIN,steamstore-a.akamaihd.net
-  - DOMAIN,steamusercontent-a.akamaihd.net
-  - DOMAIN,steamuserimages-a.akamaihd.net
-
-  # > Watt Toolkit
-  - DOMAIN-SUFFIX,rmbgame.net
-
-  # > SteamDB
-  - DOMAIN-SUFFIX,steamdb.info
+  # - DOMAIN,steambroadcast.akamaized.net
+  # - DOMAIN,steamcdn-a.akamaihd.net
+  # - DOMAIN,steamcommunity-a.akamaihd.net
+  # - DOMAIN,steamstore-a.akamaihd.net
+  # - DOMAIN,steamusercontent-a.akamaihd.net
+  # - DOMAIN,steamuserimages-a.akamaihd.net
