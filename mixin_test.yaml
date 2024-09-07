@@ -11,51 +11,8 @@ mixin:
   dns:
     cache-algorithm: arc
     enable: true
-    enhanced-mode: fake-ip
-    default-nameserver: [180.184.1.1, 119.29.29.29, 223.5.5.5]
-    proxy-server-nameserver: [https://doh-pure.onedns.net/dns-query,  https://223.6.6.6/dns-query]
-    nameserver: [https://doh-pure.onedns.net/dns-query, https://223.6.6.6/dns-query, https://120.53.53.53/dns-query]
+    enhanced-mode: redir-host
+    default-nameserver: [119.29.29.29, 223.5.5.5]
+    nameserver: [https://doh-pure.onedns.net/dns-query, https://223.6.6.6/dns-query]
     nameserver-policy:
       'geosite:cn': [system]
-    fake-ip-filter:
-      - "*.lan"
-      - "*.localdomain"
-      - "*.example"
-      - "*.invalid"
-      - "*.localhost"
-      - "*.test"
-      - "*.local"
-      - "*.home.arpa"
-      - time.*.com
-      - time.*.gov
-      - time.*.apple.com
-      - time1.*.com
-      - time2.*.com
-      - time3.*.com
-      - time4.*.com
-      - time5.*.com
-      - time6.*.com
-      - time7.*.com
-      - ntp.*.com
-      - ntp1.*.com
-      - ntp2.*.com
-      - ntp3.*.com
-      - ntp4.*.com
-      - ntp5.*.com
-      - ntp6.*.com
-      - ntp7.*.com
-      - +.pool.ntp.org
-      - +.msftconnecttest.com
-      - +.msftncsi.com
-      - msftconnecttest.com
-      - msftncsi.com
-      - xbox.*.microsoft.com
-      - xnotify.xboxlive.com
-      - +.ipv6.microsoft.com
-      - +.wargaming.net
-      - stun.*.*
-      - stun.*.*.*
-      - +.stun.*.*
-      - +.stun.*.*.*
-      - +.stun.*.*.*.*
-      - geosite:cn
