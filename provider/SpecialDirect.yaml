@@ -75,3 +75,6 @@ payload:
   # > Other
   - DOMAIN-SUFFIX,senhewenhua.com
   - DOMAIN-SUFFIX,cycanime.com
+  
+  - DOMAIN,img4.nga.178.com
+  - DOMAIN,img.nga.178.com
