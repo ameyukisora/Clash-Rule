@@ -13,7 +13,7 @@ dns:
   default-nameserver: [119.29.29.29, 223.5.5.5]
   nameserver: [https://doh-pure.onedns.net/dns-query, https://223.6.6.6/dns-query]
   nameserver-policy:
-    'geosite:cn': [dhcp://system]
+    'rule-set:cndomain': [dhcp://system]
 proxies: ~
 proxy-groups: ~
 rules: ~
