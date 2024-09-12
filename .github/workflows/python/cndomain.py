@@ -21,8 +21,8 @@ current_time = datetime.now(tz).strftime("%Y-%m-%d %H:%M:%S")
 
 # 创建新的文件内容
 new_content = ["payload:"]
-new_content.append(f"# Updated: {current_time}, Total: {domain_count}")
-new_content.extend(payload)
+new_content.append(f"  # Updated: {current_time}, Total: {domain_count}")
+new_content.extend([f"  {domain}" for domain in payload])
 
 # 确保autoupdate文件夹存在
 os.makedirs('autoupdate', exist_ok=True)
