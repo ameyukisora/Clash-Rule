@@ -42,7 +42,10 @@ jobs:
 
       - name: force proxy
         run: python .github/workflows/python/Proxy_urls.py
-      
+
+      - name: cndomain
+        run: python .github/workflows/python/cndomain.py
+
       - name: Commit and push changes
         run: |
           if [[ $(git status --porcelain) ]]; then
