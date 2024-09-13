@@ -15,14 +15,14 @@ jobs:
 
     - name: Squash actions-user commits
       run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
+        git config user.name "GitHub Action"
+        git config user.email "action@github.com"
         
         # 获取最新的非 actions-user commit
-        LAST_HUMAN_COMMIT=$(git log --author="^((?!github-actions).)*$" --pretty=format:"%H" -n 1)
+        LAST_HUMAN_COMMIT=$(git log --author="^((?!actions-user).)*$" --pretty=format:"%H" -n 1)
         
         # 获取最新的 actions-user commit
-        LAST_ACTION_COMMIT=$(git log --author="github-actions" --pretty=format:"%H" -n 1)
+        LAST_ACTION_COMMIT=$(git log --author="actions-user" --pretty=format:"%H" -n 1)
         
         if [ -n "$LAST_HUMAN_COMMIT" ] && [ -n "$LAST_ACTION_COMMIT" ]; then
           # 创建一个临时分支
