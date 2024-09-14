@@ -15,4 +15,4 @@ mixin:
     default-nameserver: [119.29.29.29, 223.5.5.5]
     nameserver: [https://doh-pure.onedns.net/dns-query, https://223.6.6.6/dns-query]
     nameserver-policy:
-      'rule-set:cndomain': [system]
+      'rule-set:cndomain': [system://]
