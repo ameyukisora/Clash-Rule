@@ -16,7 +16,7 @@ dns:
 proxies: ~
 proxy-groups: ~
 rules: ~
-rule-providers: ~
+rule-providers:
   cndomain:
     type: http
     behavior: domain
