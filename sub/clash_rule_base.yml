@@ -16,3 +16,10 @@ dns:
 proxies: ~
 proxy-groups: ~
 rules: ~
+rule-providers: ~
+  cndomain:
+    type: http
+    behavior: domain
+    url: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cndomain.yaml
+    path: ./providers/rule-provider_cndomain.yaml
+    interval: 86400
