@@ -3,8 +3,10 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2024-09-16T18:01:20.161Z
-  # Total: 63964
+  # Last modified: 2024-09-17T12:01:25.539Z
+  # Total: 63983
+  - '+.iv.hautboyhellen.com'
+  - '+.cfusion-internet.com'
   - '+.s0-greate.net'
   - '+.alaudrup.net'
   - '+.shamnmalcwob.com'
@@ -44328,6 +44330,8 @@ payload:
   - '+.wizaly.com'
   - '+.d1udjti6mtxz9q.cloudfront.net'
   - '+.tagman.britishairways.com'
+  - '+.ivstat.indavideo.hu'
+  - '+.stat.indidata.com'
   - '+.plausible.paimon.moe'
   - '+.stats.allenai.org'
   - '+.logperf.vnexpress.net'
@@ -47510,6 +47514,7 @@ payload:
   - '+.ct.corpusapp.com'
   - '+.ct.itbusinessedge.com'
   - '+.ct.thegear-box.com'
+  - '+.cta-service-cms2.hubspot.com'
   - '+.cts.businesswire.com'
   - '+.cts.vresp.com'
   - '+.curated.fieldtest.cc'
@@ -48027,6 +48032,7 @@ payload:
   - '+.w4o7aea80ss3-a.akamaihd.net'
   - '+.watchtower.graindata.com'
   - '+.wco.crownpeak.com'
+  - '+.wds.weqs.me'
   - '+.web-tracker.smsbump.com'
   - '+.web1.51.la'
   - '+.webcare.byside.com'
@@ -48176,6 +48182,7 @@ payload:
   - '+.contiamo.com'
   - '+.counter-zaehler.de'
   - '+.dcmn.io'
+  - '+.digistats.de'
   - '+.dl8.me'
   - '+.durchsichtig.xyz'
   - '+.etrust.eu'
@@ -48814,6 +48821,7 @@ payload:
   - '+.target.smi2.net'
   - '+.target.smi2.ru'
   - '+.tbe.tom.ru'
+  - '+.test.legitcode.ws'
   - '+.top.elec.ru'
   - '+.visitor-microservice.ext.p-a.im'
   - '+.visor.sberbank.ru'
@@ -48963,6 +48971,8 @@ payload:
   - '+.templates.buscape.com'
   - '+.yestorrents.org'
   - '+.oecistbenton.com'
+  - '+.damgurwdblf.xyz'
+  - '+.gocheewimtie.xyz'
   - '+.paintejuke.com'
   - '+.ipvertnet.com'
   - '+.cmcxmh.com'
@@ -58599,6 +58609,15 @@ payload:
   - '+.zvc.cc'
   - '+.zvietcombank.com'
   - '+.zvietnakello.weebly.com'
+  - '+.eeqweqw.fun'
+  - '+.ypkiog.xyz'
+  - '+.esyook.xyz'
+  - '+.hitoxx.xyz'
+  - '+.kzaawga.icu'
+  - '+.cdcs34.fun'
+  - '+.qdickey.top'
+  - '+.zcypmsp.icu'
+  - '+.frgf99.fun'
   - '+.bowvses.icu'
   - '+.mdmuky.xyz'
   - '+.zyrnbh.xyz'
