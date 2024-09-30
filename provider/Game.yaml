@@ -1,0 +1,3 @@
+payload:
+  # > WoWs
+  - AND,((PROCESS-NAME,WorldOfWarships64.exe),(NETWORK,UDP))
