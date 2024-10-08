@@ -1,6 +1,6 @@
 payload:
-  # 2024-10-08 02:11:09
-  # TOTAL: 6193 urls
+  # 2024-10-09 02:10:49
+  # TOTAL: 6196 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1663,6 +1663,7 @@ payload:
   - '+.fa.gov.tw'
   - '+.facebook.br'
   - '+.facebook.com'
+  - '+.facebook.de'
   - '+.facebook.design'
   - '+.facebook.hu'
   - '+.facebook.in'
@@ -3394,6 +3395,7 @@ payload:
   - '+.meshrep.com'
   - '+.mesotw.com'
   - '+.messenger.com'
+  - '+.meta.com'
   - '+.metacafe.com'
   - '+.metafilter.com'
   - '+.metart.com'
@@ -5201,6 +5203,7 @@ payload:
   - '+.torrentproject.se'
   - '+.torrenty.org'
   - '+.torrentz.eu'
+  - '+.tortoisesvn.net'
   - '+.torvpn.com'
   - '+.tosh.comedycentral.com'
   - '+.totalvpn.com'
