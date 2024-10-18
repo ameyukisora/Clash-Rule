@@ -9,9 +9,3 @@ payload:
   - DOMAIN-SUFFIX,gstatic.cn
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-
-  # > DNS
-  - IP-CIDR,1.1.1.1/32,no-resolve
-  - IP-CIDR,1.0.0.1/32,no-resolve
-  - IP-CIDR,8.8.8.8/32,no-resolve
-  - IP-CIDR,8.8.4.4/32,no-resolve
