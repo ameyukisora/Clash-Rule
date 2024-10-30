@@ -12,8 +12,6 @@ dns:
   fake-ip-filter-mode: whitelist
   fake-ip-filter:
     - "rule-set:Proxy_urls"
-  default-nameserver: [119.29.29.29, 223.6.6.6]
-  proxy-server-nameserver: [119.29.29.29, 223.6.6.6]
   nameserver: [system://]
   fallback: [https://doh.apad.pro/dns-query, https://208.67.220.220/dns-query]
   fallback-filter:
