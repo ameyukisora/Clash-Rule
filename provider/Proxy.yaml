@@ -9,3 +9,6 @@ payload:
   - DOMAIN-SUFFIX,gstatic.cn
   - DOMAIN-SUFFIX,gstatic.com
   - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
+
+  # > wows
+  - PROCESS-NAME,cef_subprocess.exe
