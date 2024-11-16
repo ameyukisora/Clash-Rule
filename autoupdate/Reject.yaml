@@ -1,7 +1,7 @@
 payload:
-  # 2024-11-16 02:11:22
-  # DOMAIN-SUFFIX: 8146, DOMAIN: 37
-  # TOTAL: 8183
+  # 2024-11-17 02:09:55
+  # DOMAIN-SUFFIX: 8145, DOMAIN: 37
+  # TOTAL: 8182
   - 'duclick.baidu.com'
   - 'hm.baidu.com'
   - 'hmma.baidu.com'
@@ -7658,7 +7658,6 @@ payload:
   - '+.wtpn.twenga.co.uk'
   - '+.wtpn.twenga.de'
   - '+.wtrace.cmgame.com'
-  - '+.wtradv.market.xiaomi.com'
   - '+.wu65.com'
   - '+.wudang05.com'
   - '+.wuliao.epro.sogou.com'
