@@ -6,9 +6,6 @@ payload:
   - DOMAIN-SUFFIX,copilot.microsoft.com
 
   # > Google
-  - DOMAIN-SUFFIX,gstatic.cn
-  - DOMAIN-SUFFIX,gstatic.com
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com
-
-  # > wows
-  - PROCESS-NAME,cef_subprocess.exe
+  #- DOMAIN-SUFFIX,gstatic.cn
+  #- DOMAIN-SUFFIX,gstatic.com
+  #- DOMAIN-SUFFIX,xn--ngstr-lra8j.com
