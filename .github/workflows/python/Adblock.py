@@ -67,7 +67,7 @@ if __name__ == "__main__":
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanAD.list",
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list",
         "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/BanEasyListChina.list",
-        "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+        "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AdBlock.list"
     ]
 
     os.makedirs("autoupdate", exist_ok=True)

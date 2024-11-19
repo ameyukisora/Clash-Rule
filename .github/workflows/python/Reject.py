@@ -2,7 +2,7 @@ import requests
 from datetime import datetime
 import pytz
 
-url = "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/Reject.list"
+url = "https://raw.githubusercontent.com/dler-io/Rules/main/Surge/Surge%203/Provider/AdBlock.list"
 response = requests.get(url)
 if response.status_code == 200:
     text = response.text.splitlines()
