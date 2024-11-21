@@ -63,7 +63,7 @@ payload:
   - DOMAIN,steamuserimages-a.akamaihd.net
 
   # > Adguard local
-  # - DOMAIN,local.adguard.org
+  - DOMAIN,local.adguard.org
 
   # > Wargaming
   #- PROCESS-NAME,wgc.exe
