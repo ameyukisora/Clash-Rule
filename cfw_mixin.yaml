@@ -1,6 +1,5 @@
 mixin:
   find-process-mode: always
-  unified-delay: true
   tun:
     enable: true
     stack: system   #system / gvisor / mixed
@@ -13,6 +12,7 @@ mixin:
     cache-algorithm: arc
     enable: true
     enhanced-mode: fake-ip
+    fake-ip-range: 22.0.0.1/8
     fake-ip-filter:
       - local.adguard.org
       - "*.n.n.srv.nintendo.net"
