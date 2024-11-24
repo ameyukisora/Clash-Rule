@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2024-11-23T18:01:14.892Z
-  # Total: 57644
+  # Last modified: 2024-11-24T18:02:14.180Z
+  # Total: 57654
   - '+.legiblyosmols.top'
   - '+.medbroadcast.com'
   - '+.trusting-produce.com'
@@ -41344,6 +41344,7 @@ payload:
   - '+.webturn.ru'
   - '+.webvisor.com'
   - '+.wwgate.ru'
+  - '+.yandexmetric.com'
   - '+.algopine.com'
   - '+.24log.es'
   - '+.agency360.io'
@@ -45648,6 +45649,7 @@ payload:
   - '+.stats.ehandel.se'
   - '+.stats.helsingborg.se'
   - '+.stats.jibber.social'
+  - '+.stats.med.lu.se'
   - '+.stats.playoncenter.com'
   - '+.stats.poddtoppen.se'
   - '+.stats.proff.se'
@@ -49496,6 +49498,7 @@ payload:
   - '+.sacchaeleduk.com'
   - '+.sacombank.net.vn'
   - '+.sacombank.vn-ne.top'
+  - '+.sacombankvn.com'
   - '+.sadm26.com'
   - '+.saifcrack.com'
   - '+.salu.gq'
@@ -51620,6 +51623,13 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.lipheak.com'
+  - '+.xcwdcynb.icu'
+  - '+.wweizae.top'
+  - '+.az5i.icu'
+  - '+.yoqqiev.top'
+  - '+.fiezaits.com'
+  - '+.qweizay.top'
   - '+.xevaix.com'
   - '+.sweizab.top'
   - '+.eweizaw.top'
