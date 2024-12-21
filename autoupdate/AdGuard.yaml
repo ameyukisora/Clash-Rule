@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2024-12-20T18:01:24.516Z
-  # Total: 55873
+  # Last modified: 2024-12-21T18:01:23.917Z
+  # Total: 55886
   - '+.ceefsyqotuagk.com'
   - '+.kljhsanvj.com'
   - '+.leegreemula.net'
@@ -9309,6 +9309,7 @@ payload:
   - '+.egmfjmhffbarsxd.xyz'
   - '+.egotizeoxgall.com'
   - '+.egpdbp6e.de'
+  - '+.egraglauvoathog.com'
   - '+.egretswamper.com'
   - '+.egrogree.xyz'
   - '+.egrousoawhie.com'
@@ -11791,6 +11792,7 @@ payload:
   - '+.grashaksoudry.net'
   - '+.grasshusk.com'
   - '+.grasutie.net'
+  - '+.gratataxis.shop'
   - '+.graterpatent.com'
   - '+.gratertwentieth.com'
   - '+.gratificationdesperate.com'
@@ -38225,7 +38227,6 @@ payload:
   - '+.tracking.thehut.net'
   - '+.tracking.tidalhifi.com'
   - '+.tracking.times247.com'
-  - '+.tracking.tomshardware.co.uk'
   - '+.tracking.ukwm.co.uk'
   - '+.tracking.unrealengine.com'
   - '+.tracking.yourfilehost.com'
@@ -50657,6 +50658,18 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.rktjxj.icu'
+  - '+.orodsmnu.com'
+  - '+.muiuim.icu'
+  - '+.popsvg.xyz'
+  - '+.3vp.icu'
+  - '+.vvfgjzwa.icu'
+  - '+.hwilmiu.top'
+  - '+.ruancq.xyz'
+  - '+.ei7.icu'
+  - '+.iwilmio.top'
+  - '+.shaotgs.cn'
+  - '+.ledollull.com'
   - '+.grmzwc.icu'
   - '+.ppio12200ios.top'
   - '+.ondraits.com'
