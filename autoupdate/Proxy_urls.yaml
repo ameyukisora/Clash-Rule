@@ -1,6 +1,6 @@
 payload:
-  # 2025-01-01 02:10:27
-  # TOTAL: 6200 urls
+  # 2025-01-02 02:13:48
+  # TOTAL: 6205 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -2412,6 +2412,7 @@ payload:
   - '+.greenvpn.org'
   - '+.grindr.com'
   - '+.grotty-monday.com'
+  - '+.ground.news'
   - '+.groups.google.cn'
   - '+.grow.google'
   - '+.gs-discuss.com'
@@ -2504,6 +2505,7 @@ payload:
   - '+.hentaivideoworld.com'
   - '+.heqinglian.net'
   - '+.heritage.org'
+  - '+.herokuapp.com'
   - '+.heungkongdiscuss.com'
   - '+.hexieshe.com'
   - '+.hexieshe.xyz'
@@ -2656,6 +2658,7 @@ payload:
   - '+.howtoforge.com'
   - '+.hoxx.com'
   - '+.hpa.gov.tw'
+  - '+.hpjav.com'
   - '+.hqcdp.org'
   - '+.hqjapanesesex.com'
   - '+.hqmovies.com'
@@ -2743,6 +2746,7 @@ payload:
   - '+.iask.bz'
   - '+.iask.ca'
   - '+.iav19.com'
+  - '+.iavian.net'
   - '+.ibiblio.org'
   - '+.ibit.am'
   - '+.iblist.com'
@@ -4011,6 +4015,7 @@ payload:
   - '+.pcanywhere.net'
   - '+.pcc.gov.tw'
   - '+.pcdvd.com.tw'
+  - '+.pcgamestorrents.com'
   - '+.pchome.com.tw'
   - '+.pcij.org'
   - '+.pcstore.com.tw'
