@@ -1,6 +1,6 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD
-  # 2025-01-04 02:11:14
+  # 2025-01-05 02:10:02
   # DOMAIN-SUFFIX: 1552, IP-CIDR: 19, DOMAIN-KEYWORD: 25, DOMAIN: 10
   # TOTAL: 1606
   - DOMAIN,adsmind.apdcdn.tc.qq.com
