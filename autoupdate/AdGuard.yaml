@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2025-01-05T18:01:16.793Z
-  # Total: 56048
+  # Last modified: 2025-01-06T18:01:16.031Z
+  # Total: 56064
   - '+.dsfvmx.click'
   - '+.mentionideablit.com'
   - '+.dzliege.com'
@@ -1864,6 +1864,7 @@ payload:
   - '+.9cd76b4462bb.com'
   - '+.9d2cca15e4.com'
   - '+.9d603009eb.com'
+  - '+.9d87b35397.com'
   - '+.9dccbda825.com'
   - '+.9dmnv9z0gtoh.com'
   - '+.9e3810a418.com'
@@ -32821,6 +32822,7 @@ payload:
   - '+.ib.snssdk.com'
   - '+.xlog.snssdk.com'
   - '+.log.snssdk.com'
+  - '+.view.mngusr.com'
   - '+.cdn.q0losid.com'
   - '+.tags.fullcontact.com'
   - '+.matomo.akbal.dev'
@@ -36414,6 +36416,7 @@ payload:
   - '+.wizaly.com'
   - '+.d1udjti6mtxz9q.cloudfront.net'
   - '+.tagman.britishairways.com'
+  - '+.qbrth.ezcontacts.com'
   - '+.intake-analytics.wikimedia.org'
   - '+.lgforbes.akamaized.net'
   - '+.event.wondershare.com'
@@ -43864,6 +43867,7 @@ payload:
   - '+.yads.yjtag.yahoo.co.jp'
   - '+.bance.jp'
   - '+.94.130.167.163'
+  - '+.mbada.nan.co.jp'
   - '+.ads.nicovideo.jp'
   - '+.adserv2.suumo.jp'
   - '+.ad.woman.mynavi.jp'
@@ -45115,10 +45119,12 @@ payload:
   - '+.stat.brollopstorget.se'
   - '+.stat.devote.se'
   - '+.stat.familjeliv.se'
+  - '+.stat.loppi.se'
   - '+.stat.modette.se'
   - '+.stat.nyheter24.se'
   - '+.stat.rodeo.net'
   - '+.stat.torgen.se'
+  - '+.stat.vimedbarn.se'
   - '+.stat03.stat.cliche.se'
   - '+.statcounter.va-endpoint.com'
   - '+.static.matchads.net'
@@ -51109,6 +51115,16 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.jjplaqyo.icu'
+  - '+.tixoilll.com'
+  - '+.hitalsli.com'
+  - '+.lcvwdn.icu'
+  - '+.1tp.icu'
+  - '+.jdyurlia.top'
+  - '+.orcinhyi.com'
+  - '+.thruksyq.com'
+  - '+.z4v.icu'
+  - '+.kdyurlid.top'
   - '+.lirretsn.com'
   - '+.nmzbrd.icu'
   - '+.hrjciqyu.icu'
