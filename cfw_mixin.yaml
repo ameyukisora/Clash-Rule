@@ -13,6 +13,7 @@ mixin:
     enhanced-mode: fake-ip
     fake-ip-filter-mode: whitelist
     fake-ip-filter: [geosite:gfw]
+    proxy-server-nameserver: [https://223.6.6.6/dns-query,  https://120.53.53.53/dns-query]
     nameserver: [system://]
     fallback: [https://223.6.6.6/dns-query, https://208.67.220.220/dns-query]
     fallback-filter:
