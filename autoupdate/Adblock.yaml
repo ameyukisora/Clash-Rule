@@ -1,7 +1,7 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2025-01-14 02:12:10
-  # DOMAIN-SUFFIX: 13968, IP-CIDR: 62, DOMAIN: 47, DOMAIN-KEYWORD: 25, IP-CIDR6: 1
+  # 2025-01-15 02:10:52
+  # DOMAIN-SUFFIX: 13968, DOMAIN: 47, DOMAIN-KEYWORD: 25, IP-CIDR6: 1, IP-CIDR: 62
   # TOTAL: 14103
   - DOMAIN,118.89.204.198
   - DOMAIN,ad.bn.netease.com
