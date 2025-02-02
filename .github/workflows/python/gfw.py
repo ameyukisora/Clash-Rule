@@ -7,7 +7,7 @@ urls = response.text.splitlines()[1:]
 
 timestamp = datetime.now(pytz.timezone('Asia/Shanghai')).strftime("%Y-%m-%d %H:%M:%S")
 
-with open("autoupdate/Proxy_urls.yaml", "w") as f:
+with open("autoupdate/gfw.yaml", "w") as f:
     f.write(f'''payload:
   # {timestamp}
   # TOTAL: {len(urls)} urls

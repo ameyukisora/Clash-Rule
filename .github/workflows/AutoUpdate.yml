@@ -40,8 +40,8 @@ jobs:
       - name: Reject
         run: python .github/workflows/python/Reject.py
 
-      - name: force proxy
-        run: python .github/workflows/python/Proxy_urls.py
+      - name: gfw
+        run: python .github/workflows/python/gfw.py
 
       - name: cndomain
         run: python .github/workflows/python/cndomain.py
