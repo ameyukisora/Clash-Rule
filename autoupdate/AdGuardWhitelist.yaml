@@ -4,8 +4,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2025-02-03T18:01:32.556Z
-  # Total: 131
+  # Last modified: 2025-02-04T18:01:27.344Z
+  # Total: 132
   - '+.link.sylikes.com'
   - '+.rd.bizrate.com'
   - '+.sbs.demdex.net'
@@ -14,6 +14,7 @@ payload:
   - '+.www.dogpile.com'
   - '+.acs-m.daraz.com.bd'
   - '+.f-gear.ec-optimizer.com'
+  - '+.get.neofinancial.com'
   - '+.hidive.com'
   - '+.learn.khanacademy.org'
   - '+.res.ads.nicovideo.jp'
