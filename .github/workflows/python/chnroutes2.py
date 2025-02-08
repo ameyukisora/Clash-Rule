@@ -1,25 +1,32 @@
 import requests
 import os
+import re
 
 def download_and_filter_ips(url, output_file):
-    # Download the file from the URL
+    # 下载文件并检查状态
     response = requests.get(url)
-    lines = response.text.split("\n")
-
-    # Filter IP addresses
-    ip_list = [ip for ip in lines if ip and ip[0].isdigit()]
-
-    # Write the IP addresses to the output YAML file
+    response.raise_for_status()
+    
+    # 处理文本内容
+    lines = response.text.splitlines()
+    ip_pattern = re.compile(r'^\d{1,3}(\.\d{1,3}){3}/\d{1,2}$')
+    filtered_ips = (line for line in lines if ip_pattern.match(line))
+    
+    # 构建YAML内容
+    yaml_content = [
+        "payload:",
+        "  # https://github.com/misakaio/chnroutes2",
+        *[f"  {line}" for line in lines[:2]],  # 保留源文件前两行
+        *[f"  - '{ip}'" for ip in filtered_ips]
+    ]
+    
+    # 写入文件
+    os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w") as f:
-        f.write(f'''payload:
-  # https://github.com/misakaio/chnroutes2
-  {lines[0]}
-  {lines[1]}
-{"".join(f"  - '{ip}'\n" for ip in ip_list)}
-''')
+        f.write("\n".join(yaml_content))
 
 if __name__ == "__main__":
-    url = "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt"
-    os.makedirs("autoupdate", exist_ok=True)
-    output_file = "autoupdate/chnroutes.yaml"
-    download_and_filter_ips(url, output_file)
+    download_and_filter_ips(
+        "https://raw.githubusercontent.com/misakaio/chnroutes2/master/chnroutes.txt",
+        "autoupdate/chnroutes.yaml"
+    )
