@@ -3,56 +3,61 @@ name: autoupdate
 on:
   schedule:
     - cron: "0 18 * * *"
-
   workflow_dispatch:
 
 jobs:
   autoupdate_python:
     runs-on: ubuntu-latest
-    
+    # 建议锁定全新更新的镜像版本（可选）
+    # runs-on: ubuntu-24.04
+
     steps:
       - name: Checkout code
-        uses: actions/checkout@main
-      
-      - name: Set up Python
-        uses: actions/setup-python@main
+        uses: actions/checkout@v4
         with:
-          python-version: '3.x'
-      
+          # 获取完整提交历史，避免推送冲突
+          fetch-depth: 0
+          # 使用 GITHUB_TOKEN 确保推送权限
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Cache Python dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('.github/workflows/python/requirements.txt') }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          # 明确指定 Python 版本，避免兼容性问题
+          python-version: "3.11"
+
       - name: Install dependencies
         run: pip install -r .github/workflows/python/requirements.txt
-      
-      - name: AdGuard DNS Filter
-        run: python .github/workflows/python/AdGuard.py
-      
-      - name: chnroutes2
-        run: python .github/workflows/python/chnroutes2.py
 
-      - name: chn-operator-ip
-        run: python .github/workflows/python/chn-operator-ip.py
-
-      - name: Adblock
-        run: python .github/workflows/python/Adblock.py
-
-      - name: AdblockLite
-        run: python .github/workflows/python/AdblockLite.py
-
-      - name: Reject
-        run: python .github/workflows/python/Reject.py
-
-      - name: gfw
-        run: python .github/workflows/python/gfw.py
-
-      - name: cndomain
-        run: python .github/workflows/python/cndomain.py
+      - name: Run all update scripts
+        run: |
+          # 按顺序执行所有脚本，保持原有逻辑
+          python .github/workflows/python/AdGuard.py
+          python .github/workflows/python/chnroutes2.py
+          python .github/workflows/python/chn-operator-ip.py
+          python .github/workflows/python/Adblock.py
+          python .github/workflows/python/AdblockLite.py
+          python .github/workflows/python/Reject.py
+          python .github/workflows/python/gfw.py
+          python .github/workflows/python/cndomain.py
 
       - name: Commit and push changes
         run: |
-          if [[ $(git status --porcelain) ]]; then
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add autoupdate/*.yaml
-            git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
+          # 兼容 Ubuntu 的 date 命令格式（东八区时间）
+          commit_time=$(TZ=Asia/Shanghai date +"%Y-%m-%d %H:%M:%S")
+
+          if ! git diff --quiet; then
+            git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git config --local user.name "GitHub Actions"
+            # 添加所有变更文件（按实际需求调整路径）
+            git add --all
+            git commit -m "Auto-update rules: $commit_time"
             git push
           else
             echo "No changes to commit."
