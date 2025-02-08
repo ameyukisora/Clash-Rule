@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2025-02-07T18:01:39.143Z
-  # Total: 57197
+  # Last modified: 2025-02-08T06:01:26.362Z
+  # Total: 57200
   - '+.videocdnmetrika.com'
   - '+.pkyffuewwuhnld.com'
   - '+.phahifoobsie.net'
@@ -52011,6 +52011,9 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.vjzqfh.icu'
+  - '+.8ff0.cn'
+  - '+.tdinmai.top'
   - '+.xtdvvp.icu'
   - '+.vbllxaaj.icu'
   - '+.apk02070oo.xyz'
