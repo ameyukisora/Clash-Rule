@@ -1,25 +1,36 @@
 import requests
+import re
+import os
 
-# 下载文件
 url = "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt"
-response = requests.get(url)
-if response.status_code == 200:
-    text = response.text.splitlines()
-    adguard = [adg[2:-1] for adg in text if adg.startswith('||') and '*' not in adg and adg.endswith('^')]
-    whitelist = [adgw[4:-2] for adgw in text if adgw.startswith('@@||') and '*' not in adgw and adgw.endswith('^|')]
+response = requests.get(url, timeout=10)
+response.raise_for_status()  # 自动处理HTTP错误
 
-# 输出新文件
-with open('autoupdate/AdGuard.yaml', 'w') as f:
-    f.write(f'''payload:
-{'\n'.join(f'  # {description[2:]}' for description in text[1:6])}
-  # Total: {len(adguard)}
-{'\n'.join(f"  - '+.{rule}'" for rule in adguard)}
-''')
+text = response.text.splitlines()
 
-with open('autoupdate/AdGuardWhitelist.yaml', 'w') as f:
-    f.write(f'''payload:
-  # Use with AdGuard.yaml
-{'\n'.join(f'  # {description[2:]}' for description in text[1:6])}
-  # Total: {len(whitelist)}
-{'\n'.join(f"  - '+.{rule}'" for rule in whitelist)}
-''')
+# 使用正则表达式一次性匹配黑白名单
+ad_rules = {"adguard": re.compile(r'^\|\|([^*]+?)\^$'), 
+            "whitelist": re.compile(r'^@@\|\|([^*]+?)\^\|$')}
+
+filters = {"adguard": [], "whitelist": []}
+for line in text:
+    for rule_type, pattern in ad_rules.items():
+        if match := pattern.match(line):
+            filters[rule_type].append(match.group(1))
+            break
+
+# 提取公共描述部分
+descriptions = [f"  # {line[2:]}" for line in text[1:6]]
+
+# 确保输出目录存在
+os.makedirs("autoupdate", exist_ok=True)
+
+# 统一输出逻辑
+for rule_type in filters:
+    with open(f"autoupdate/AdGuard{['','Whitelist'][rule_type=='whitelist']}.yaml", "w") as f:
+        f.write(f"payload:\n")
+        if rule_type == "whitelist":
+            f.write("  # Use with AdGuard.yaml\n")
+        f.write("\n".join(descriptions) + "\n")
+        f.write(f"  # Total: {len(filters[rule_type])}\n")
+        f.write("\n".join(f"  - '+.{rule}'" for rule in filters[rule_type]))
