@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2025-02-11T18:01:23.298Z
-  # Total: 56877
+  # Last modified: 2025-02-12T06:01:25.300Z
+  # Total: 56886
   - '+.directone.xyz'
   - '+.dramaticsalad.com'
   - '+.chinnedwithset.com'
@@ -16290,6 +16290,7 @@ payload:
   - '+.masculineillness.com'
   - '+.masklink.org'
   - '+.masonopen.com'
+  - '+.masonrycruor.shop'
   - '+.masqueradeentrustveneering.com'
   - '+.masqueradethousand.com'
   - '+.massacreintentionalmemorize.com'
@@ -33345,6 +33346,7 @@ payload:
   - '+.ib.snssdk.com'
   - '+.xlog.snssdk.com'
   - '+.log.snssdk.com'
+  - '+.analytics.viture.dev'
   - '+.us-behavior.apitd.net'
   - '+.collector.snplow.net'
   - '+.squeezely.tech'
@@ -36972,6 +36974,7 @@ payload:
   - '+.wizaly.com'
   - '+.d1udjti6mtxz9q.cloudfront.net'
   - '+.tagman.britishairways.com'
+  - '+.inf.miui.com'
   - '+.q.quora.com'
   - '+.evts.ecocart.io'
   - '+.e.fomo.com'
@@ -39589,6 +39592,7 @@ payload:
   - '+.int.vlancaa.site'
   - '+.int.vlancaa.fun'
   - '+.tok.vaicore.xyz'
+  - '+.log.ultimatecleaner.pro'
   - '+.impression.link'
   - '+.rm.aarki.net'
   - '+.use-cr.svr-algorix.com'
@@ -51668,6 +51672,10 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.traukvan.com'
+  - '+.20wx.com'
+  - '+.vitqzd.icu'
+  - '+.icinmao.top'
   - '+.fuuksew.com'
   - '+.xfxvpt.icu'
   - '+.s31u.com'
@@ -56570,6 +56578,7 @@ payload:
   - '+.xn--s-4z5e652a53k.com'
   - '+.categorysort.com'
   - '+.adcastmarket.com'
+  - '+.recoshopping.naver.com'
   - '+.ad-creative.pstatic.net'
   - '+.centaurs-rest.coupang.com'
   - '+.ad.cashdoc.io'
