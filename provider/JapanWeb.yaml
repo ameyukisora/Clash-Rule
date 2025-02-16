@@ -8,6 +8,7 @@ payload:
   
   # プリンセスコネクト！Re:Dive
   - DOMAIN-SUFFIX,api-priconne-redive.cygames.jp
+  - DOMAIN,prd-priconne-redive.akamaized.net
 
   # ティンクルスターナイツ，Twinkle Star Knights
   - DOMAIN-SUFFIX,twinkle-star-knights.com
