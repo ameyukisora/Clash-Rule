@@ -1,6 +1,6 @@
 payload:
-  # 2025-02-19 02:11:48
-  # TOTAL: 6302 urls
+  # 2025-02-20 02:11:29
+  # TOTAL: 6304 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -96,6 +96,7 @@ payload:
   - '+.5i01.com'
   - '+.5isotoi5.org'
   - '+.5maodang.com'
+  - '+.611study.icu'
   - '+.63i.com'
   - '+.64museum.org'
   - '+.64tianwang.com'
@@ -3755,6 +3756,7 @@ payload:
   - '+.news.tvbs.com.tw'
   - '+.news.yahoo.com'
   - '+.news.ycombinator.com'
+  - '+.news1.kr'
   - '+.news100.com.tw'
   - '+.newsancai.com'
   - '+.newsblur.com'
@@ -4124,6 +4126,7 @@ payload:
   - '+.picturedip.com'
   - '+.pictures.playboy.com'
   - '+.picturesocial.com'
+  - '+.picuki.com'
   - '+.pigav.com'
   - '+.pimg.tw'
   - '+.pin-cong.com'
@@ -4895,7 +4898,6 @@ payload:
   - '+.strikingly.com'
   - '+.strongvpn.com'
   - '+.strongwindpress.com'
-  - '+.student.tw'
   - '+.studentsforafreetibet.org'
   - '+.stumbleupon.com'
   - '+.stupidvideos.com'
