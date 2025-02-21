@@ -78,3 +78,5 @@ payload:
   # > Other
   - DOMAIN,img4.nga.178.com
   - DOMAIN,img.nga.178.com
+
+  - PROCESS-NAME,RCService.exe
