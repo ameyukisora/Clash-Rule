@@ -3,8 +3,8 @@ payload:
   # Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
   # Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
   # License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-  # Last modified: 2025-02-25T18:01:20.557Z
-  # Total: 55012
+  # Last modified: 2025-02-26T06:01:25.030Z
+  # Total: 55018
   - '+.demand.supply'
   - '+.seeptoafuko.com'
   - '+.wmrdplrves.com'
@@ -28800,6 +28800,7 @@ payload:
   - '+.nster.net'
   - '+.ntent.com'
   - '+.numbers.md'
+  - '+.o.socoms.net'
   - '+.oboxads.com'
   - '+.oceanwebcraft.com'
   - '+.ocelot.studio'
@@ -50036,6 +50037,10 @@ payload:
   - '+.zywjpypco.7hujk.de'
   - '+.51tongji.trafficmanager.net'
   - '+.cnzz.trafficmanager.net'
+  - '+.zlzgfj.icu'
+  - '+.lnptph.icu'
+  - '+.pisb.cn'
+  - '+.dyyygyg.top'
   - '+.druqodrly.com'
   - '+.bidotz.icu'
   - '+.nktydx.icu'
@@ -50044,6 +50049,7 @@ payload:
   - '+.znlvhnej.icu'
   - '+.okwjmii.top'
   - '+.onjncgq.top'
+  - '+.o02260aokk.com'
   - '+.o02251aokk.com'
   - '+.pheidheat.com'
   - '+.thampheth.com'
