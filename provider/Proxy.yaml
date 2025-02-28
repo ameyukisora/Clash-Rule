@@ -2,8 +2,8 @@ payload:
   # Supplemental proxy rules list
 
   # > Bing
-  - DOMAIN-SUFFIX,bing.com
-  - DOMAIN-SUFFIX,copilot.microsoft.com
+  #- DOMAIN-SUFFIX,bing.com
+  #- DOMAIN-SUFFIX,copilot.microsoft.com
 
   # > Google
   #- DOMAIN-SUFFIX,gstatic.cn
