@@ -1,6 +1,6 @@
 payload:
-  # 2025-03-01 02:11:43
-  # TOTAL: 6306 urls
+  # 2025-03-02 02:10:02
+  # TOTAL: 6307 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -790,6 +790,7 @@ payload:
   - '+.brucewang.net'
   - '+.brutaltgp.com'
   - '+.bsky.app'
+  - '+.bsky.network'
   - '+.bsky.social'
   - '+.bt95.com'
   - '+.btaia.com'
