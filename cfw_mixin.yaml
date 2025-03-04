@@ -2,10 +2,12 @@ mixin:
   find-process-mode: always
   tun:
     enable: true
-    stack: gvisor   #system / gvisor / mixed
+    device: Mihomo
+    stack: system   #system / gvisor / mixed
     dns-hijack:
       - any:53
     auto-route: true
+    mtu: 1500
     strict-route: true
     auto-detect-interface: true
   dns:
