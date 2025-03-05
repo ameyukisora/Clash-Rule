@@ -13,7 +13,7 @@ dns:
   fake-ip-filter: [rule-set:gfw]
   proxy-server-nameserver: [https://223.6.6.6/dns-query,  https://120.53.53.53/dns-query]
   nameserver: [223.6.6.6, 119.29.29.29]
-  fallback: [https://223.6.6.6/dns-query, https://208.67.222.123/dns-query]
+  fallback: [https://223.6.6.6/dns-query, https://106.75.165.71/dns-query]
   fallback-filter:
     geoip: false
     ipcidr: 
