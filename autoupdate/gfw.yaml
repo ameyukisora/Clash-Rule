@@ -1,6 +1,6 @@
 payload:
-  # 2025-03-08 02:11:45
-  # TOTAL: 6466 urls
+  # 2025-03-09 02:08:25
+  # TOTAL: 6467 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -107,6 +107,7 @@ payload:
   - '+.66.ca'
   - '+.666kb.com'
   - '+.666pool.cn'
+  - '+.69shuba.cx'
   - '+.6do.news'
   - '+.6do.world'
   - '+.6park.com'
@@ -2181,6 +2182,7 @@ payload:
   - '+.github.blog'
   - '+.github.com'
   - '+.github.io'
+  - '+.githubassets.com'
   - '+.githubcopilot.com'
   - '+.githubusercontent.com'
   - '+.gizlen.net'
@@ -2449,6 +2451,7 @@ payload:
   - '+.google.vg'
   - '+.google.vu'
   - '+.google.ws'
+  - '+.googleapis.com'
   - '+.googleapps.com'
   - '+.googlearth.com'
   - '+.googleartproject.com'
@@ -3467,7 +3470,6 @@ payload:
   - '+.manta.com'
   - '+.manyvoices.news'
   - '+.maplew.com'
-  - '+.maps.googleapis.com'
   - '+.marc.info'
   - '+.marguerite.su'
   - '+.martau.com'
@@ -4292,6 +4294,7 @@ payload:
   - '+.politicalconsultation.org'
   - '+.politiscales.net'
   - '+.poloniex.com'
+  - '+.polymarket.com'
   - '+.polymer-project.org'
   - '+.polymerhk.com'
   - '+.poolbinance.com'
@@ -5453,7 +5456,6 @@ payload:
   - '+.tradingview.com'
   - '+.trans.wenweipo.com'
   - '+.translate.goog'
-  - '+.translate.googleapis.com'
   - '+.transparency.org'
   - '+.treemall.com.tw'
   - '+.trendsmap.com'
@@ -6050,7 +6052,6 @@ payload:
   - '+.wikiversity.org'
   - '+.wikivoyage.org'
   - '+.wikiwand.com'
-  - '+.wikiwiki.jp'
   - '+.wiktionary.org'
   - '+.wildammo.com'
   - '+.williamhill.com'
