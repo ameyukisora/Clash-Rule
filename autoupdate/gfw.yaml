@@ -1,5 +1,5 @@
 payload:
-  # 2025-03-11 02:10:30
+  # 2025-03-12 02:12:20
   # TOTAL: 6469 urls
   - '+.000webhost.com'
   - '+.030buy.com'
@@ -1002,6 +1002,7 @@ payload:
   - '+.chapm25.com'
   - '+.character.ai'
   - '+.chat.lmsys.org'
+  - '+.chat.openai.com'
   - '+.chatgpt.com'
   - '+.chatnook.com'
   - '+.chaturbate.com'
@@ -4082,7 +4083,7 @@ payload:
   - '+.oopsforum.com'
   - '+.open.com.hk'
   - '+.open.firstory.me'
-  - '+.openai.com'
+  - '+.open.spotify.com'
   - '+.openallweb.com'
   - '+.opendemocracy.net'
   - '+.opendn.xyz'
@@ -4943,7 +4944,6 @@ payload:
   - '+.spike.com'
   - '+.sports.williamhill.com'
   - '+.spotflux.com'
-  - '+.spotify.com'
   - '+.spreadsheet.new'
   - '+.spreadshirt.es'
   - '+.spreaker.com'
