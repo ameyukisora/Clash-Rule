@@ -23,6 +23,7 @@ payload:
   - DOMAIN-SUFFIX,x.com
   - DOMAIN-SUFFIX,twimg.com
   - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,t.co
 
   # DLsite
   - DOMAIN-SUFFIX,dlsite.com
