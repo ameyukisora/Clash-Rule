@@ -1,6 +1,6 @@
 payload:
-  # 2025-03-15 02:11:42
-  # TOTAL: 6480 urls
+  # 2025-03-16 02:10:29
+  # TOTAL: 6479 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1831,7 +1831,6 @@ payload:
   - '+.farwestchina.com'
   - '+.fast.wistia.com'
   - '+.fastestvpn.com'
-  - '+.fastgpt.run'
   - '+.fastpic.ru'
   - '+.fastssh.com'
   - '+.faststone.org'
