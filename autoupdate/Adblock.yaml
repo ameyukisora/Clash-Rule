@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2025-03-29 02:12:29
-  # DOMAIN-SUFFIX: 12636, DOMAIN: 47, IP-CIDR: 62, DOMAIN-KEYWORD: 25, IP-CIDR6: 1
-  # TOTAL: 12771
+  # 2025-03-30 02:10:29
+  # DOMAIN-SUFFIX: 12647, IP-CIDR: 62, DOMAIN: 47, DOMAIN-KEYWORD: 25, IP-CIDR6: 1
+  # TOTAL: 12782
   - DOMAIN,118.89.204.198
   - DOMAIN,ad.bn.netease.com
   - DOMAIN,ad.yixin.im
@@ -4543,6 +4543,7 @@ payload:
   - DOMAIN-SUFFIX,ehxyz.com
   - DOMAIN-SUFFIX,ei1s7b.cn
   - DOMAIN-SUFFIX,ei7.icu
+  - DOMAIN-SUFFIX,eildralfl.com
   - DOMAIN-SUFFIX,ein.51yingfa.com
   - DOMAIN-SUFFIX,eiphrut.com
   - DOMAIN-SUFFIX,eisnaisv.com
@@ -5242,6 +5243,7 @@ payload:
   - DOMAIN-SUFFIX,gif.lu.sogoucdn.com
   - DOMAIN-SUFFIX,gimg.baidu.com
   - DOMAIN-SUFFIX,gimg.bitauto.com
+  - DOMAIN-SUFFIX,giphaudoq.com
   - DOMAIN-SUFFIX,girlcc.cc
   - DOMAIN-SUFFIX,gj500.com
   - DOMAIN-SUFFIX,gjghy.com
@@ -5667,6 +5669,7 @@ payload:
   - DOMAIN-SUFFIX,hpd.baidu.cn
   - DOMAIN-SUFFIX,hpd.baidu.com
   - DOMAIN-SUFFIX,hpqxznpb.bid
+  - DOMAIN-SUFFIX,hptidc.top
   - DOMAIN-SUFFIX,hpzktd.xyz
   - DOMAIN-SUFFIX,hqgjcm.com
   - DOMAIN-SUFFIX,hqhspv.xyz
@@ -6366,6 +6369,7 @@ payload:
   - DOMAIN-SUFFIX,jdlhg.com
   - DOMAIN-SUFFIX,jdomsia.top
   - DOMAIN-SUFFIX,jdoshba.top
+  - DOMAIN-SUFFIX,jdqmhay.icu
   - DOMAIN-SUFFIX,jdrlfn.xyz
   - DOMAIN-SUFFIX,jdw.zjuwjdc.com
   - DOMAIN-SUFFIX,jdyurlia.top
@@ -7114,6 +7118,7 @@ payload:
   - DOMAIN-SUFFIX,linktech.cn
   - DOMAIN-SUFFIX,linyao.dxsdb.com
   - DOMAIN-SUFFIX,lipheak.com
+  - DOMAIN-SUFFIX,liqw.cn
   - DOMAIN-SUFFIX,lirretsn.com
   - DOMAIN-SUFFIX,lishuanghao.com
   - DOMAIN-SUFFIX,listenother.com
@@ -10662,6 +10667,7 @@ payload:
   - DOMAIN-SUFFIX,tcxshop.com
   - DOMAIN-SUFFIX,td.mpush.cn
   - DOMAIN-SUFFIX,td.xue63.com
+  - DOMAIN-SUFFIX,td86hsmlmggym.top
   - DOMAIN-SUFFIX,tdamcsi.top
   - DOMAIN-SUFFIX,tdayi.com
   - DOMAIN-SUFFIX,tdfqvx.xyz
@@ -10868,6 +10874,7 @@ payload:
   - DOMAIN-SUFFIX,trorqaeao.com
   - DOMAIN-SUFFIX,trpyceq.cn
   - DOMAIN-SUFFIX,trutvnci.top
+  - DOMAIN-SUFFIX,truuhmoen.com
   - DOMAIN-SUFFIX,truxedku.com
   - DOMAIN-SUFFIX,trvxbd.xyz
   - DOMAIN-SUFFIX,trwba.com
@@ -11141,6 +11148,7 @@ payload:
   - DOMAIN-SUFFIX,uid.mdbchina.com
   - DOMAIN-SUFFIX,uimg.27admin.com
   - DOMAIN-SUFFIX,uimserv.net
+  - DOMAIN-SUFFIX,uivc.cn
   - DOMAIN-SUFFIX,ujian.cc
   - DOMAIN-SUFFIX,ujikdd041o.cn
   - DOMAIN-SUFFIX,ujimtyt.top
@@ -11235,6 +11243,7 @@ payload:
   - DOMAIN-SUFFIX,updates-s3.binaryage.com
   - DOMAIN-SUFFIX,upgrade.xl9.xunlei.com
   - DOMAIN-SUFFIX,uplze.code.weddingeeos.com
+  - DOMAIN-SUFFIX,uposnmb.icu
   - DOMAIN-SUFFIX,ups.ksmobile.net
   - DOMAIN-SUFFIX,upush.res.meizu.com
   - DOMAIN-SUFFIX,upyzqf.cn
@@ -11485,6 +11494,7 @@ payload:
   - DOMAIN-SUFFIX,vps.inte.sogou.com
   - DOMAIN-SUFFIX,vpwizuj.icu
   - DOMAIN-SUFFIX,vpydjogaytpg.xyz
+  - DOMAIN-SUFFIX,vqaj6smlmtpym.top
   - DOMAIN-SUFFIX,vqbzpv.xyz
   - DOMAIN-SUFFIX,vqlwoy.xyz
   - DOMAIN-SUFFIX,vraataidz.com
@@ -11516,6 +11526,7 @@ payload:
   - DOMAIN-SUFFIX,vtlyrj.xyz
   - DOMAIN-SUFFIX,vtrrxqbi.xyz
   - DOMAIN-SUFFIX,vudqth.icu
+  - DOMAIN-SUFFIX,vuhf.cn
   - DOMAIN-SUFFIX,vuirssd.icu
   - DOMAIN-SUFFIX,vulitd.xyz
   - DOMAIN-SUFFIX,vungle.cn
