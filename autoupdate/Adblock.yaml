@@ -1,6 +1,6 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2025-04-03 02:12:46
+  # 2025-04-04 02:12:14
   # DOMAIN-SUFFIX: 12647, IP-CIDR: 62, DOMAIN: 47, DOMAIN-KEYWORD: 25, IP-CIDR6: 1
   # TOTAL: 12782
   - DOMAIN,118.89.204.198
