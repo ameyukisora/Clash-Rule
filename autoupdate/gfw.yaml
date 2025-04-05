@@ -1,6 +1,6 @@
 payload:
-  # 2025-04-05 02:12:05
-  # TOTAL: 6474 urls
+  # 2025-04-06 02:10:30
+  # TOTAL: 6476 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -426,6 +426,7 @@ payload:
   - '+.auctions.yahoo.co.jp'
   - '+.audacy.com'
   - '+.auntology.fandom.com'
+  - '+.auth.openai.com'
   - '+.authorizeddns.net'
   - '+.authorizeddns.org'
   - '+.authorizeddns.us'
@@ -4090,6 +4091,7 @@ payload:
   - '+.open.spotify.com'
   - '+.openallweb.com'
   - '+.opendemocracy.net'
+  - '+.opendesktop.org'
   - '+.opendn.xyz'
   - '+.openervpn.in'
   - '+.openid.net'
