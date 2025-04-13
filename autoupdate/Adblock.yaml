@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD, BanEasyListChina and dler-io: Surge Reject.list
-  # 2025-04-13 02:10:47
-  # DOMAIN-SUFFIX: 12567, DOMAIN: 47, DOMAIN-KEYWORD: 25, IP-CIDR: 62, IP-CIDR6: 1
-  # TOTAL: 12702
+  # 2025-04-14 02:11:17
+  # DOMAIN-SUFFIX: 12576, DOMAIN: 47, IP-CIDR: 62, DOMAIN-KEYWORD: 25, IP-CIDR6: 1
+  # TOTAL: 12711
   - DOMAIN,118.89.204.198
   - DOMAIN,ad.bn.netease.com
   - DOMAIN,ad.yixin.im
@@ -2645,6 +2645,7 @@ payload:
   - DOMAIN-SUFFIX,bu1.duba.com
   - DOMAIN-SUFFIX,bu1.vvvdj.com
   - DOMAIN-SUFFIX,bu2.duba.com
+  - DOMAIN-SUFFIX,bubmhm.top
   - DOMAIN-SUFFIX,bugly.qq.com
   - DOMAIN-SUFFIX,bugtags.com
   - DOMAIN-SUFFIX,bujlmitd.icu
@@ -5848,6 +5849,7 @@ payload:
   - DOMAIN-SUFFIX,ifacelog.iqiyi.com
   - DOMAIN-SUFFIX,ifej.cn
   - DOMAIN-SUFFIX,ifengad.3g.ifeng.com
+  - DOMAIN-SUFFIX,ifethbrzb.com
   - DOMAIN-SUFFIX,iffobi.xyz
   - DOMAIN-SUFFIX,ifjslio.top
   - DOMAIN-SUFFIX,iflucav.icu
@@ -6899,6 +6901,7 @@ payload:
   - DOMAIN-SUFFIX,kuzai.cooguo.com
   - DOMAIN-SUFFIX,kvhee.com
   - DOMAIN-SUFFIX,kvkcei.xyz
+  - DOMAIN-SUFFIX,kvqp.cn
   - DOMAIN-SUFFIX,kvyyyde.cn
   - DOMAIN-SUFFIX,kw.ra.icast.cn
   - DOMAIN-SUFFIX,kwaterd.top
@@ -8060,6 +8063,7 @@ payload:
   - DOMAIN-SUFFIX,muwqiga.icu
   - DOMAIN-SUFFIX,mvads.kugou.com
   - DOMAIN-SUFFIX,mvcngm.xyz
+  - DOMAIN-SUFFIX,mvcnmtx.top
   - DOMAIN-SUFFIX,mvip.zhuba8.com
   - DOMAIN-SUFFIX,mvirkw.xyz
   - DOMAIN-SUFFIX,mvmqos.xyz
@@ -8278,6 +8282,7 @@ payload:
   - DOMAIN-SUFFIX,nnedbx.com
   - DOMAIN-SUFFIX,nnfbxz.icu
   - DOMAIN-SUFFIX,nngft.com
+  - DOMAIN-SUFFIX,nnntxx.icu
   - DOMAIN-SUFFIX,nnvjbb.xyz
   - DOMAIN-SUFFIX,noberlmall.com
   - DOMAIN-SUFFIX,nogogey.top
@@ -8427,6 +8432,7 @@ payload:
   - DOMAIN-SUFFIX,ok365.com
   - DOMAIN-SUFFIX,ok5.fun
   - DOMAIN-SUFFIX,okagcw.xyz
+  - DOMAIN-SUFFIX,okeaxgugq.com
   - DOMAIN-SUFFIX,okikwul.icu
   - DOMAIN-SUFFIX,okiterk.top
   - DOMAIN-SUFFIX,okkkk.com
@@ -8437,6 +8443,7 @@ payload:
   - DOMAIN-SUFFIX,okpp01031.xyz
   - DOMAIN-SUFFIX,okpp01040.xyz
   - DOMAIN-SUFFIX,okpp12311.xyz
+  - DOMAIN-SUFFIX,okvt.cn
   - DOMAIN-SUFFIX,okwan.cn
   - DOMAIN-SUFFIX,okwjmii.top
   - DOMAIN-SUFFIX,olcdn.com
@@ -10878,6 +10885,7 @@ payload:
   - DOMAIN-SUFFIX,tuvrutsnf.com
   - DOMAIN-SUFFIX,tuxpfiok.icu
   - DOMAIN-SUFFIX,tv.code.jjyx.com
+  - DOMAIN-SUFFIX,tvcnmti.top
   - DOMAIN-SUFFIX,tvgkatu.icu
   - DOMAIN-SUFFIX,tvpqnh.xyz
   - DOMAIN-SUFFIX,tw.adon.vpon.com
@@ -11800,6 +11808,7 @@ payload:
   - DOMAIN-SUFFIX,wuresde.top
   - DOMAIN-SUFFIX,wusfa.xyz
   - DOMAIN-SUFFIX,wuwho.cn
+  - DOMAIN-SUFFIX,wvcnmte.top
   - DOMAIN-SUFFIX,wvwqywz.cn
   - DOMAIN-SUFFIX,ww.xiaopiaoyou.com
   - DOMAIN-SUFFIX,ww10.onetad.com

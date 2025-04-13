@@ -1,6 +1,6 @@
 payload:
-  # 2025-04-13 02:10:48
-  # TOTAL: 6476 urls
+  # 2025-04-14 02:11:17
+  # TOTAL: 6477 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -425,6 +425,7 @@ payload:
   - '+.atnext.com'
   - '+.auctions.yahoo.co.jp'
   - '+.audacy.com'
+  - '+.audiomack.com'
   - '+.auntology.fandom.com'
   - '+.auth.openai.com'
   - '+.authorizeddns.net'
@@ -1165,7 +1166,6 @@ payload:
   - '+.cloud.dify.ai'
   - '+.cloud.mail.ru'
   - '+.cloudflare-ipfs.com'
-  - '+.cloudfront.net'
   - '+.cloudfunctions.net'
   - '+.club1069.com'
   - '+.clubhouseapi.com'
@@ -4624,6 +4624,7 @@ payload:
   - '+.s3-ap-southeast-1.amazonaws.com'
   - '+.s3-ap-southeast-2.amazonaws.com'
   - '+.s3.amazonaws.com'
+  - '+.s3.eu-central-1.amazonaws.com'
   - '+.s8forum.com'
   - '+.sa.hao123.com'
   - '+.sacks.com'
