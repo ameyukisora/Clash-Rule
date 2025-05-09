@@ -27,9 +27,7 @@ jobs:
           python .github/workflows/python/AdGuard.py
           python .github/workflows/python/chnroutes2.py
           python .github/workflows/python/chn-operator-ip.py
-          python .github/workflows/python/Adblock.py
           python .github/workflows/python/AdblockLite.py
-          python .github/workflows/python/Reject.py
           python .github/workflows/python/gfw.py
           python .github/workflows/python/cndomain.py
 
