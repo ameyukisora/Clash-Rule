@@ -13,8 +13,7 @@ dns:
   fake-ip-filter:
     - rule-set:gfw
   nameserver:
-    - https://106.75.165.71/dns-query
-    - https://54.223.159.81/dns-query
+    - https://106.75.177.177/dns-query
 proxies: ~
 proxy-groups: ~
 rules: ~
