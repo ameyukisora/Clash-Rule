@@ -1,6 +1,6 @@
 payload:
-  # 2025-05-13 02:13:05
-  # TOTAL: 6510 urls
+  # 2025-05-14 02:13:25
+  # TOTAL: 6517 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -213,6 +213,7 @@ payload:
   - '+.ai-kan.net'
   - '+.ai-wen.net'
   - '+.ai.binwang.me'
+  - '+.ai.google'
   - '+.aiosearch.com'
   - '+.aiph.net'
   - '+.airasia.com'
@@ -3921,6 +3922,10 @@ payload:
   - '+.nicovideo.jp'
   - '+.nighost.org'
   - '+.nightswatch.top'
+  - '+.nikke-en.com'
+  - '+.nikke-jp.com'
+  - '+.nikke-kr.com'
+  - '+.nikke.hotcool.tw'
   - '+.nikkei.com'
   - '+.ninecommentaries.com'
   - '+.ninjacloak.com'
@@ -3954,6 +3959,7 @@ payload:
   - '+.nordstromrack.com'
   - '+.nordvpn.com'
   - '+.nos.nl'
+  - '+.notebooklm.google'
   - '+.notepad-plus-plus.org'
   - '+.nottinghampost.com'
   - '+.novelasia.com'
@@ -5400,6 +5406,7 @@ payload:
   - '+.tigervpn.com'
   - '+.tiktok.com'
   - '+.tiktokcdn-us.com'
+  - '+.tiktokcdn.com'
   - '+.tiktokv.com'
   - '+.tiktokv.us'
   - '+.tiltbrush.com'
