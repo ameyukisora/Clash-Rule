@@ -1,6 +1,6 @@
 payload:
-  # 2025-05-18 02:11:29
-  # TOTAL: 6517 urls
+  # 2025-05-19 02:11:31
+  # TOTAL: 6522 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -520,6 +520,7 @@ payload:
   - '+.bbs.mikocon.com'
   - '+.bbs.morbell.com'
   - '+.bbs.mychat.to'
+  - '+.bbs.naixi.net'
   - '+.bbs.netbig.com'
   - '+.bbs.nyinfor.com'
   - '+.bbs.ozchinese.com'
@@ -3307,6 +3308,8 @@ payload:
   - '+.lausan.hk'
   - '+.lbank.info'
   - '+.ld.hao123img.com'
+  - '+.ldplayer.net'
+  - '+.ldplayer.tw'
   - '+.le-vpn.com'
   - '+.leafyvpn.net'
   - '+.lecloud.net'
@@ -4659,6 +4662,7 @@ payload:
   - '+.safeguarddefenders.com'
   - '+.safervpn.com'
   - '+.safety.google'
+  - '+.sagernet.org'
   - '+.saintyculture.com'
   - '+.saiq.me'
   - '+.sakuralive.com'
@@ -5405,6 +5409,7 @@ payload:
   - '+.ticket.com.tw'
   - '+.tigervpn.com'
   - '+.tiktok.com'
+  - '+.tiktokcdn-eu.com'
   - '+.tiktokcdn-us.com'
   - '+.tiktokcdn.com'
   - '+.tiktokv.com'
