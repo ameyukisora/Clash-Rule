@@ -9,7 +9,7 @@ mixin:
       - any:53
     auto-route: true
     mtu: 1500
-    strict-route: true
+    #strict-route: true # 启用会导致机械革命控制台失效
     auto-detect-interface: true
   dns:
     cache-algorithm: arc
