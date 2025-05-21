@@ -1,6 +1,6 @@
 payload:
-  # 2025-05-21 02:13:25
-  # TOTAL: 6522 urls
+  # 2025-05-22 02:13:22
+  # TOTAL: 6524 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -271,6 +271,7 @@ payload:
   - '+.alwaysvpn.com'
   - '+.am730.com.hk'
   - '+.amazon.co.jp'
+  - '+.amazonvideo.com'
   - '+.ameblo.jp'
   - '+.americangreencard.com'
   - '+.americanunfinished.com'
@@ -4382,6 +4383,7 @@ payload:
   - '+.presidentlee.tw'
   - '+.prestige-av.com'
   - '+.pride.google'
+  - '+.primevideo.com'
   - '+.prism-break.org'
   - '+.prisoneralert.com'
   - '+.pritunl.com'
