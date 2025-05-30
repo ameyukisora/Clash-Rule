@@ -1,6 +1,6 @@
 payload:
-  # 2025-05-30 02:12:59
-  # TOTAL: 6501 urls
+  # 2025-05-31 02:12:56
+  # TOTAL: 6507 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -4631,9 +4631,15 @@ payload:
   - '+.s1.nudezz.com'
   - '+.s1heng.com'
   - '+.s1s1s1.com'
+  - '+.s3-ap-northeast-1.amazonaws.com'
+  - '+.s3-ap-northeast-2.amazonaws.com'
   - '+.s3-ap-southeast-1.amazonaws.com'
   - '+.s3-ap-southeast-2.amazonaws.com'
+  - '+.s3-eu-central-1.amazonaws.com'
   - '+.s3.amazonaws.com'
+  - '+.s3.ap-northeast-2.amazonaws.com'
+  - '+.s3.eu-central-1.amazonaws.com'
+  - '+.s3.us-east-1.amazonaws.com'
   - '+.s8forum.com'
   - '+.sa.hao123.com'
   - '+.sacks.com'
