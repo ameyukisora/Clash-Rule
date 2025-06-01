@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-01 02:11:33
-  # TOTAL: 6507 urls
+  # 2025-06-02 02:11:45
+  # TOTAL: 6508 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -627,6 +627,7 @@ payload:
   - '+.bl-doujinsouko.com'
   - '+.blacked.com'
   - '+.blacklogic.com'
+  - '+.blackmagicdesign.com'
   - '+.blackvpn.com'
   - '+.blewpass.com'
   - '+.blinkx.com'
