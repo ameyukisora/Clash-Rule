@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-05 02:13:09
-  # TOTAL: 6509 urls
+  # 2025-06-06 14:35:31
+  # TOTAL: 6512 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -959,6 +959,7 @@ payload:
   - '+.cdjp.org'
   - '+.cdn-images.mailchimp.com'
   - '+.cdn-telegram.org'
+  - '+.cdn.arstechnica.net'
   - '+.cdn.assets.lfpcontent.com'
   - '+.cdn.helixstudios.net'
   - '+.cdn.jwplayer.com'
@@ -1119,6 +1120,7 @@ payload:
   - '+.churchinhongkong.org'
   - '+.chushigangdrug.ch'
   - '+.ci-en.jp'
+  - '+.cici.com'
   - '+.ciciai.com'
   - '+.cienen.com'
   - '+.cineastentreff.de'
@@ -1211,6 +1213,7 @@ payload:
   - '+.codeshare.io'
   - '+.codeskulptor.org'
   - '+.cofacts.tw'
+  - '+.coffeemanga.to'
   - '+.coin2co.in'
   - '+.coinbase.com'
   - '+.coinbene.com'
