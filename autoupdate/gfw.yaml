@@ -1,5 +1,5 @@
 payload:
-  # 2025-06-13 02:13:06
+  # 2025-06-14 02:13:05
   # TOTAL: 6514 urls
   - '+.000webhost.com'
   - '+.030buy.com'
@@ -1264,6 +1264,7 @@ payload:
   - '+.coursehero.com'
   - '+.coze.com'
   - '+.cpj.org'
+  - '+.cpu-monkey.com'
   - '+.cq99.us'
   - '+.crackle.com'
   - '+.crazypool.org'
@@ -2850,7 +2851,6 @@ payload:
   - '+.huyandex.com'
   - '+.hwadzan.tw'
   - '+.hwayue.org.tw'
-  - '+.hwinfo.com'
   - '+.hxwk.org'
   - '+.hxwq.org'
   - '+.hybrid-analysis.com'
