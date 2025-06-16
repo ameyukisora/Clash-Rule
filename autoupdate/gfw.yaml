@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-16 02:11:45
-  # TOTAL: 5851 urls
+  # 2025-06-17 02:13:39
+  # TOTAL: 5853 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1967,6 +1967,7 @@ payload:
   - '+.githubassets.com'
   - '+.githubcopilot.com'
   - '+.githubusercontent.com'
+  - '+.gitlab.net'
   - '+.gizlen.net'
   - '+.gjczz.com'
   - '+.glarity.app'
@@ -2394,6 +2395,7 @@ payload:
   - '+.himalayanglacier.com'
   - '+.himemix.com'
   - '+.hindustantimes.com'
+  - '+.hinet.net'
   - '+.hitbtc.com'
   - '+.hitomi.la'
   - '+.hiveon.net'
