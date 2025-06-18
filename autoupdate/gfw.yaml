@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-18 02:13:27
-  # TOTAL: 5854 urls
+  # 2025-06-19 02:13:35
+  # TOTAL: 5858 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1046,7 +1046,6 @@ payload:
   - '+.cloud.dify.ai'
   - '+.cloud.mail.ru'
   - '+.cloudflare-ipfs.com'
-  - '+.cloudfront.net'
   - '+.cloudfunctions.net'
   - '+.club1069.com'
   - '+.clubhouseapi.com'
@@ -1405,6 +1404,7 @@ payload:
   - '+.dw-world.de'
   - '+.dw.com'
   - '+.dw.de'
+  - '+.dweb.link'
   - '+.dwnews.com'
   - '+.dwnews.net'
   - '+.dynamic-dns.net'
@@ -2686,6 +2686,7 @@ payload:
   - '+.iownyour.org'
   - '+.ipdefenseforum.com'
   - '+.ipfire.org'
+  - '+.ipfs.4everland.io'
   - '+.ipfs.io'
   - '+.iphone4hongkong.com'
   - '+.iphonetaiwan.org'
@@ -3512,6 +3513,7 @@ payload:
   - '+.nflximg.net'
   - '+.nflxso.net'
   - '+.nflxvideo.net'
+  - '+.nftstorage.link'
   - '+.nga.mil'
   - '+.ngensis.com'
   - '+.nhentai.net'
@@ -4543,6 +4545,7 @@ payload:
   - '+.storj.io'
   - '+.storm.mg'
   - '+.stormmediagroup.com'
+  - '+.storry.tv'
   - '+.stoweboyd.com'
   - '+.straitstimes.com'
   - '+.stranabg.com'
@@ -5363,6 +5366,7 @@ payload:
   - '+.vultryhw.com'
   - '+.w-pool.com'
   - '+.w.idaiwan.com'
+  - '+.w3s.link'
   - '+.waffle1999.com'
   - '+.wahas.com'
   - '+.waikeung.org'
