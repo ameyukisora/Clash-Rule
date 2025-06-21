@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-21 02:13:04
-  # TOTAL: 5859 urls
+  # 2025-06-22 02:11:22
+  # TOTAL: 5860 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -258,6 +258,7 @@ payload:
   - '+.amnestyusa.org'
   - '+.ampproject.org'
   - '+.amtb-taipei.org'
+  - '+.amuletmc.com'
   - '+.anchor.fm'
   - '+.anchorfree.com'
   - '+.ancsconf.org'
