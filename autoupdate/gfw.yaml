@@ -1,6 +1,6 @@
 payload:
-  # 2025-06-23 02:11:45
-  # TOTAL: 5860 urls
+  # 2025-06-24 02:13:35
+  # TOTAL: 5865 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -355,6 +355,7 @@ payload:
   - '+.artofpeacefoundation.org'
   - '+.artstation.com'
   - '+.artsy.net'
+  - '+.arvanstorage.ir'
   - '+.asacp.org'
   - '+.asdfg.jp'
   - '+.asg.to'
@@ -2264,6 +2265,7 @@ payload:
   - '+.gotquestions.org'
   - '+.gotrusted.com'
   - '+.gotw.ca'
+  - '+.gov.ir'
   - '+.gov.taipei'
   - '+.gov.tw'
   - '+.gr8domain.biz'
@@ -2703,7 +2705,9 @@ payload:
   - '+.iptv.com.tw'
   - '+.iptvbin.com'
   - '+.ipvanish.com'
+  - '+.irangov.ir'
   - '+.iredmail.org'
+  - '+.irna.ir'
   - '+.ironpython.net'
   - '+.ironsocket.com'
   - '+.is-a-hunter.com'
@@ -3938,6 +3942,7 @@ payload:
   - '+.premproxy.com'
   - '+.presentation.new'
   - '+.presentationzen.com'
+  - '+.president.ir'
   - '+.presidentlee.tw'
   - '+.prestige-av.com'
   - '+.primevideo.com'
