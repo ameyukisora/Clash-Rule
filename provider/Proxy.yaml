@@ -13,3 +13,6 @@ payload:
   - IP-CIDR,94.140.14.14/32,no-resolve
   - DOMAIN,dns.adguard-dns.com
   - DOMAIN,dns.cloudflare.com
+
+  # > Other
+  - DOMAIN-SUFFIX,gsxt.gov.cn
