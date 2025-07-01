@@ -12,7 +12,7 @@ dns:
   fake-ip-filter-mode: whitelist
   fake-ip-filter:
     - rule-set:gfw
-  proxy-server-nameserver: [1.2.4.8]
+  proxy-server-nameserver: [114.114.114.114]
   #nameserver-policy:
   #  'ciallo.*.*': '114.114.114.114'
   nameserver: [system]
