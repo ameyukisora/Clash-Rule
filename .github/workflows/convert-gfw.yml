@@ -24,7 +24,7 @@ jobs:
 
       - name: Download gfw.yaml
         run: |
-          wget -O autoupdate/gfw.yaml https://github.com/ameyukisora/Clash-Rule/blob/master/autoupdate/gfw.yaml
+          wget -O autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
 
       - name: Convert gfw.yaml to gfw.mrs
         run: |
