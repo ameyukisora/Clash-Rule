@@ -28,15 +28,14 @@ jobs:
       - name: Download gfw.yaml
         run: curl -L -o gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.yaml
 
-      # 步骤4: 安装 mihomo 内核 (优化版)
+      # 步骤4: 安装 mihomo 内核 (最终优化版)
+      # 精准过滤，只选择一个标准的 .gz 文件，并用 first 确保输出唯一
       - name: Set up mihomo
         run: |
-          # 使用 jq 精准解析 JSON，并用 GITHUB_TOKEN 进行身份验证
           MIHOMO_URL=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
             "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" | \
-            jq -r '.assets[] | select(.name | contains("linux-amd64")) | .browser_download_url')
+            jq -r '(.assets[] | select(.name | contains("linux-amd64") and endswith(".gz") and (contains("compatible") | not)) | .browser_download_url) | first')
           
-          # 检查是否成功获取 URL
           if [ -z "$MIHOMO_URL" ]; then
             echo "错误：无法找到 mihomo linux-amd64 的下载链接。"
             exit 1
