@@ -17,12 +17,10 @@ jobs:
 
     steps:
       # 步骤1: 检出你的仓库代码
-      # 以便后续可以提交生成的文件
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       # 步骤2: 创建用于存放 mrs 文件的目录
-      # `-p` 参数确保在目录已存在时不会报错
       - name: Create autoupdate directory
         run: mkdir -p ./autoupdate
 
@@ -30,31 +28,36 @@ jobs:
       - name: Download gfw.yaml
         run: curl -L -o gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.yaml
 
-      # 步骤4: 安装 mihomo 内核
-      # 从 GitHub API 获取最新版 mihomo for linux-amd64，解压并移动到可执行路径
+      # 步骤4: 安装 mihomo 内核 (优化版)
       - name: Set up mihomo
         run: |
-          MIHOMO_URL=$(curl -s "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" | grep "browser_download_url.*linux-amd64" | cut -d : -f 2,3 | tr -d \")
-          wget -q -O mihomo-linux-amd64.gz $MIHOMO_URL
+          # 使用 jq 精准解析 JSON，并用 GITHUB_TOKEN 进行身份验证
+          MIHOMO_URL=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest" | \
+            jq -r '.assets[] | select(.name | contains("linux-amd64")) | .browser_download_url')
+          
+          # 检查是否成功获取 URL
+          if [ -z "$MIHOMO_URL" ]; then
+            echo "错误：无法找到 mihomo linux-amd64 的下载链接。"
+            exit 1
+          fi
+
+          echo "正在从以下链接下载 mihomo: $MIHOMO_URL"
+          wget -q -O mihomo-linux-amd64.gz "$MIHOMO_URL"
           gunzip mihomo-linux-amd64.gz
           chmod +x mihomo-linux-amd64
           sudo mv mihomo-linux-amd64 /usr/local/bin/mihomo
 
       # 步骤5: 将 YAML 转换为 .mrs
-      # 命令: mihomo convert-ruleset <behavior> <input-format> <input-path> <output-path>
       - name: Convert YAML to .mrs
         run: mihomo convert-ruleset domain yaml gfw.yaml ./autoupdate/gfw.mrs
 
       # 步骤6: 自动提交并推送到你的仓库
-      # 使用 git-auto-commit-action 插件来简化操作
       - name: Commit and push .mrs file
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          # 提交信息
           commit_message: "chore: 自动更新 gfw.mrs 规则"
-          # 要提交的文件路径
           file_pattern: "./autoupdate/gfw.mrs"
-          # 提交作者信息
           commit_user_name: "github-actions[bot]"
           commit_user_email: "github-actions[bot]@users.noreply.github.com"
           commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
