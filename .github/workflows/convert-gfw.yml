@@ -1,51 +1,41 @@
-# 工作流名称
-name: Convert GFW Rule to MRS
+name: Convert YAML to MRS
 
 on:
-  # 允许在 Actions 页面手动触发此工作流
-  workflow_dispatch:
-
-  # 设置定时任务，使用 Cron 表达式
-  # 每天在北京时间早上 5 点执行 (UTC 时间为前一天 21:00)
   schedule:
-    - cron: '0 21 * * *'
+    # 每天凌晨 00:00 UTC 运行
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许手动触发
 
 jobs:
-  build-and-commit:
-    # 使用最新版的 Ubuntu 虚拟机
+  convert:
     runs-on: ubuntu-latest
-
     steps:
-      # 步骤1: 检出你的仓库代码
-      - name: Checkout Repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 步骤2: 创建用于存放 mrs 文件的目录
-      - name: Create autoupdate directory
-        run: mkdir -p ./autoupdate
-
-      # 步骤3: 下载 gfw.yaml 文件
-      - name: Download gfw.yaml
-        run: curl -L -o gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.yaml
-
-      # 步骤4: 安装 mihomo 内核 (最终优化版)
-      # 精准过滤，只选择一个标准的 .gz 文件，并用 first 确保输出唯一
-      - name: Set up mihomo
+      - name: Download Mihomo
         run: |
           MIHOMO_VERSION="v1.19.11" # 可以根据需要修改 Mihomo 版本
           wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
           chmod +x mihomo
 
-      # 步骤5: 将 YAML 转换为 .mrs
-      - name: Convert YAML to .mrs
-        run: mihomo convert-ruleset domain yaml gfw.yaml ./autoupdate/gfw.mrs
+      - name: Create autoupdate directory if it doesn't exist
+        run: mkdir -p autoupdate
 
-      # 步骤6: 自动提交并推送到你的仓库
-      - name: Commit and push .mrs file
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: 自动更新 gfw.mrs 规则"
-          file_pattern: "./autoupdate/gfw.mrs"
-          commit_user_name: "github-actions[bot]"
-          commit_user_email: "github-actions[bot]@users.noreply.github.com"
-          commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+      - name: Download gfw.yaml
+        run: |
+          wget -O autoupdate/gfw.yaml https://github.com/ameyukisora/Clash-Rule/blob/master/autoupdate/gfw.yaml
+
+      - name: Convert gfw.yaml to gfw.mrs
+        run: |
+          ./mihomo convert-ruleset domain yaml autoupdate/gfw.yaml autoupdate/gfw.mrs
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add autoupdate/gfw.mrs
+          git commit -m "Update gfw.mrs" || echo "No changes to commit"
+          git push
