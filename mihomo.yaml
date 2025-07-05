@@ -1,19 +1,30 @@
-# ###############################################################
-# Mihomo (Clash.Meta) 配置文件 (最终修正版)
-# ###############################################################
+# Mihomo (Clash.Meta) 配置文件
 
 # ==> 定义可复用的 YAML 锚点
 x-anchors:
-  # 健康检查的配置内容
-  health-check-config: &health-check-config
-    enable: true
-    url: http://www.gstatic.com/generate_204
-    interval: 600
+  # 代理集合通用配置
+  proxy-providers-config: &proxy-providers-config
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 600
   
   # 规则提供商的通用配置
   rule-provider-config: &rule-provider-config
     type: http
     interval: 86400
+
+# ==> 代理集合 (Proxy Providers)
+proxy-providers:
+  subscription:
+    <<: *proxy-providers-config
+    # !!!重要!!! 请将下面的 url 替换为你的订阅链接
+    url: "https://example.com/your-sub-url.yaml" 
+    path: ./providers/subscription.yaml
+    # 节点过滤器
+    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|Y\w+|V\w+|GAME)).*$'
 
 # ==> 基础配置
 mixed-port: 8899
@@ -27,11 +38,10 @@ global-client-fingerprint: chrome
 # ==> DNS 配置
 dns:
   enable: true
-  listen: 0.0.0.0:1053
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter-mode: whitelist
   fake-ip-filter:
-    - 'rule-set:gfw'
+    - rule-set:gfw
   proxy-server-nameserver:
     - 114.114.114.114
   nameserver: [system]
@@ -50,20 +60,6 @@ dns:
       - 224.0.0.0/4
       - 240.0.0.0/4
       - 255.255.255.255/32
-
-# ==> 代理集合 (Proxy Providers)
-proxy-providers:
-  subscription:
-    type: http
-    # !!!重要!!! 请将下面的 url 替换为你的订阅链接
-    url: "https://example.com/your-sub-url.yaml" 
-    path: ./providers/subscription.yaml
-    interval: 86400
-    # 节点过滤器
-    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|Y\w+|V\w+|GAME)).*$'
-    # 正确的锚点用法: 先写 health-check 键，再在内部合并
-    health-check:
-      <<: *health-check-config
 
 # ==> 规则集合 (Rule Providers)
 # 使用了更紧凑的单行写法
