@@ -1,0 +1,175 @@
+# ###############################################################
+# Mihomo (Clash.Meta) 配置文件 (最终修正版)
+# ###############################################################
+
+# ==> 定义可复用的 YAML 锚点
+x-anchors:
+  # 健康检查的配置内容
+  health-check-config: &health-check-config
+    enable: true
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+  
+  # 规则提供商的通用配置
+  rule-provider-config: &rule-provider-config
+    type: http
+    interval: 86400
+
+# ==> 基础配置
+mixed-port: 8899
+allow-lan: false
+log-level: info
+mode: Rule
+ipv6: false
+unified-delay: true
+global-client-fingerprint: chrome
+
+# ==> DNS 配置
+dns:
+  enable: true
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - 'rule-set:gfw'
+  proxy-server-nameserver:
+    - 114.114.114.114
+  nameserver: [system]
+  fallback:
+    - https://223.6.6.6/dns-query
+    - https://120.53.53.53/dns-query
+  fallback-filter:
+    geoip: false
+    ipcidr:
+      - 0.0.0.0/8
+      - 10.0.0.0/8
+      - 100.64.0.0/10
+      - 127.0.0.0/8
+      - 172.16.0.0/12
+      - 192.168.0.0/16
+      - 224.0.0.0/4
+      - 240.0.0.0/4
+      - 255.255.255.255/32
+
+# ==> 代理集合 (Proxy Providers)
+proxy-providers:
+  subscription:
+    type: http
+    # !!!重要!!! 请将下面的 url 替换为你的订阅链接
+    url: "https://example.com/your-sub-url.yaml" 
+    path: ./providers/subscription.yaml
+    interval: 86400
+    # 节点过滤器
+    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|Y\w+|V\w+|GAME)).*$'
+    # 正确的锚点用法: 先写 health-check 键，再在内部合并
+    health-check:
+      <<: *health-check-config
+
+# ==> 规则集合 (Rule Providers)
+# 使用了更紧凑的单行写法
+rule-providers:
+  SpecialDirect: {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/SpecialDirect.yaml", path: ./rule_provider/SpecialDirect.yaml}
+  AdblockLite:   {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/AdblockLite.yaml", path: ./rule_provider/AdblockLite.yaml}
+  ExHentai:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/ExHentai.yaml", path: ./rule_provider/ExHentai.yaml}
+  JapanWeb:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/JapanWeb.yaml", path: ./rule_provider/JapanWeb.yaml}
+  NGA:           {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/NGA.yaml", path: ./rule_provider/NGA.yaml}
+  Steam:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Steam.yaml", path: ./rule_provider/Steam.yaml}
+  Telegram:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Telegram.yaml", path: ./rule_provider/Telegram.yaml}
+  AI:            {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/AI.yaml", path: ./rule_provider/AI.yaml}
+  Proxy:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml", path: ./rule_provider/Proxy.yaml}
+  gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.yaml", path: ./rule_provider/gfw.yaml}
+  cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.yaml", path: ./rule_provider/cn.yaml}
+
+# ==> 代理策略组 (Proxy Groups)
+proxy-groups:
+  - name: "🔰 节点选择"
+    type: select
+    include-all-providers: true
+    filter: '(港|HK|Hong Kong|日本|JP|Japan)'
+    proxies:
+      - ✈️ 其他节点
+
+  - name: "🌸 日区网站"
+    type: select
+    include-all-providers: true
+    filter: '(日本|JP|Japan)'
+    proxies:
+      - 🔰 节点选择
+
+  - name: "✈️ 其他节点"
+    type: select
+    include-all-providers: true
+    filter: '^(?!.*(港|HK|Hong Kong|日本|JP|Japan)).*$'
+    proxies:
+      - DIRECT
+
+  - name: "🖼️ EH图库"
+    type: select
+    include-all-providers: true
+    filter: '(摩尔多瓦|港|HK|Hong Kong)'
+    proxies:
+      - 🔰 节点选择
+      - ✈️ 其他节点
+
+  - name: "📜 NGA"
+    type: select
+    include-all-providers: true
+    filter: '^(?!.*(GAME)).*$'
+    proxies:
+      - DIRECT
+  
+  - name: "🎮 游戏平台"
+    type: select
+    include-all-providers: true
+    filter: '(港|HK|Hong Kong)'
+    proxies:
+      - DIRECT
+      - 🔰 节点选择
+  
+  - name: "📲 电报消息"
+    type: select
+    include-all-providers: true
+    filter: '^(?!.*(GAME)).*$'
+
+  - name: "🤖 AI"
+    type: select
+    include-all-providers: true
+    filter: '^(?!.*(港|HK|Hong Kong|GAME)).*$'
+
+  - name: "⛔ 广告拦截"
+    type: select
+    proxies:
+      - REJECT
+      - REJECT-DROP
+      - PASS
+      - DIRECT
+      - 🔰 节点选择
+
+  - name: "🎯 特殊直连"
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 3600
+    proxies:
+      - DIRECT
+
+  - name: "🐟 漏网之鱼"
+    type: url-test
+    url: "http://www.gstatic.com/generate_204"
+    interval: 3600
+    proxies:
+      - 🔰 节点选择
+
+# ==> 规则 (Rules)
+rules:
+  - RULE-SET,SpecialDirect,🎯 特殊直连
+  - RULE-SET,AdblockLite,⛔ 广告拦截
+  - RULE-SET,ExHentai,🖼️ EH图库
+  - RULE-SET,JapanWeb,🌸 日区网站
+  - RULE-SET,NGA,📜 NGA
+  - RULE-SET,Steam,🎮 游戏平台
+  - RULE-SET,Telegram,📲 电报消息
+  - RULE-SET,AI,🤖 AI
+  - RULE-SET,Proxy,🔰 节点选择
+  - RULE-SET,gfw,🔰 节点选择
+  - RULE-SET,cn,DIRECT
+  - MATCH,🐟 漏网之鱼
