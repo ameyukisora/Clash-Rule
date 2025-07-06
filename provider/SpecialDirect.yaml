@@ -23,7 +23,7 @@ payload:
   - DOMAIN-SUFFIX,msftconnecttest.com
 
   # > Microsoft Edge Sync
-  #- DOMAIN,edge.microsoft.com
+  - DOMAIN,edge.microsoft.com
   
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
