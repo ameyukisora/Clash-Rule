@@ -42,10 +42,8 @@ jobs:
           # 它会检查是否有文件被修改(M)或新增(A)
           if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
             echo "Changes detected in rule sets. Preparing to commit."
-            
             git add autoupdate/*.mrs
-            
-            git commit -m "Update mrs at $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            git commit -m "Update mrs at $(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
             git push
           else
             echo "No changes to commit."
