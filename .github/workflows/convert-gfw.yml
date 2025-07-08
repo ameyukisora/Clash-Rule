@@ -19,6 +19,9 @@ jobs:
           wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
           chmod +x mihomo
 
+      - name: Ignore mihomo executable
+        run: echo "mihomo" >> .gitignore # Add mihomo to .gitignore
+
       - name: Create autoupdate directory if it doesn't exist
         run: mkdir -p autoupdate
 
