@@ -1,51 +1,42 @@
-name: Convert YAML to MRS
+name: Update gfw.mrs
 
 on:
   schedule:
-    # 每天凌晨 00:00 UTC 运行
+    # 每天北京时间上午8点运行 (UTC时间0点)
     - cron: '0 0 * * *'
   workflow_dispatch: # 允许手动触发
 
 jobs:
-  convert:
+  update-gfw-mrs:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download Mihomo
-        run: |
-          MIHOMO_VERSION="v1.19.11" # 可以根据需要修改 Mihomo 版本
-          wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-amd64-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
-          chmod +x mihomo
-
-      - name: Ignore mihomo executable
-        run: echo "mihomo" >> .gitignore # Add mihomo to .gitignore
-
-      - name: Stage .gitignore if it's new or modified
-        # This will add .gitignore to the staging area so Git doesn't complain about it
-        run: git add .gitignore
-
-      - name: Create autoupdate directory if it doesn't exist
+      - name: Create autoupdate directory if not exists
         run: mkdir -p autoupdate
 
       - name: Download gfw.yaml
         run: |
-          wget -O autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
+          curl -sSL -o autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
+
+      - name: Download mihomo
+        run: |
+          MIHOMO_VERSION="v1.19.11" # 可以根据需要修改版本
+          ARCH="amd64" # 根据运行环境选择架构，例如 "arm64", "armv7", "386", "amd64"
+          wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-${ARCH}-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
+          chmod +x mihomo
 
       - name: Convert gfw.yaml to gfw.mrs
         run: |
           ./mihomo convert-ruleset domain yaml autoupdate/gfw.yaml autoupdate/gfw.mrs
 
-      - name: Commit and push changes
-        run: |
-          if [[ $(git status --porcelain) ]]; then
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[mrs]"
-            # Add all modified MRS files and also .gitignore if it was changed in this run
-            git add autoupdate/*.mrs
-            git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
-            git push
-          else
-            echo "No changes to commit."
-          fi
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto-update gfw.mrs (Updated at $(TZ=Asia/Shanghai date +'%Y-%m-%d %H:%M:%S'))"
+          file_pattern: "autoupdate/gfw.mrs"
+          # 如果需要，可以配置提交用户和邮箱
+          # commit_user_name: "GitHub Actions Bot"
+          # commit_user_email: "actions@github.com"
