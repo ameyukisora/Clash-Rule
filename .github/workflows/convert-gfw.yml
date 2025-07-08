@@ -1,13 +1,12 @@
-name: Update gfw.mrs
+name: Update Rule Sets
 
 on:
   schedule:
-    # 每天北京时间上午8点运行 (UTC时间0点)
-    - cron: '0 0 * * *'
-  workflow_dispatch: # 允许手动触发
+    - cron: '30 18 * * *'
+  workflow_dispatch: 
 
 jobs:
-  update-gfw-mrs:
+  update-rules:
     runs-on: ubuntu-latest
 
     steps:
@@ -17,28 +16,39 @@ jobs:
       - name: Create autoupdate directory if not exists
         run: mkdir -p autoupdate
 
-      - name: Download gfw.yaml
+      - name: Download source rule files
         run: |
+          # 下载 gfw 和 cn 的源文件
           curl -sSL -o autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
+          curl -sSL -o autoupdate/cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn.yaml
 
       - name: Download mihomo
         run: |
-          MIHOMO_VERSION="v1.19.11" # 可以根据需要修改版本
-          ARCH="amd64" # 根据运行环境选择架构，例如 "arm64", "armv7", "386", "amd64"
+          MIHOMO_VERSION="v1.19.11"
+          ARCH="amd64"
           wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-${ARCH}-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
           chmod +x mihomo
 
-      - name: Convert gfw.yaml to gfw.mrs
+      - name: Convert rules to .mrs format
         run: |
+          # 转换 gfw 规则
           ./mihomo convert-ruleset domain yaml autoupdate/gfw.yaml autoupdate/gfw.mrs
+          # 转换 cn 规则
+          ./mihomo convert-ruleset ipcidr yaml autoupdate/cn.yaml autoupdate/cn.mrs
 
-      - name: Commit and push changes
+      - name: Commit and push changes if any
         run: |
-          if [[ $(git status --porcelain autoupdate/gfw.mrs) ]]; then
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          
+          # 关键改动：这里的判断条件只关注 autoupdate 目录下的 .mrs 文件
+          # 它会检查是否有文件被修改(M)或新增(A)
+          if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
+            echo "Changes detected in rule sets. Preparing to commit."
+            
             git add autoupdate/*.mrs
-            git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
+            
+            git commit -m "Update mrs at $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
             git push
           else
             echo "No changes to commit."
