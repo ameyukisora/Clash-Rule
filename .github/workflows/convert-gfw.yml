@@ -22,6 +22,10 @@ jobs:
       - name: Ignore mihomo executable
         run: echo "mihomo" >> .gitignore # Add mihomo to .gitignore
 
+      - name: Stage .gitignore if it's new or modified
+        # This will add .gitignore to the staging area so Git doesn't complain about it
+        run: git add .gitignore
+
       - name: Create autoupdate directory if it doesn't exist
         run: mkdir -p autoupdate
 
@@ -38,6 +42,7 @@ jobs:
           if [[ $(git status --porcelain) ]]; then
             git config --local user.email "github-actions[bot]@users.noreply.github.com"
             git config --local user.name "github-actions[mrs]"
+            # Add all modified MRS files and also .gitignore if it was changed in this run
             git add autoupdate/*.mrs
             git commit -m "$(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
             git push
