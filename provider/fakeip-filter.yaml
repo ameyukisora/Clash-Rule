@@ -1,0 +1,66 @@
+payload:
+  # Local Network & Reserved Domains (局域网和保留域名)
+  - '*.lan'
+  - '*.local'
+  - '*.localdomain'
+  - '*.localhost'
+  - '*.home.arpa'
+  - '*.example'
+  - '*.invalid'
+  - '*.test'
+  - localhost.ptlogin2.qq.com
+
+  # NTP (时间同步服务)
+  - 'time.*.com'
+  - 'time.*.gov'
+  - 'time.*.edu.cn'
+  - 'time.*.apple.com'
+  - 'ntp.*.com'
+  - '*.time.edu.cn'
+  - '*.ntp.org.cn'
+  - ntp.ubuntu.com
+  - ntp.nasa.gov
+  - time.ustc.edu.cn
+  - '+.pool.ntp.org'
+  - '*.openwrt.pool.ntp.org'
+
+  # STUN / Teredo / NAT Traversal (NAT穿透)
+  - 'stun.*.*'
+  - 'stun.*.*.*'
+  - 'teredo.*.*'
+  - 'teredo.*.*.*'
+  - stun.services.mozilla1.com
+  - '+.stun.playstation.net'
+
+  # Microsoft & Connectivity Check (微软和网络连通性检查)
+  - '*.msftconnecttest.com'
+  - '*.msftncsi.com'
+  - '*.ipv6.microsoft.com'
+
+  # Game (游戏)
+  - '+.wargaming.net'
+  - '+.wggames.cn'
+  - '+.wowsgame.cn'
+  - '+.wotgame.cn'
+  - '*.*.xboxlive.com'
+  - 'xbox.*.*.microsoft.com'
+
+  # Music Streaming (音乐流媒体)
+  - '*.music.163.com'
+  - '*.126.net' # NetEase
+  - '*.y.qq.com'
+  - streamoc.music.tc.qq.com
+  - mobileoc.music.tc.qq.com
+  - isure.stream.qqmusic.qq.com
+  - dl.stream.qqmusic.qq.com
+  - aqqmusic.tc.qq.com
+  - amobile.music.tc.qq.com
+
+  # Video Streaming (视频流媒体)
+  - api.bilibili.com
+  - www.bilibili.com
+  - a.w.bilicdn1.com
+
+  # Others (其他)
+  - '*.market.xiaomi.com'
+  - '*.congyusub.top'
