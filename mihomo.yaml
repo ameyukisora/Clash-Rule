@@ -24,13 +24,13 @@ proxy-providers:
     url: "https://example.com/your-sub-url.yaml" 
     path: ./providers/subscription.yaml
     # 节点过滤器
-    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|Y\w+|V\w+|GAME)).*$'
+    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|GAME)).*$'
 
 # ==> 基础配置
 mixed-port: 8899
 allow-lan: false
 log-level: info
-mode: Rule
+mode: rule
 ipv6: false
 unified-delay: true
 global-client-fingerprint: chrome
@@ -39,27 +39,12 @@ global-client-fingerprint: chrome
 dns:
   enable: true
   enhanced-mode: fake-ip
-  fake-ip-filter-mode: whitelist
   fake-ip-filter:
-    - rule-set:gfw
+    - rule-set:fakeip-filter
   proxy-server-nameserver:
     - 114.114.114.114
-  nameserver: [system]
-  fallback:
-    - https://223.6.6.6/dns-query
-    - https://120.53.53.53/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr:
-      - 0.0.0.0/8
-      - 10.0.0.0/8
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 172.16.0.0/12
-      - 192.168.0.0/16
-      - 224.0.0.0/4
-      - 240.0.0.0/4
-      - 255.255.255.255/32
+  nameserver: 
+    - system
 
 # ==> 规则集合 (Rule Providers)
 # 使用了更紧凑的单行写法
@@ -73,8 +58,9 @@ rule-providers:
   Telegram:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Telegram.yaml", path: ./rule_provider/Telegram.yaml}
   AI:            {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/AI.yaml", path: ./rule_provider/AI.yaml}
   Proxy:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml", path: ./rule_provider/Proxy.yaml}
-  gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.yaml", path: ./rule_provider/gfw.yaml}
-  cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.yaml", path: ./rule_provider/cn.yaml}
+  gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.mrs", path: ./rule_provider/gfw.mrs, format: mrs}
+  cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs", path: ./rule_provider/cn.mrs, format: mrs}
+  fakeip-filter: {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/fakeip-filter.yaml", path: ./rule_provider/fakeip-filter.yaml}
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
@@ -89,8 +75,6 @@ proxy-groups:
     type: select
     include-all-providers: true
     filter: '(日本|JP|Japan)'
-    proxies:
-      - 🔰 节点选择
 
   - name: "✈️ 其他节点"
     type: select
