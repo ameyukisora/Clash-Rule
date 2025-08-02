@@ -20,6 +20,7 @@ jobs:
         run: |
           curl -sSL -o autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
           curl -sSL -o autoupdate/cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn.yaml
+          curl -sSL -o autoupdate/cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn_v6.yaml
           curl -sSL -o autoupdate/cndomain.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cndomain.yaml
 
       - name: Download mihomo
@@ -33,6 +34,7 @@ jobs:
         run: |
           ./mihomo convert-ruleset domain yaml autoupdate/gfw.yaml autoupdate/gfw.mrs
           ./mihomo convert-ruleset ipcidr yaml autoupdate/cn.yaml autoupdate/cn.mrs
+          ./mihomo convert-ruleset ipcidr yaml autoupdate/cn.yaml autoupdate/cn_v6.mrs
           ./mihomo convert-ruleset domain yaml autoupdate/cndomain.yaml autoupdate/cndomain.mrs
 
       - name: Commit and push changes if any
