@@ -38,6 +38,7 @@ global-client-fingerprint: chrome
 # ==> DNS 配置
 dns:
   enable: true
+  cache-algorithm: arc
   enhanced-mode: fake-ip
   fake-ip-filter:
     - "rule-set:fakeip-filter"
