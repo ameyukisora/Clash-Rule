@@ -12,7 +12,7 @@ mixin:
     #strict-route: true # 启用会导致机械革命控制台失效
     auto-detect-interface: true
   dns:
-    #cache-algorithm: arc
+    cache-algorithm: arc
     enable: true
     enhanced-mode: fake-ip
     fake-ip-filter-mode: whitelist
