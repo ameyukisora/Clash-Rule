@@ -24,7 +24,13 @@ payload:
 
   # > Microsoft Edge Sync
   - DOMAIN,edge.microsoft.com
-  
+
+  # > Microsoft
+  - DOMAIN-SUFFIX,office.net
+  - DOMAIN-SUFFIX,microsoft.com
+  - DOMAIN-SUFFIX,msn.com
+  - DOMAIN-SUFFIX,msn.cn
+
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
   - DOMAIN-SUFFIX,ntp.org.cn
