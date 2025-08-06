@@ -32,6 +32,8 @@ payload:
   - DOMAIN-SUFFIX,msn.cn
   - DOMAIN-SUFFIX,nelreports.net
   - DOMAIN-SUFFIX,office.com
+  - DOMAIN-SUFFIX,client.wns.windows.com
+  - DOMAIN-SUFFIX,activity.windows.com
 
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
