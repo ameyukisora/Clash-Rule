@@ -43,6 +43,7 @@ payload:
   - '+.worldoftanks.*'
   - '*.*.xboxlive.com'
   - 'xbox.*.*.microsoft.com'
+  - registry.npmmirror.com
 
   # Music Streaming (音乐流媒体)
   - '*.music.163.com'
@@ -64,3 +65,4 @@ payload:
   - '*.market.xiaomi.com'
 
   - '*.congyusub.top'
+
