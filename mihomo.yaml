@@ -39,24 +39,12 @@ dns:
   enable: true
   cache-algorithm: arc
   enhanced-mode: fake-ip
-  fake-ip-filter-mode: whitelist
   fake-ip-filter:
-    - "rule-set:gfw"
+    - "rule-set:fakeip-filter"
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query#h3=true
   nameserver: 
     - system
-  fallback: 
-    - https://dns.alidns.com/dns-query#h3=true
-    - https://120.53.53.53/dns-query
-  fallback-filter:
-    geoip: false
-    ipcidr: 
-      - 0.0.0.0/32
-      - 100.64.0.0/10
-      - 127.0.0.0/8
-      - 240.0.0.0/4
-      - 255.255.255.255/32
 
 # ==> 规则集合 (Rule Providers)
 # 使用了更紧凑的单行写法
@@ -72,6 +60,7 @@ rule-providers:
   Proxy:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml", path: ./rule_provider/Proxy.yaml}
   gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.mrs", path: ./rule_provider/gfw.mrs, format: mrs}
   cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs", path: ./rule_provider/cn.mrs, format: mrs}
+  fakeip-filter: {<<: *rule-provider-config, behavior: domain, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/fakeip-filter.yaml", path: ./rule_provider/fakeip-filter.yaml}
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
