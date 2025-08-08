@@ -39,9 +39,8 @@ payload:
 
   # Game (游戏)
   - '+.wargaming.net'
-  - '+.wggames.cn'
-  - '+.wowsgame.cn'
-  - '+.wotgame.cn'
+  - '+.worldofwarships.*'
+  - '+.worldoftanks.*'
   - '*.*.xboxlive.com'
   - 'xbox.*.*.microsoft.com'
 
@@ -63,4 +62,5 @@ payload:
 
   # Others (其他)
   - '*.market.xiaomi.com'
+
   - '*.congyusub.top'
