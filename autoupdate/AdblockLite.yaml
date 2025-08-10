@@ -1,8 +1,8 @@
 payload:
   # Merged ACL4SSR: BanAD, BanProgramAD
-  # 2025-03-30 02:10:29
-  # DOMAIN-SUFFIX:1550, DOMAIN-KEYWORD:25, DOMAIN:10, IP-CIDR:19
-  # TOTAL: 1604
+  # 2025-08-11 02:12:31
+  # DOMAIN-SUFFIX:1549, IP-CIDR:19, DOMAIN-KEYWORD:25, DOMAIN:10
+  # TOTAL: 1603
   - DOMAIN,adsmind.apdcdn.tc.qq.com
   - DOMAIN,adsmind.gdtimg.com
   - DOMAIN,adsmind.tc.qq.com
@@ -1518,7 +1518,6 @@ payload:
   - DOMAIN-SUFFIX,wqmobile.com
   - DOMAIN-SUFFIX,wrating.com
   - DOMAIN-SUFFIX,ws.progrss.yahoo.com
-  - DOMAIN-SUFFIX,wtradv.market.xiaomi.com
   - DOMAIN-SUFFIX,wumii.cn
   - DOMAIN-SUFFIX,wwads.cn
   - DOMAIN-SUFFIX,wwis-dubc1-vip60.adobe.com
