@@ -1,6 +1,6 @@
 payload:
-  # 2025-08-13 02:14:40
-  # TOTAL: 5875 urls
+  # 2025-08-14 02:14:19
+  # TOTAL: 5879 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -540,6 +540,7 @@ payload:
   - '+.biliworld.com'
   - '+.billypan.com'
   - '+.binance.com'
+  - '+.binance.org'
   - '+.binancezh.cc'
   - '+.binux.me'
   - '+.bird.so'
@@ -2667,6 +2668,7 @@ payload:
   - '+.indiemerch.com'
   - '+.inews-api.tvb.com'
   - '+.info-graf.fr'
+  - '+.infura.io'
   - '+.inherit.live'
   - '+.initiativesforchina.org'
   - '+.inkbunny.net'
@@ -3091,6 +3093,7 @@ payload:
   - '+.lsxszzg.com'
   - '+.ltn.com.tw'
   - '+.luckydesigner.space'
+  - '+.luckymobile.ca'
   - '+.ludepress.com'
   - '+.luke54.com'
   - '+.luke54.org'
@@ -3213,6 +3216,7 @@ payload:
   - '+.messenger.com'
   - '+.meta.com'
   - '+.metafilter.com'
+  - '+.metamask.io'
   - '+.metart.com'
   - '+.metarthunter.com'
   - '+.meteorshowersonline.com'
