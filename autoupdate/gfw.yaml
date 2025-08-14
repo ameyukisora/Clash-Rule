@@ -1,6 +1,6 @@
 payload:
-  # 2025-08-14 02:14:19
-  # TOTAL: 5879 urls
+  # 2025-08-15 02:14:11
+  # TOTAL: 5882 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -514,6 +514,7 @@ payload:
   - '+.bet365.com'
   - '+.betaclouds.net'
   - '+.betfair.com'
+  - '+.betterhash.net'
   - '+.betternet.co'
   - '+.bettervpn.com'
   - '+.bettween.com'
@@ -2372,6 +2373,7 @@ payload:
   - '+.heqinglian.net'
   - '+.heritage.org'
   - '+.herokuapp.com'
+  - '+.herominers.com'
   - '+.hexieshe.com'
   - '+.hexieshe.xyz'
   - '+.hexxeh.net'
@@ -2742,6 +2744,7 @@ payload:
   - '+.itaiwan.gov.tw'
   - '+.italiatibet.org'
   - '+.itasoftware.com'
+  - '+.itch.io'
   - '+.itemdb.com'
   - '+.itemfix.com'
   - '+.ithelp.ithome.com.tw'
