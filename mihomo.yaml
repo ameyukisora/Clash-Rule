@@ -126,11 +126,10 @@ proxy-groups:
       - 🔰 节点选择
 
   - name: "🐟 漏网之鱼"
-    type: url-test
-    url: "http://www.gstatic.com/generate_204"
-    interval: 3600
+    type: select
     proxies:
       - 🔰 节点选择
+    hidden: true
 
 # ==> 规则 (Rules)
 rules:
