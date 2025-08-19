@@ -1,6 +1,6 @@
 payload:
-  # 2025-08-19 02:14:29
-  # TOTAL: 5886 urls
+  # 2025-08-20 02:13:29
+  # TOTAL: 5890 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1273,6 +1273,7 @@ payload:
   - '+.demo.unlock-music.dev'
   - '+.democrats.org'
   - '+.demosisto.hk'
+  - '+.deno.dev'
   - '+.depositphotos.com'
   - '+.desc.se'
   - '+.desipro.de'
@@ -1341,6 +1342,7 @@ payload:
   - '+.doc.new'
   - '+.docker.com'
   - '+.docker.io'
+  - '+.docs.deno.com'
   - '+.docs.new'
   - '+.doctorvoice.org'
   - '+.documentingreality.com'
@@ -1863,6 +1865,7 @@ payload:
   - '+.furbo.org'
   - '+.furhhdl.org'
   - '+.furinkan.com'
+  - '+.furrybar.com'
   - '+.futurechinaforum.org'
   - '+.futuremessage.org'
   - '+.fux.com'
@@ -3442,6 +3445,7 @@ payload:
   - '+.nationsonline.org'
   - '+.nationwide.com'
   - '+.naughtyamerica.com'
+  - '+.naver.com'
   - '+.navyfamily.navy.mil'
   - '+.navyreserve.navy.mil'
   - '+.naweeklytimes.com'
