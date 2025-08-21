@@ -59,14 +59,7 @@ rule-providers:
   Proxy:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml", path: ./rule_provider/Proxy.yaml}
   gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.mrs", path: ./rule_provider/gfw.mrs, format: mrs}
   cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs", path: ./rule_provider/cn.mrs, format: mrs}
-  cn_v6:         {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn_v6.mrs", path: ./rule_provider/cn_v6.mrs, format: mrs}
   fakeip-filter: {<<: *rule-provider-config, behavior: domain, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/fakeip-filter.yaml", path: ./rule_provider/fakeip-filter.yaml}
-
-proxies:
-  - name: "direct"
-    type: direct
-    udp: true
-    ip-version: ipv6-prefer
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
@@ -87,7 +80,7 @@ proxy-groups:
     include-all-providers: true
     filter: '^(?!.*(港|HK|Hong Kong|日本|JP|Japan)).*$'
     proxies:
-      - direct
+      - DIRECT
 
   - name: "🖼️ EH图库"
     type: select
@@ -102,14 +95,14 @@ proxy-groups:
     include-all-providers: true
     filter: '^(?!.*(GAME)).*$'
     proxies:
-      - direct
+      - DIRECT
   
   - name: "🎮 游戏平台"
     type: select
     include-all-providers: true
     filter: '(港|HK|Hong Kong)'
     proxies:
-      - direct
+      - DIRECT
       - 🔰 节点选择
   
   - name: "📲 电报消息"
@@ -131,12 +124,6 @@ proxy-groups:
       - DIRECT
       - 🔰 节点选择
 
-  - name: "直连"
-    type: select
-    proxies:
-      - direct
-    hidden: true
-
   - name: "♾️"
     type: select
     proxies:
@@ -145,7 +132,7 @@ proxy-groups:
 
 # ==> 规则 (Rules)
 rules:
-  - RULE-SET,SpecialDirect,直连
+  - RULE-SET,SpecialDirect,DIRECT
   - RULE-SET,AWAvenue-Ads-Rule,⛔ 广告拦截
   - RULE-SET,ExHentai,🖼️ EH图库
   - RULE-SET,JapanWeb,🌸 日区网站
@@ -155,6 +142,5 @@ rules:
   - RULE-SET,AI,🤖 AI
   - RULE-SET,Proxy,🔰 节点选择
   - RULE-SET,gfw,🔰 节点选择
-  - RULE-SET,cn_v6,直连
-  - RULE-SET,cn,直连
+  - RULE-SET,cn,DIRECT
   - MATCH,♾️
