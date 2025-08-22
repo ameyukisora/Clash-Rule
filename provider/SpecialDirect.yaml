@@ -87,9 +87,6 @@ payload:
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
 
-  # > Immersive Translate
-  - DOMAIN-SUFFIX,immersivetranslate.com
-
   # > NGA
   - DOMAIN,img4.nga.178.com
   - DOMAIN,img.nga.178.com
