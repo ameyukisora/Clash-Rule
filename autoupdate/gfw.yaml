@@ -1,6 +1,6 @@
 payload:
-  # 2025-08-24 02:11:07
-  # TOTAL: 5893 urls
+  # 2025-08-25 02:11:43
+  # TOTAL: 5895 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1855,6 +1855,8 @@ payload:
   - '+.ftx.com'
   - '+.fucd.com'
   - '+.fuchsia.dev'
+  - '+.fuckccp.com'
+  - '+.fuckccp.xyz'
   - '+.fuckgfw.org'
   - '+.fulione.com'
   - '+.fullerconsideration.com'
