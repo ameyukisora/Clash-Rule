@@ -1,6 +1,6 @@
 payload:
-  # 2025-09-06 02:12:38
-  # TOTAL: 5897 urls
+  # 2025-09-07 02:10:48
+  # TOTAL: 5900 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -738,6 +738,8 @@ payload:
   - '+.bsky.app'
   - '+.bsky.network'
   - '+.bsky.social'
+  - '+.bt4g.org'
+  - '+.bt4gprx.com'
   - '+.bt95.com'
   - '+.btaia.com'
   - '+.btbit.net'
@@ -4684,6 +4686,7 @@ payload:
   - '+.talkonly.net'
   - '+.tanc.org'
   - '+.tangren.us'
+  - '+.tanks.gg'
   - '+.taoism.net'
   - '+.tapanwap.com'
   - '+.tapatalk.com'
