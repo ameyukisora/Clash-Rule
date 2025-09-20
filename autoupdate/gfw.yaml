@@ -1,6 +1,6 @@
 payload:
-  # 2025-09-20 02:12:41
-  # TOTAL: 5904 urls
+  # 2025-09-21 02:10:51
+  # TOTAL: 5908 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -1907,6 +1907,7 @@ payload:
   - '+.gardennetworks.com'
   - '+.gardennetworks.org'
   - '+.gartlive.com'
+  - '+.garudalinux.org'
   - '+.gate.io'
   - '+.gatecoin.com'
   - '+.gather.com'
@@ -1982,6 +1983,7 @@ payload:
   - '+.githubassets.com'
   - '+.githubcopilot.com'
   - '+.githubusercontent.com'
+  - '+.gitlab.com'
   - '+.gitlab.net'
   - '+.gizlen.net'
   - '+.gjczz.com'
@@ -3563,6 +3565,7 @@ payload:
   - '+.ninjacloak.com'
   - '+.ninjaproxy.ninja'
   - '+.nintendium.com'
+  - '+.nirsoft.net'
   - '+.nitter.cc'
   - '+.nitter.net'
   - '+.niu.moe'
@@ -5398,6 +5401,7 @@ payload:
   - '+.vpnworldwide.com'
   - '+.vporn.com'
   - '+.vpser.net'
+  - '+.vpsxb.net'
   - '+.vraiesagesse.net'
   - '+.vrchat.com'
   - '+.vrmtr.com'
