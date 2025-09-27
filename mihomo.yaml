@@ -24,7 +24,7 @@ proxy-providers:
     url: "https://example.com/your-sub-url.yaml" 
     path: ./providers/subscription.yaml
     # 节点过滤器
-    filter: '^(?!.*(官|流量|Traffic|Expire|自动更新订阅|\.org|GAME)).*$'
+    exclude-filter: "官|流量|Traffic|Expire|自动更新订阅"
 
 # ==> 基础配置
 mixed-port: 8899
@@ -41,8 +41,6 @@ dns:
   enhanced-mode: fake-ip
   fake-ip-filter:
     - "rule-set:fakeip-filter"
-  proxy-server-nameserver:
-    - https://dns.alidns.com/dns-query#h3=true
   nameserver: 
     - system
 
