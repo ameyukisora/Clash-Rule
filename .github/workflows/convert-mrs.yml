@@ -2,53 +2,79 @@ name: Update .mrs
 
 on:
   schedule:
-    - cron: '30 18 * * *'
-  workflow_dispatch: 
+    - cron: '30 18 * * *'  # UTC 时间，对应北京时间 02:30
+  workflow_dispatch:
 
 jobs:
   update-rules:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest  # 使用 Windows 环境
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Create autoupdate directory if not exists
-        run: mkdir -p autoupdate
+        run: |
+          if not exist autoupdate mkdir autoupdate
+        shell: cmd
 
       - name: Download source rule files
         run: |
-          curl -sSL -o autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
-          curl -sSL -o autoupdate/cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn.yaml
-          curl -sSL -o autoupdate/cn_v6.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn_v6.yaml
-          curl -sSL -o autoupdate/cndomain.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cndomain.yaml
+          curl -sSL -o autoupdate\gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
+          curl -sSL -o autoupdate\cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn.yaml
+          curl -sSL -o autoupdate\cn_v6.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn_v6.yaml
+          curl -sSL -o autoupdate\cndomain.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cndomain.yaml
+        shell: pwsh
 
-      - name: Download mihomo
+      - name: Get latest mihomo release version
+        id: get_version
         run: |
-          MIHOMO_VERSION="v1.19.11"
-          ARCH="amd64"
-          wget -qO- "https://github.com/MetaCubeX/mihomo/releases/download/${MIHOMO_VERSION}/mihomo-linux-${ARCH}-${MIHOMO_VERSION}.gz" | gzip -d > mihomo
-          chmod +x mihomo
+          $latest = (Invoke-RestMethod -Uri "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest")
+          $version = $latest.tag_name
+          echo "latest_version=$version" >> $env:GITHUB_OUTPUT
+        shell: pwsh
+
+      - name: Download and extract mihomo for Windows
+        run: |
+          $version = "${{ steps.get_version.outputs.latest_version }}"
+          $url = "https://github.com/MetaCubeX/mihomo/releases/download/${version}/mihomo-windows-amd64-${version}.gz"
+          Invoke-WebRequest -Uri $url -OutFile "mihomo.exe.gz"
+          # 使用 PowerShell 解压 .gz（需 .NET 的 GZipStream）
+          $input = [System.IO.File]::OpenRead("mihomo.exe.gz")
+          $output = [System.IO.File]::Create("mihomo.exe")
+          $gzip = New-Object System.IO.Compression.GZipStream($input, [System.IO.Compression.CompressionMode]::Decompress)
+          $buffer = New-Object byte[](1024)
+          while (($read = $gzip.Read($buffer, 0, $buffer.Length)) -gt 0) {
+              $output.Write($buffer, 0, $read)
+          }
+          $gzip.Dispose()
+          $input.Dispose()
+          $output.Dispose()
+          Remove-Item "mihomo.exe.gz"
+        shell: pwsh
 
       - name: Convert rules to .mrs format
         run: |
-          ./mihomo convert-ruleset domain yaml autoupdate/gfw.yaml autoupdate/gfw.mrs
-          ./mihomo convert-ruleset ipcidr yaml autoupdate/cn.yaml autoupdate/cn.mrs
-          ./mihomo convert-ruleset ipcidr yaml autoupdate/cn_v6.yaml autoupdate/cn_v6.mrs
-          ./mihomo convert-ruleset domain yaml autoupdate/cndomain.yaml autoupdate/cndomain.mrs
+          .\mihomo.exe convert-ruleset domain yaml autoupdate\gfw.yaml autoupdate\gfw.mrs
+          .\mihomo.exe convert-ruleset ipcidr yaml autoupdate\cn.yaml autoupdate\cn.mrs
+          .\mihomo.exe convert-ruleset ipcidr yaml autoupdate\cn_v6.yaml autoupdate\cn_v6.mrs
+          .\mihomo.exe convert-ruleset domain yaml autoupdate\cndomain.yaml autoupdate\cndomain.mrs
+        shell: pwsh
 
       - name: Commit and push changes if any
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          
-          # 这里的判断条件只关注 autoupdate 目录下的 .mrs 文件
-          # 它会检查是否有文件被修改(M)或新增(A)
-          if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
-            echo "Changes detected in rule sets. Preparing to commit."
-            git add autoupdate/*.mrs
-            git commit -m "Update mrs at $(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
+
+          # 检查 autoupdate 目录下是否有 .mrs 文件被修改或新增
+          $status = git status --porcelain autoupdate\*.mrs
+          if ($status) {
+            Write-Host "Changes detected in rule sets. Preparing to commit."
+            git add autoupdate\*.mrs
+            $date = (Get-Date).AddHours(8).ToString("yyyy-MM-dd HH:mm:ss")
+            git commit -m "Update mrs at $date"
             git push
-          else
-            echo "No changes to commit."
-          fi
+          } else {
+            Write-Host "No changes to commit."
+          }
+        shell: pwsh
