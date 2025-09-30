@@ -43,18 +43,27 @@ jobs:
         shell: pwsh
         run: |
           $zipPath = "mihomo.zip"
-          $exePath = "mihomo.exe"
           Invoke-WebRequest -Uri "${{ steps.get_latest_release.outputs.asset_url }}" -OutFile $zipPath
           Expand-Archive -Path $zipPath -DestinationPath . -Force
-          if (Test-Path "mihomo.exe") {
-            Write-Host "mihomo.exe found in root."
-          } elseif (Test-Path "mihomo/mihomo.exe") {
-            Move-Item "mihomo/mihomo.exe" .
-            Remove-Item "mihomo" -Recurse -Force
-          } else {
-            Write-Error "mihomo.exe not found after extraction."
+
+          # 查找解压后以 "mihomo-windows-amd64" 开头的 .exe 文件
+          $exeFiles = Get-ChildItem -Path . -Filter "mihomo-windows-amd64*.exe"
+          if ($exeFiles.Count -eq 0) {
+            Write-Error "No mihomo-windows-amd64*.exe found after extraction."
             exit 1
           }
+
+          # 取第一个匹配的文件（通常只有一个）
+          $sourceExe = $exeFiles[0].FullName
+          $targetExe = "mihomo.exe"
+
+          Write-Host "Found: $sourceExe"
+          Write-Host "Renaming to: $targetExe"
+          Move-Item -Path $sourceExe -Destination $targetExe -Force
+
+          # 清理 zip 和可能的多余文件
+          Remove-Item $zipPath -Force
+          # 如果有 LICENSE/README 等，也可选择保留或删除，不影响
 
       - name: Convert rules to .mrs format
         run: |
