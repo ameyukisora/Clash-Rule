@@ -25,30 +25,36 @@ jobs:
           curl -sSL -o autoupdate/cndomain.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cndomain.yaml
         shell: bash
 
-      - name: Get latest mihomo release info (Windows amd64 .zip)
+      - name: Get latest mihomo release info
         id: get_latest_release
+        shell: pwsh
         run: |
           $latest = Invoke-RestMethod -Uri "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest"
           $version = $latest.tag_name
-          # Look for mihomo-windows-amd64-*.zip
-          $asset = $latest.assets | Where-Object { $_.name -match "mihomo-windows-amd64.*\.zip$" } | Select-Object -First 1
+          $asset = $latest.assets | Where-Object { $_.name -like "*windows-amd64*.zip" } | Select-Object -First 1
           if (-not $asset) {
             Write-Error "No Windows amd64 .zip asset found in latest release."
             exit 1
           }
           Write-Output "version=$version" >> $env:GITHUB_OUTPUT
           Write-Output "asset_url=$($asset.browser_download_url)" >> $env:GITHUB_OUTPUT
-        shell: pwsh
 
-      - name: Download and extract mihomo (Windows .zip)
+      - name: Download and extract mihomo for Windows
+        shell: pwsh
         run: |
-          curl -sSL -o mihomo.zip "${{ steps.get_latest_release.outputs.asset_url }}"
-          # Extract using 7z (available on Windows runners)
-          7z x mihomo.zip -omihomo_temp > /dev/null
-          # Find the .exe file (usually just "mihomo.exe")
-          mv mihomo_temp/mihomo.exe ./mihomo.exe
-          rm -rf mihomo_temp mihomo.zip
-        shell: bash
+          $zipPath = "mihomo.zip"
+          $exePath = "mihomo.exe"
+          Invoke-WebRequest -Uri "${{ steps.get_latest_release.outputs.asset_url }}" -OutFile $zipPath
+          Expand-Archive -Path $zipPath -DestinationPath . -Force
+          if (Test-Path "mihomo.exe") {
+            Write-Host "mihomo.exe found in root."
+          } elseif (Test-Path "mihomo/mihomo.exe") {
+            Move-Item "mihomo/mihomo.exe" .
+            Remove-Item "mihomo" -Recurse -Force
+          } else {
+            Write-Error "mihomo.exe not found after extraction."
+            exit 1
+          }
 
       - name: Convert rules to .mrs format
         run: |
