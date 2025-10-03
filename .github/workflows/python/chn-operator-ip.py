@@ -33,8 +33,8 @@ def generate_yaml_content(ips: List[str], timestamp: str) -> str:
     ip_entries = "\n".join(f'  - "{ip}"' for ip in ips)
     return f"""payload:
   # https://github.com/gaoyifan/china-operator-ip
-  # 更新时间: {timestamp}
-  # 条目总数: {len(ips)}
+  # {timestamp}
+  # Total: {len(ips)}
 {ip_entries}
 """
 
@@ -62,3 +62,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
