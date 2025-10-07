@@ -1,6 +1,6 @@
 payload:
-  # 2025-10-07 02:13:36
-  # TOTAL: 5915 urls
+  # 2025-10-08 02:13:38
+  # TOTAL: 5916 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -5321,6 +5321,7 @@ payload:
   - '+.vilanet.me'
   - '+.vilavpn.com'
   - '+.vimeo.com'
+  - '+.vimeocdn.com'
   - '+.vimperator.org'
   - '+.vincnd.com'
   - '+.vine.co'
