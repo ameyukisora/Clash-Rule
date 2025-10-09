@@ -48,8 +48,8 @@ dns:
 
 # ==> 规则集合 (Rule Providers)
 rule-providers:
-  SpecialDirect: {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/SpecialDirect.yaml", path: ./rule_provider/SpecialDirect.yaml}
   AWAvenue-Ads-Rule: {<<: *rule-provider-config, behavior: domain, url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml", path: ./rule_provider/AWAvenue-Ads-Rule.yaml}
+  SpecialDirect: {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/SpecialDirect.yaml", path: ./rule_provider/SpecialDirect.yaml}
   ExHentai:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/ExHentai.yaml", path: ./rule_provider/ExHentai.yaml}
   JapanWeb:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/JapanWeb.yaml", path: ./rule_provider/JapanWeb.yaml}
   NGA:           {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/NGA.yaml", path: ./rule_provider/NGA.yaml}
