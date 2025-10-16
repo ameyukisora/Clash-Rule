@@ -1,6 +1,6 @@
 payload:
-  # 2025-10-16 02:14:22
-  # TOTAL: 5919 urls
+  # 2025-10-17 02:13:53
+  # TOTAL: 5922 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -366,6 +366,7 @@ payload:
   - '+.asiaharvest.org'
   - '+.asianage.com'
   - '+.asianews.it'
+  - '+.asianfanfics.com'
   - '+.asiansexdiary.com'
   - '+.asiaone.com'
   - '+.asiatgp.com'
@@ -5016,6 +5017,7 @@ payload:
   - '+.trtc.com.tw'
   - '+.truebuddha-md.org'
   - '+.trulyergonomic.com'
+  - '+.trustwallet.com'
   - '+.truthsocial.com'
   - '+.truveo.com'
   - '+.tryheart.jp'
@@ -5845,6 +5847,7 @@ payload:
   - '+.z-lib.gl'
   - '+.z-lib.io'
   - '+.z-lib.org'
+  - '+.z-library.ec'
   - '+.z-library.sk'
   - '+.zacebook.com'
   - '+.zalmos.com'
