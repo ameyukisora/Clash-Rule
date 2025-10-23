@@ -81,6 +81,3 @@ payload:
   # > NGA
   - DOMAIN,img4.nga.178.com
   - DOMAIN,img.nga.178.com
-
-  # > Hugging Face
-  - DOMAIN-SUFFIX,hf.co
