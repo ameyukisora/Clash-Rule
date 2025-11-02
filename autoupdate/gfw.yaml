@@ -1,6 +1,6 @@
 payload:
-  # 2025-11-02 02:11:30
-  # TOTAL: 5924 urls
+  # 2025-11-03 02:11:23
+  # TOTAL: 5925 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -4756,6 +4756,7 @@ payload:
   - '+.telesco.pe'
   - '+.tellapart.com'
   - '+.tellme.pw'
+  - '+.temu.com'
   - '+.tenacy.com'
   - '+.tenor.com'
   - '+.tensorflow.org'
