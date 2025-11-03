@@ -132,8 +132,8 @@ proxy-groups:
 
 # ==> 规则 (Rules)
 rules:
-  - RULE-SET,SpecialDirect,DIRECT
   - RULE-SET,AWAvenue-Ads-Rule,⛔ 广告拦截
+  - RULE-SET,SpecialDirect,DIRECT
   - RULE-SET,ExHentai,🖼️ EH图库
   - RULE-SET,JapanWeb,🌸 日区网站
   - RULE-SET,NGA,📜 NGA
