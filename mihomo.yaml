@@ -80,7 +80,7 @@ proxy-groups:
 
   - name: "其他节点"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/airplane.png
+    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/Global.png
     include-all-providers: true
     exclude-filter: '(港|HK|Hong Kong|日本|JP|Japan)'
     proxies:
@@ -114,7 +114,7 @@ proxy-groups:
 
   - name: "广告拦截"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/no-entry.png
+    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/AdBlock.png
     proxies:
       - REJECT
       - REJECT-DROP
