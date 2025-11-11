@@ -112,9 +112,9 @@ proxy-groups:
     include-all-providers: true
     filter: '^(?!.*(港|HK|Hong Kong|GAME)).*$'
 
-  - name: "广告拦截"
+  - name: "秋风净化"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/AdBlock.png
+    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/AWAvenue.png
     proxies:
       - REJECT
       - REJECT-DROP
@@ -130,7 +130,7 @@ proxy-groups:
 
 # ==> 规则 (Rules)
 rules:
-  - RULE-SET,AWAvenue-Ads-Rule,广告拦截
+  - RULE-SET,AWAvenue-Ads-Rule,秋风净化
   - RULE-SET,SpecialDirect,DIRECT
   - RULE-SET,ExHentai,EH图库
   - RULE-SET,JapanWeb,日区网站
