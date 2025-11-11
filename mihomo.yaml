@@ -64,7 +64,7 @@ rule-providers:
 proxy-groups:
   - name: "节点选择"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/start.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/start.png
     include-all-providers: true
     filter: '(港|HK|Hong Kong|日本|JP|Japan)'
     proxies:
@@ -72,7 +72,7 @@ proxy-groups:
 
   - name: "日区网站"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/cherry-blossom.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/cherry-blossom.png
     include-all-providers: true
     filter: '(日本|JP|Japan)'
     proxies:
@@ -80,7 +80,7 @@ proxy-groups:
 
   - name: "其他节点"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/Global.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/Global.png
     include-all-providers: true
     exclude-filter: '(港|HK|Hong Kong|日本|JP|Japan)'
     proxies:
@@ -88,12 +88,12 @@ proxy-groups:
 
   - name: "EH图库"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/ehentai.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/ehentai.png
     include-all-providers: true
   
   - name: "游戏平台"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/steam.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/steam.png
     include-all-providers: true
     filter: '(港|HK|Hong Kong)'
     proxies:
@@ -102,19 +102,19 @@ proxy-groups:
   
   - name: "电报消息"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/telegram.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/telegram.png
     include-all-providers: true
     filter: '^(?!.*(GAME)).*$'
 
   - name: "AI"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/gemini.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/gemini.png
     include-all-providers: true
-    filter: '^(?!.*(港|HK|Hong Kong|GAME)).*$'
+    exclude-filter: '(港|HK|Hong Kong)'
 
   - name: "秋风净化"
     type: select
-    icon: https://fastly.jsdelivr.net/gh/ameyukisora/Clash-Rule@master/icon/AWAvenue.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/AWAvenue.png
     proxies:
       - REJECT
       - REJECT-DROP
