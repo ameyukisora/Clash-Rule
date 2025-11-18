@@ -1,6 +1,6 @@
 payload:
-  # 2025-11-18 02:13:23
-  # TOTAL: 5943 urls
+  # 2025-11-19 02:14:52
+  # TOTAL: 5947 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -169,6 +169,7 @@ payload:
   - '+.addons.mozilla.org'
   - '+.addyoutube.com'
   - '+.adelaidebbs.com'
+  - '+.adguard-vpn.com'
   - '+.admin.recaptcha.net'
   - '+.admob.com'
   - '+.adpl.org.hk'
@@ -2376,6 +2377,7 @@ payload:
   - '+.have8.com'
   - '+.hbg.com'
   - '+.hbo.com'
+  - '+.hbomax.com'
   - '+.hclips.com'
   - '+.hd.stheadline.com'
   - '+.hdtvb.net'
@@ -3318,6 +3320,7 @@ payload:
   - '+.mixx.com'
   - '+.mizzmona.com'
   - '+.mjib.gov.tw'
+  - '+.mjj.rip'
   - '+.mjlsh.usc.cuhk.edu.hk'
   - '+.mlc.ai'
   - '+.mlcool.com'
@@ -4230,6 +4233,7 @@ payload:
   - '+.rumble.com'
   - '+.runbtx.com'
   - '+.rushbee.com'
+  - '+.rustdesk.com'
   - '+.rusvpn.com'
   - '+.ruten.com.tw'
   - '+.rutracker.net'
