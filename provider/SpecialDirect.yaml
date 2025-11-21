@@ -73,7 +73,7 @@ payload:
   #- DOMAIN-KEYWORD,worldofwarships
   - DOMAIN,dht.transmissionbt.com
   #- DOMAIN-SUFFIX,worldofwarships.asia
-  #- DOMAIN,dl-wows-gc.wargaming.net
+  - DOMAIN,dl-wows-gc.wargaming.net
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
