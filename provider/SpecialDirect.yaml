@@ -79,5 +79,5 @@ payload:
   - DOMAIN-SUFFIX,hikarifield.co.jp
 
   # > NGA
-  - DOMAIN,img4.nga.178.com
-  - DOMAIN,img.nga.178.com
+  #- DOMAIN,img4.nga.178.com
+  #- DOMAIN,img.nga.178.com
