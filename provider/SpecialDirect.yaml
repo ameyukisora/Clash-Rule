@@ -28,6 +28,7 @@ payload:
   # > Microsoft
   - DOMAIN-SUFFIX,msn.com
   - DOMAIN-SUFFIX,msn.cn
+  - PROCESS-NAME,svchost.exe
 
   # > NTP-Service
   - DOMAIN-SUFFIX,pool.ntp.org
