@@ -1,6 +1,6 @@
 payload:
-  # 2025-12-18 02:16:24
-  # TOTAL: 5962 urls
+  # 2025-12-19 02:16:03
+  # TOTAL: 5964 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -557,6 +557,7 @@ payload:
   - '+.bit-z.com'
   - '+.bit.do'
   - '+.bit.ly'
+  - '+.bitbaby.com'
   - '+.bitbay.net'
   - '+.bitchute.com'
   - '+.bitcointalk.org'
@@ -2633,6 +2634,7 @@ payload:
   - '+.icu-project.org'
   - '+.id.hao123.com'
   - '+.id.heroku.com'
+  - '+.idcflare.com'
   - '+.idemocracy.asia'
   - '+.identi.ca'
   - '+.idiomconnection.com'
