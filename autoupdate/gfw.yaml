@@ -1,6 +1,6 @@
 payload:
-  # 2025-12-28 02:14:10
-  # TOTAL: 5967 urls
+  # 2025-12-29 02:14:40
+  # TOTAL: 5969 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -223,6 +223,7 @@ payload:
   - '+.aliengu.com'
   - '+.alive.bar'
   - '+.aljazeera.com'
+  - '+.aljazeera.net'
   - '+.alkasir.com'
   - '+.all4mom.org'
   - '+.allcoin.com'
@@ -1289,7 +1290,6 @@ payload:
   - '+.delcamp.net'
   - '+.demo.unlock-music.dev'
   - '+.demosisto.hk'
-  - '+.deno.dev'
   - '+.depositphotos.com'
   - '+.desc.se'
   - '+.desipro.de'
@@ -1359,7 +1359,6 @@ payload:
   - '+.docker.com'
   - '+.docker.io'
   - '+.dockerstatus.com'
-  - '+.docs.deno.com'
   - '+.docs.new'
   - '+.doctorvoice.org'
   - '+.documentingreality.com'
@@ -1985,6 +1984,7 @@ payload:
   - '+.gfw.press'
   - '+.gfw.report'
   - '+.gfwatch.org'
+  - '+.gfwbao.com'
   - '+.ggpht.com'
   - '+.ggssl.com'
   - '+.ghidra-sre.org'
@@ -2773,6 +2773,7 @@ payload:
   - '+.ismprofessional.net'
   - '+.isohunt.com'
   - '+.israbox.com'
+  - '+.issues.chromium.org'
   - '+.issuu.com'
   - '+.istars.co.nz'
   - '+.istockphoto.com'
@@ -4611,6 +4612,7 @@ payload:
   - '+.stboy.net'
   - '+.stc.com.sa'
   - '+.steamcommunity.com'
+  - '+.steamladder.com'
   - '+.steamstatic.com'
   - '+.steel-storm.com'
   - '+.steemit.com'
