@@ -1,6 +1,6 @@
 payload:
-  # 2026-01-03 02:14:55
-  # TOTAL: 5971 urls
+  # 2026-01-04 02:14:16
+  # TOTAL: 5988 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -3918,6 +3918,23 @@ payload:
   - '+.pinimg.com'
   - '+.pinkrod.com'
   - '+.pinoy-n.com'
+  - '+.pinterest.at'
+  - '+.pinterest.ca'
+  - '+.pinterest.cl'
+  - '+.pinterest.co.uk'
+  - '+.pinterest.com'
+  - '+.pinterest.com.au'
+  - '+.pinterest.com.mx'
+  - '+.pinterest.de'
+  - '+.pinterest.es'
+  - '+.pinterest.fr'
+  - '+.pinterest.ie'
+  - '+.pinterest.it'
+  - '+.pinterest.jp'
+  - '+.pinterest.nz'
+  - '+.pinterest.ph'
+  - '+.pinterest.pt'
+  - '+.pinterest.se'
   - '+.pioneer-worker.forums-free.com'
   - '+.pipii.tv'
   - '+.piraattilahti.org'
