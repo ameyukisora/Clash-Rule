@@ -1,5 +1,5 @@
 payload:
-  # 2026-01-07 02:16:00
+  # 2026-01-08 02:16:45
   # TOTAL: 5993 urls
   - '+.000webhost.com'
   - '+.030buy.com'
@@ -1021,6 +1021,7 @@ payload:
   - '+.chromecast.com'
   - '+.chromeexperiments.com'
   - '+.chromestatus.com'
+  - '+.chromium.org'
   - '+.chuang-yen.org'
   - '+.chubold.com'
   - '+.chubun.com'
@@ -2775,7 +2776,6 @@ payload:
   - '+.ismprofessional.net'
   - '+.isohunt.com'
   - '+.israbox.com'
-  - '+.issues.chromium.org'
   - '+.issuu.com'
   - '+.istars.co.nz'
   - '+.istockphoto.com'
