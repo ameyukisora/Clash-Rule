@@ -75,6 +75,7 @@ payload:
   - DOMAIN,dht.transmissionbt.com
   #- DOMAIN-SUFFIX,worldofwarships.asia
   - DOMAIN,dl-wows-gc.wargaming.net
+  - PROCESS-NAME,UsbEAm Hosts Editor.exe
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
