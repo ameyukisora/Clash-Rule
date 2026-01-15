@@ -85,5 +85,4 @@ payload:
   #- DOMAIN,img.nga.178.com
 
   # > Animeko
-  - AND,((PROCESS-NAME,Ani.exe),(IP-CIDR,0.0.0.0/0,no-resolve))
-  - AND,((PROCESS-NAME,Ani.exe),(IP-CIDR6,::/0,no-resolve))
+  - PROCESS-NAME,Ani.exe
