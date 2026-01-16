@@ -19,4 +19,6 @@ payload:
 
   # > Other
   - DOMAIN-SUFFIX,gsxt.gov.cn
+
   - DOMAIN-SUFFIX,uinodes.com
+  - DOMAIN-SUFFIX,dht.libtorrent.org
