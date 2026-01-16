@@ -87,3 +87,6 @@ payload:
   # > Animeko
   - PROCESS-NAME,Ani.exe
   - PROCESS-NAME,me.him188.ani
+
+  # > Other
+  - DOMAIN-SUFFIX,test-ipv6.com
