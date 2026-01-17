@@ -85,9 +85,8 @@ payload:
   #- DOMAIN,img.nga.178.com
 
   # > Animeko
-  - PROCESS-NAME,Ani.exe
-  - PROCESS-NAME,me.him188.ani
-
+  - AND,((OR,((PROCESS-NAME,ani.exe),(PROCESS-NAME,me.him188.ani))),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR6,::/0,no-resolve))))
+  
   # > Other
   - DOMAIN-SUFFIX,test-ipv6.com
   - DOMAIN-SUFFIX,cycani.org
