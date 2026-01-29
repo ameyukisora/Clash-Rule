@@ -86,6 +86,7 @@ payload:
 
   # > Animeko
   - AND,((OR,((PROCESS-NAME,ani.exe),(PROCESS-NAME,me.him188.ani))),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR6,::/0,no-resolve))))
+  - DOMAIN,dht.libtorrent.org
   
   # > Other
   - DOMAIN-SUFFIX,test-ipv6.com
