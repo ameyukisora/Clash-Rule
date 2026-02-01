@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-01 02:16:06
-  # TOTAL: 6004 urls
+  # 2026-02-02 02:18:26
+  # TOTAL: 6007 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -468,6 +468,7 @@ payload:
   - '+.bbc.co.uk'
   - '+.bbc.com'
   - '+.bbc.in'
+  - '+.bbc.pdn.tritondigital.com'
   - '+.bbcchinese.com'
   - '+.bbchat.tv'
   - '+.bbci.co.uk'
@@ -1274,6 +1275,7 @@ payload:
   - '+.dbgjd.com'
   - '+.dcard.tw'
   - '+.dcmilitary.com'
+  - '+.dcs-spotify.megaphone.fm'
   - '+.ddc.com.tw'
   - '+.ddex.io'
   - '+.ddns.info'
@@ -2404,6 +2406,7 @@ payload:
   - '+.helloandroid.com'
   - '+.helloqueer.com'
   - '+.hellouk.org'
+  - '+.help.byspotify.com'
   - '+.helpeachpeople.com'
   - '+.helpster.de'
   - '+.helpzhuling.org'
