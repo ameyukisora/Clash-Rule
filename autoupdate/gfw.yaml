@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-02 02:18:26
-  # TOTAL: 6007 urls
+  # 2026-02-03 02:26:38
+  # TOTAL: 6008 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -4746,6 +4746,7 @@ payload:
   - '+.tafm.org'
   - '+.tagwalk.com'
   - '+.tahr.org.tw'
+  - '+.tails.net'
   - '+.taipei.gov.tw'
   - '+.taipeisociety.org'
   - '+.taipeitimes.com'
