@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-05 02:32:24
-  # TOTAL: 6008 urls
+  # 2026-02-06 02:33:29
+  # TOTAL: 6011 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -3829,6 +3829,7 @@ payload:
   - '+.padmanet.com'
   - '+.page.link'
   - '+.page2rss.com'
+  - '+.pages.dev'
   - '+.paimon.moe'
   - '+.palacemoon.com'
   - '+.paljorpublications.com'
@@ -4367,6 +4368,7 @@ payload:
   - '+.seesmic.com'
   - '+.seevpn.com'
   - '+.seezone.net'
+  - '+.sef.org.tw'
   - '+.sehuatang.net'
   - '+.sehuatang.org'
   - '+.sejie.com'
@@ -5712,6 +5714,7 @@ payload:
   - '+.www.eastturkistan.net'
   - '+.www.gmiddle.com'
   - '+.www.gmiddle.net'
+  - '+.www.hoyolab.com'
   - '+.www.hustlercash.com'
   - '+.www.idlcoyote.com'
   - '+.www.imdb.com'
