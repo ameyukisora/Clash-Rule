@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-07 02:31:41
-  # TOTAL: 6012 urls
+  # 2026-02-08 02:17:59
+  # TOTAL: 6015 urls
   - '+.000webhost.com'
   - '+.030buy.com'
   - '+.0rz.tw'
@@ -577,6 +577,7 @@ payload:
   - '+.bitshare.com'
   - '+.bitsnoop.com'
   - '+.bitterwinter.org'
+  - '+.bittorrent.com'
   - '+.bitvise.com'
   - '+.bitz.ai'
   - '+.bizhat.com'
@@ -2411,6 +2412,7 @@ payload:
   - '+.helpeachpeople.com'
   - '+.helpster.de'
   - '+.helpzhuling.org'
+  - '+.hembed.com'
   - '+.hentai.to'
   - '+.hentaitube.tv'
   - '+.hentaivideoworld.com'
@@ -5355,6 +5357,7 @@ payload:
   - '+.uygur.org'
   - '+.uymaarip.com'
   - '+.v2.help'
+  - '+.v2.hysteria.network'
   - '+.v2ex.com'
   - '+.v2fly.org'
   - '+.v2ray.com'
