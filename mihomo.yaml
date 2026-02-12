@@ -25,7 +25,7 @@ proxy-providers:
     url: "https://example.com/your-sub-url.yaml" 
     path: ./providers/subscription.yaml
     # 节点过滤器
-    exclude-filter: "官|流量|Traffic|Expire|自动更新订阅"
+    exclude-filter: "官|流量|Traffic|Expire|自动更新订阅|剩余|过期|网址"
 
 # ==> 基础配置
 mixed-port: 8899
@@ -46,21 +46,6 @@ dns:
     - https://doh.pub/dns-query
   nameserver:
     - system
-
-# ==> 规则集合 (Rule Providers)
-rule-providers:
-  SpecialDirect: {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/SpecialDirect.yaml", path: ./rule_provider/SpecialDirect.yaml}
-  AWAvenue-Ads-Rule: {<<: *rule-provider-config, behavior: domain, url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml", path: ./rule_provider/AWAvenue-Ads-Rule.yaml}
-  ExHentai:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/ExHentai.yaml", path: ./rule_provider/ExHentai.yaml}
-  JapanWeb:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/JapanWeb.yaml", path: ./rule_provider/JapanWeb.yaml}
-  Steam:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Steam.yaml", path: ./rule_provider/Steam.yaml}
-  Telegram:      {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Telegram.yaml", path: ./rule_provider/Telegram.yaml}
-  AI:            {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/AI.yaml", path: ./rule_provider/AI.yaml}
-  Proxy:         {<<: *rule-provider-config, behavior: classical, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml", path: ./rule_provider/Proxy.yaml}
-  gfw:           {<<: *rule-provider-config, behavior: domain,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.mrs", path: ./rule_provider/gfw.mrs, format: mrs}
-  cn:            {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs", path: ./rule_provider/cn.mrs, format: mrs}
-  cn_v6:         {<<: *rule-provider-config, behavior: ipcidr,  url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn_v6.mrs", path: ./rule_provider/cn_v6.mrs, format: mrs}
-  fakeip-filter: {<<: *rule-provider-config, behavior: domain, url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/fakeip-filter.yaml", path: ./rule_provider/fakeip-filter.yaml}
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
@@ -144,3 +129,80 @@ rules:
   - RULE-SET,cn_v6,DIRECT
   - RULE-SET,cn,DIRECT
   - MATCH,♾️
+
+# ==> 规则集合 (Rule Providers)
+rule-providers:
+  SpecialDirect:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/SpecialDirect.yaml"
+    path: ./rule_provider/SpecialDirect.yaml
+  
+  AWAvenue-Ads-Rule:
+    <<: *rule-provider-config
+    behavior: domain
+    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml"
+    path: ./rule_provider/AWAvenue-Ads-Rule.yaml
+  
+  ExHentai:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/ExHentai.yaml"
+    path: ./rule_provider/ExHentai.yaml
+  
+  JapanWeb:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/JapanWeb.yaml"
+    path: ./rule_provider/JapanWeb.yaml
+  
+  Steam:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Steam.yaml"
+    path: ./rule_provider/Steam.yaml
+  
+  Telegram:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Telegram.yaml"
+    path: ./rule_provider/Telegram.yaml
+  
+  AI:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/AI.yaml"
+    path: ./rule_provider/AI.yaml
+  
+  Proxy:
+    <<: *rule-provider-config
+    behavior: classical
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Proxy.yaml"
+    path: ./rule_provider/Proxy.yaml
+  
+  gfw:
+    <<: *rule-provider-config
+    behavior: domain
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/gfw.mrs"
+    path: ./rule_provider/gfw.mrs
+    format: mrs
+  
+  cn:
+    <<: *rule-provider-config
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs"
+    path: ./rule_provider/cn.mrs
+    format: mrs
+  
+  cn_v6:
+    <<: *rule-provider-config
+    behavior: ipcidr
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn_v6.mrs"
+    path: ./rule_provider/cn_v6.mrs
+    format: mrs
+  
+  fakeip-filter:
+    <<: *rule-provider-config
+    behavior: domain
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/fakeip-filter.yaml"
+    path: ./rule_provider/fakeip-filter.yaml
