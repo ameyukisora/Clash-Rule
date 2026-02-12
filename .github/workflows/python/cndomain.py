@@ -1,38 +1,51 @@
 import requests
 from datetime import datetime
 import pytz
-import os
+from pathlib import Path
 
-# 定义常量
+# 配置常量
 URL = "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Domain.yaml"
-OUTPUT_DIR = 'autoupdate'
-OUTPUT_FILE = 'cndomain.yaml'
+OUTPUT_FILE = Path("autoupdate/cndomain.yaml")
 TIMEZONE = 'Asia/Shanghai'
-ENCODING = 'utf-8'
 
-# 下载文件内容
-response = requests.get(URL)
-content = response.text.splitlines()
+def main():
+    try:
+        print(f"正在下载: {URL}")
+        resp = requests.get(URL, timeout=20)
+        resp.raise_for_status()
+        
+        lines = resp.text.splitlines()
+        payload = []
+        in_payload = False
+        
+        for line in lines:
+            # 查找 payload: 标记
+            if line.strip() == "payload:":
+                in_payload = True
+                continue
+            
+            if in_payload:
+                stripped = line.strip()
+                # 过滤空行和注释
+                if stripped and not stripped.startswith("#"):
+                    payload.append(stripped)
+        
+        timestamp = datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M:%S")
+        
+        # 构建新内容
+        new_lines = [
+            "payload:",
+            f"  # Updated: {timestamp}, Total: {len(payload)}",
+            *[f"  {domain}" for domain in payload]
+        ]
+        
+        OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
+        OUTPUT_FILE.write_text('\n'.join(new_lines), encoding='utf-8')
+        print(f"✅ 成功生成: {OUTPUT_FILE} (共 {len(payload)} 条)")
+        
+    except Exception as e:
+        print(f"❌ 发生错误: {e}")
+        exit(1)
 
-# 提取域名列表
-payload_start_index = content.index("payload:") + 1
-payload = [line.strip() for line in content[payload_start_index:] if line.strip() and not line.strip().startswith("#")]
-domain_count = len(payload)
-
-# 生成新的文件内容
-current_time = datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M:%S")
-new_content = [
-    "payload:",
-    f"  # Updated: {current_time}, Total: {domain_count}",
-    *[f"  {domain}" for domain in payload]  # 使用星号解包列表
-]
-
-# 确保输出目录存在
-os.makedirs(OUTPUT_DIR, exist_ok=True)
-
-# 保存到文件
-output_path = os.path.join(OUTPUT_DIR, OUTPUT_FILE)
-with open(output_path, 'w', encoding=ENCODING) as f:
-    f.write('\n'.join(new_content))
-
-print(f"域名总数: {domain_count}")
+if __name__ == "__main__":
+    main()
