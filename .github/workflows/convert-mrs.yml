@@ -13,57 +13,53 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Create autoupdate directory if not exists
-        run: mkdir -p autoupdate
-        shell: bash
+      # 获取最新版本号，用于后续缓存 Key
+      - name: Get latest mihomo version
+        id: version
+        run: |
+          $tag = gh release view -R MetaCubeX/mihomo --json tagName --jq ".tagName"
+          Write-Output "version=$tag" >> $env:GITHUB_OUTPUT
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      # 缓存 mihomo.exe。如果版本未变，跳过下载和解压步骤，大幅提速。
+      - name: Cache mihomo binary
+        id: cache-mihomo
+        uses: actions/cache@v4
+        with:
+          path: mihomo.exe
+          key: mihomo-${{ steps.version.outputs.version }}-windows-amd64
+
+      - name: Download and extract mihomo
+        if: steps.cache-mihomo.outputs.cache-hit != 'true'
+        run: |
+          gh release download ${{ steps.version.outputs.version }} -R MetaCubeX/mihomo --pattern "*windows-amd64*.zip" --clobber
+          
+          # 解压并重命名
+          $zipFile = Get-ChildItem -Filter "*windows-amd64*.zip" | Select-Object -First 1
+          Expand-Archive -Path $zipFile -DestinationPath . -Force
+          
+          $exeFile = Get-ChildItem -Filter "mihomo-windows-amd64*.exe" | Select-Object -First 1
+          Move-Item -Path $exeFile -Destination "mihomo.exe" -Force
+          
+          # 清理 zip 文件
+          Remove-Item $zipFile -Force
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Download source rule files
         run: |
-          curl -sSL -o autoupdate/gfw.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/gfw.yaml
-          curl -sSL -o autoupdate/cn.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn.yaml
-          curl -sSL -o autoupdate/cn_v6.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cn_v6.yaml
-          curl -sSL -o autoupdate/cndomain.yaml https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate/cndomain.yaml
+          mkdir -p autoupdate
+          base_url="https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate"
+          
+          curl -sSL -o autoupdate/gfw.yaml "$base_url/gfw.yaml" &
+          curl -sSL -o autoupdate/cn.yaml "$base_url/cn.yaml" &
+          curl -sSL -o autoupdate/cn_v6.yaml "$base_url/cn_v6.yaml" &
+          curl -sSL -o autoupdate/cndomain.yaml "$base_url/cndomain.yaml" &
+          wait
         shell: bash
-
-      - name: Get latest mihomo release info
-        id: get_latest_release
-        shell: pwsh
-        run: |
-          $latest = Invoke-RestMethod -Uri "https://api.github.com/repos/MetaCubeX/mihomo/releases/latest"
-          $version = $latest.tag_name
-          $asset = $latest.assets | Where-Object { $_.name -like "*windows-amd64*.zip" } | Select-Object -First 1
-          if (-not $asset) {
-            Write-Error "No Windows amd64 .zip asset found in latest release."
-            exit 1
-          }
-          Write-Output "version=$version" >> $env:GITHUB_OUTPUT
-          Write-Output "asset_url=$($asset.browser_download_url)" >> $env:GITHUB_OUTPUT
-
-      - name: Download and extract mihomo for Windows
-        shell: pwsh
-        run: |
-          $zipPath = "mihomo.zip"
-          Invoke-WebRequest -Uri "${{ steps.get_latest_release.outputs.asset_url }}" -OutFile $zipPath
-          Expand-Archive -Path $zipPath -DestinationPath . -Force
-
-          # 查找解压后以 "mihomo-windows-amd64" 开头的 .exe 文件
-          $exeFiles = Get-ChildItem -Path . -Filter "mihomo-windows-amd64*.exe"
-          if ($exeFiles.Count -eq 0) {
-            Write-Error "No mihomo-windows-amd64*.exe found after extraction."
-            exit 1
-          }
-
-          # 取第一个匹配的文件（通常只有一个）
-          $sourceExe = $exeFiles[0].FullName
-          $targetExe = "mihomo.exe"
-
-          Write-Host "Found: $sourceExe"
-          Write-Host "Renaming to: $targetExe"
-          Move-Item -Path $sourceExe -Destination $targetExe -Force
-
-          # 清理 zip 和可能的多余文件
-          Remove-Item $zipPath -Force
-          # 如果有 LICENSE/README 等，也可选择保留或删除，不影响
 
       - name: Convert rules to .mrs format
         run: |
@@ -78,10 +74,12 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
+          # 检查是否有变更
           if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
             echo "Changes detected in rule sets. Preparing to commit."
             git add autoupdate/*.mrs
-            git commit -m "Update mrs at $(date -u +"%Y-%m-%d %H:%M:%S" -d "+8 hours")"
+            # 使用 TZ 环境变量处理时区
+            git commit -m "Update mrs at $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
             git push
           else
             echo "No changes to commit."
