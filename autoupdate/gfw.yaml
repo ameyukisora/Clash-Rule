@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-15 02:17:29
-  # TOTAL: 4209 urls
+  # 2026-02-16 02:18:50
+  # TOTAL: 4210 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3847,6 +3847,7 @@ payload:
   - '+.wallmama.com'
   - '+.wallpapercasa.com'
   - '+.wallsttv.com'
+  - '+.wallzhihu.com'
   - '+.waltermartin.com'
   - '+.waltermartin.org'
   - '+.wanderinghorse.net'
