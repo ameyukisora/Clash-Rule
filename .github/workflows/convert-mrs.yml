@@ -79,7 +79,7 @@ jobs:
             echo "Changes detected in rule sets. Preparing to commit."
             git add autoupdate/*.mrs
             TIME=$(pwsh -Command "[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow, 'China Standard Time').ToString('yyyy-MM-dd HH:mm:ss')")
-            git commit -m "Update mrs at $TIME"
+            git commit -m "Update mrs: $TIME"
             git push
           else
             echo "No changes to commit."
