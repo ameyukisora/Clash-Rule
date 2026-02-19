@@ -78,8 +78,8 @@ jobs:
           if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
             echo "Changes detected in rule sets. Preparing to commit."
             git add autoupdate/*.mrs
-            # 使用 TZ 环境变量处理时区
-            git commit -m "Update mrs at $(TZ='Asia/Shanghai' date '+%Y-%m-%d %H:%M:%S')"
+            TIME=$(pwsh -Command "[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow, 'China Standard Time').ToString('yyyy-MM-dd HH:mm:ss')")
+            git commit -m "Update mrs at $TIME"
             git push
           else
             echo "No changes to commit."
