@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-23 02:18:20
-  # TOTAL: 4186 urls
+  # 2026-02-24 02:45:10
+  # TOTAL: 4188 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3508,6 +3508,7 @@ payload:
   - '+.topsy.com'
   - '+.toptip.ca'
   - '+.toptoon.net'
+  - '+.tor.eff.org'
   - '+.torguard.net'
   - '+.torlock.com'
   - '+.torproject.org'
@@ -3662,6 +3663,7 @@ payload:
   - '+.underwoodammo.com'
   - '+.unholyknight.com'
   - '+.unirule.cloud'
+  - '+.uniswap.org'
   - '+.unknownspace.org'
   - '+.unmineable.com'
   - '+.unseen.is'
