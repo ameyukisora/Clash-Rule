@@ -1,6 +1,6 @@
 payload:
-  # 2026-02-25 02:43:35
-  # TOTAL: 4188 urls
+  # 2026-02-26 02:48:42
+  # TOTAL: 4189 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -1264,6 +1264,7 @@ payload:
   - '+.freebeacon.com'
   - '+.freebrowser.org'
   - '+.freechinaweibo.com'
+  - '+.freedom.gov'
   - '+.freedomhouse.org'
   - '+.freedominfonetweb.wordpress.com'
   - '+.freedomsherald.org'
