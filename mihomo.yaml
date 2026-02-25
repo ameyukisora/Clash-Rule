@@ -141,8 +141,9 @@ rule-providers:
   AWAvenue-Ads-Rule:
     <<: *rule-provider-config
     behavior: domain
-    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.yaml"
-    path: ./rule_provider/AWAvenue-Ads-Rule.yaml
+    url: "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Clash.mrs"
+    path: ./rule_provider/AWAvenue-Ads-Rule-Clash.mrs
+    format: mrs
   
   ExHentai:
     <<: *rule-provider-config
