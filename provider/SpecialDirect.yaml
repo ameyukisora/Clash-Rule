@@ -75,7 +75,7 @@ payload:
   - DOMAIN,dht.transmissionbt.com
   #- DOMAIN-SUFFIX,worldofwarships.asia
   - DOMAIN,dl-wows-gc.wargaming.net
-  - PROCESS-NAME,UsbEAm Hosts Editor.exe
+  #- PROCESS-NAME,UsbEAm Hosts Editor.exe
 
   # > HIKARI FIELD STORE
   - DOMAIN-SUFFIX,hikarifield.co.jp
@@ -85,7 +85,7 @@ payload:
   #- DOMAIN,img.nga.178.com
 
   # > Animeko
-  - AND,((OR,((PROCESS-NAME,ani.exe),(PROCESS-NAME,me.him188.ani))),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR6,::/0,no-resolve))))
+  #- AND,((OR,((PROCESS-NAME,ani.exe),(PROCESS-NAME,me.him188.ani))),(OR,((IP-CIDR,0.0.0.0/0,no-resolve),(IP-CIDR6,::/0,no-resolve))))
   - DOMAIN,dht.libtorrent.org
   
   # > Other
