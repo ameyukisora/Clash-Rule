@@ -17,6 +17,11 @@ x-anchors:
     type: http
     interval: 86400
 
+  # 策略组通用配置
+  common-group: &common-group
+    type: select
+    include-all-providers: true
+
 # ==> 代理集合 (Proxy Providers)
 proxy-providers:
   subscription:
@@ -33,6 +38,7 @@ allow-lan: false
 log-level: info
 mode: rule
 unified-delay: true
+tcp-concurrent: true
 
 # ==> DNS 配置
 dns:
@@ -50,54 +56,45 @@ dns:
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
   - name: "节点选择"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/start.png
-    include-all-providers: true
     filter: '(港|HK|Hong Kong|日本|JP|Japan)'
     proxies:
       - 其他节点
 
   - name: "日区网站"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/cherry-blossom.png
-    include-all-providers: true
     filter: '(日本|JP|Japan)'
     proxies:
       - 节点选择
 
   - name: "其他节点"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/Global.png
-    include-all-providers: true
     exclude-filter: '(港|HK|Hong Kong|日本|JP|Japan)'
     proxies:
       - DIRECT
 
   - name: "EH图库"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/ehentai.png
-    include-all-providers: true
   
   - name: "游戏平台"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/steam.png
-    include-all-providers: true
     filter: '(港|HK|Hong Kong)'
     proxies:
       - DIRECT
       - 节点选择
   
   - name: "电报消息"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/telegram.png
-    include-all-providers: true
-    filter: '^(?!.*(GAME)).*$'
 
   - name: "AI"
-    type: select
+    <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/gemini.png
-    include-all-providers: true
-    exclude-filter: '(港|HK|Hong Kong)'
 
   - name: "秋风净化"
     type: select
@@ -117,7 +114,6 @@ proxy-groups:
 
 # ==> 规则 (Rules)
 rules:
-  - RULE-SET,Proxy,节点选择
   - RULE-SET,AWAvenue-Ads-Rule,秋风净化
   - RULE-SET,SpecialDirect,DIRECT
   - RULE-SET,ExHentai,EH图库
@@ -125,6 +121,7 @@ rules:
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Telegram,电报消息
   - RULE-SET,AI,AI
+  - RULE-SET,Proxy,节点选择
   - RULE-SET,gfw,节点选择
   - RULE-SET,cn_v6,DIRECT
   - RULE-SET,cn,DIRECT
