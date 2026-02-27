@@ -126,7 +126,6 @@ rules:
   - RULE-SET,AI,AI
   - RULE-SET,Proxy,节点选择
   - RULE-SET,gfw,节点选择
-  - RULE-SET,cn_v6,DIRECT
   - RULE-SET,cn,DIRECT
   - MATCH,♾️
 
@@ -193,13 +192,6 @@ rule-providers:
     behavior: ipcidr
     url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn.mrs"
     path: ./rule_provider/cn.mrs
-    format: mrs
-  
-  cn_v6:
-    <<: *rule-provider-config
-    behavior: ipcidr
-    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/autoupdate/cn_v6.mrs"
-    path: ./rule_provider/cn_v6.mrs
     format: mrs
   
   fakeip-filter:
