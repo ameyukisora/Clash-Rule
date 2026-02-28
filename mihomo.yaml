@@ -38,7 +38,6 @@ allow-lan: false
 log-level: info
 mode: rule
 unified-delay: true
-tcp-concurrent: true
 
 # ==> DNS 配置
 dns:
