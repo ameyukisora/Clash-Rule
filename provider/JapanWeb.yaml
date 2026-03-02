@@ -21,10 +21,10 @@ payload:
   - DOMAIN-SUFFIX,fanbox.cc
 
   # twitter
-  - DOMAIN-SUFFIX,x.com
-  - DOMAIN-SUFFIX,twimg.com
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,t.co
+  #- DOMAIN-SUFFIX,x.com
+  #- DOMAIN-SUFFIX,twimg.com
+  #- DOMAIN-SUFFIX,twitter.com
+  #- DOMAIN-SUFFIX,t.co
 
   # DLsite
   - DOMAIN-SUFFIX,dlsite.com
