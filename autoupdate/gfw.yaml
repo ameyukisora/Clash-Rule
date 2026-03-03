@@ -1,6 +1,6 @@
 payload:
-  # 2026-03-03 02:30:07
-  # TOTAL: 4189 urls
+  # 2026-03-04 02:32:09
+  # TOTAL: 4190 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -760,6 +760,7 @@ payload:
   - '+.ck101.com'
   - '+.classicalguitarblog.net'
   - '+.claude.ai'
+  - '+.claude.com'
   - '+.cldr.unicode.org'
   - '+.clearsurance.com'
   - '+.clementine-player.org'
@@ -2264,6 +2265,7 @@ payload:
   - '+.mangafox.me'
   - '+.mangmang.run'
   - '+.manta.com'
+  - '+.manus.im'
   - '+.manyvoices.news'
   - '+.marc.info'
   - '+.martau.com'
@@ -3980,7 +3982,6 @@ payload:
   - '+.www.hoyolab.com'
   - '+.www.hustlercash.com'
   - '+.www.idlcoyote.com'
-  - '+.www.imdb.com'
   - '+.www.kindleren.com'
   - '+.www.lorenzetti.com.br'
   - '+.www.m-sport.co.uk'
