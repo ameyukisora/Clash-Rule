@@ -53,7 +53,8 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   nameserver:
-    - system
+    - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
