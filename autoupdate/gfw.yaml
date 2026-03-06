@@ -1,6 +1,6 @@
 payload:
-  # 2026-03-06 03:05:01
-  # TOTAL: 4193 urls
+  # 2026-03-07 02:27:51
+  # TOTAL: 4194 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -1006,6 +1006,7 @@ payload:
   - '+.dougscripts.com'
   - '+.doujincafe.com'
   - '+.download.aircrack-ng.org'
+  - '+.download.dappcdn.com'
   - '+.dpool.top'
   - '+.dpp.org.tw'
   - '+.dpr.info'
