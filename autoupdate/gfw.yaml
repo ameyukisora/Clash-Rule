@@ -1,6 +1,6 @@
 payload:
-  # 2026-03-07 02:27:51
-  # TOTAL: 4194 urls
+  # 2026-03-08 02:17:24
+  # TOTAL: 4197 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -978,6 +978,7 @@ payload:
   - '+.dmcdn.net'
   - '+.dmhy.org'
   - '+.dmm.co.jp'
+  - '+.dns.cloudflare.com'
   - '+.dns2go.com'
   - '+.dnscrypt.org'
   - '+.dnssec.net'
@@ -1565,6 +1566,7 @@ payload:
   - '+.google.cv'
   - '+.google.cz'
   - '+.google.de'
+  - '+.google.dev'
   - '+.google.dj'
   - '+.google.dk'
   - '+.google.dm'
@@ -1980,6 +1982,7 @@ payload:
   - '+.interseclab.org'
   - '+.inthenameofconfuciusmovie.com'
   - '+.investigating.wordpress.com'
+  - '+.investing.com'
   - '+.invidio.us'
   - '+.inxian.com'
   - '+.ipdefenseforum.com'
