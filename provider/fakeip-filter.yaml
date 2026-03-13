@@ -60,6 +60,16 @@ payload:
   - api.bilibili.com
   - www.bilibili.com
   - a.w.bilicdn1.com
+  - '+.bilibili.com'
+  - '+.hdslb.com'
+  # 核心推流与 API 域名
+  - 'api.live.bilibili.com'
+  - 'api.vc.bilibili.com'
+  - 'broadcast.chat.bilibili.com' # 弹幕相关
+  # 直播推流 CDN
+  - '+.mcdn.bilivideo.cn'
+  - '+.bilivideo.com'
+  - '+.bilivideo.cn'
 
   # Others (其他)
   - '*.market.xiaomi.com'
