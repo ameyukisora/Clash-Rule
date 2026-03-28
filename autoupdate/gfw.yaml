@@ -1,6 +1,6 @@
 payload:
-  # 2026-03-28 02:40:06
-  # TOTAL: 4206 urls
+  # 2026-03-29 02:23:01
+  # TOTAL: 4205 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3014,7 +3014,6 @@ payload:
   - '+.rutracker.org'
   - '+.rxhj.net'
   - '+.s-cute.com'
-  - '+.s.rmimg.com'
   - '+.s.yimg.com'
   - '+.s3-ap-northeast-1.amazonaws.com'
   - '+.s3-ap-northeast-2.amazonaws.com'
