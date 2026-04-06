@@ -92,3 +92,4 @@ payload:
   - DOMAIN-SUFFIX,test-ipv6.com
   - DOMAIN-SUFFIX,cycani.org
   - PROCESS-NAME,HipsDaemon.exe
+  - DOMAIN-KEYWORD,nvidia
