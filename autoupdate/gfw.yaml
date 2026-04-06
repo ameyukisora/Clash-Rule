@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-06 02:26:24
-  # TOTAL: 4206 urls
+  # 2026-04-07 02:39:32
+  # TOTAL: 4210 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -239,6 +239,7 @@ payload:
   - '+.appspot.com'
   - '+.appsto.re'
   - '+.aptoide.com'
+  - '+.archive-it.org'
   - '+.archive.fo'
   - '+.archive.is'
   - '+.archive.li'
@@ -981,6 +982,7 @@ payload:
   - '+.dmhy.org'
   - '+.dmm.co.jp'
   - '+.dns.cloudflare.com'
+  - '+.dns.sb'
   - '+.dns2go.com'
   - '+.dnscrypt.org'
   - '+.dnssec.net'
@@ -991,6 +993,7 @@ payload:
   - '+.dockerstatus.com'
   - '+.docs.new'
   - '+.documentingreality.com'
+  - '+.doh.sb'
   - '+.dolc.de'
   - '+.dolf.org.hk'
   - '+.dongtaiwang.com'
@@ -998,6 +1001,7 @@ payload:
   - '+.doom9.org'
   - '+.doosho.com'
   - '+.doourbest.org'
+  - '+.dot.sb'
   - '+.dotplane.com'
   - '+.dotsub.com'
   - '+.dotvpn.com'
