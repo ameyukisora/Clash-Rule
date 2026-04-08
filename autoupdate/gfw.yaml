@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-08 02:43:43
-  # TOTAL: 4210 urls
+  # 2026-04-09 02:59:10
+  # TOTAL: 4211 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -847,6 +847,7 @@ payload:
   - '+.cpu-monkey.com'
   - '+.cq99.us'
   - '+.crackle.com'
+  - '+.crashlytics.com'
   - '+.crazypool.org'
   - '+.crazyshit.com'
   - '+.crbug.com'
