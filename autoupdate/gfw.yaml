@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-09 02:59:10
-  # TOTAL: 4211 urls
+  # 2026-04-10 02:44:21
+  # TOTAL: 4210 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -2315,7 +2315,6 @@ payload:
   - '+.mediawiki.org'
   - '+.medium.com'
   - '+.meee.com.tw'
-  - '+.meetup.com'
   - '+.mega.co.nz'
   - '+.mega.io'
   - '+.mega.nz'
@@ -2383,6 +2382,7 @@ payload:
   - '+.mirrormedia.mg'
   - '+.missav.com'
   - '+.missav.ws'
+  - '+.mistral.ai'
   - '+.mitbbs.com'
   - '+.miuipolska.pl'
   - '+.mixero.com'
@@ -2889,7 +2889,6 @@ payload:
   - '+.putty.org'
   - '+.pximg.net'
   - '+.python.com.tw'
-  - '+.pytorch.org'
   - '+.qbittorrent.org'
   - '+.qgirl.com.tw'
   - '+.qi-gong.me'
