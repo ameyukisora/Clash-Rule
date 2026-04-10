@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-10 02:44:21
-  # TOTAL: 4210 urls
+  # 2026-04-11 02:36:47
+  # TOTAL: 4206 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -187,11 +187,9 @@ payload:
   - '+.angola.org'
   - '+.angularjs.org'
   - '+.aniscartujo.com'
-  - '+.annas-archive.in'
-  - '+.annas-archive.li'
-  - '+.annas-archive.org'
-  - '+.annas-archive.pm'
-  - '+.annas-archive.se'
+  - '+.annas-archive.gd'
+  - '+.annas-archive.gl'
+  - '+.annas-archive.pk'
   - '+.anobii.com'
   - '+.anonfiles.com'
   - '+.anonymouse.org'
@@ -3353,7 +3351,6 @@ payload:
   - '+.tbssqh.org'
   - '+.teachparentstech.org'
   - '+.technews.tw'
-  - '+.techspot.com'
   - '+.techviz.net'
   - '+.teck.in'
   - '+.teco-hk.org'
@@ -3367,7 +3364,6 @@ payload:
   - '+.telegram.org'
   - '+.telegram.space'
   - '+.telegramdownload.com'
-  - '+.telegraph.co.uk'
   - '+.telesco.pe'
   - '+.tellapart.com'
   - '+.temu.com'
