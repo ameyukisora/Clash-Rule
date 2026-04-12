@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-12 02:26:21
-  # TOTAL: 4206 urls
+  # 2026-04-13 02:30:07
+  # TOTAL: 4207 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3047,6 +3047,7 @@ payload:
   - '+.savetibetstore.org'
   - '+.saveuighur.org'
   - '+.sbme.me'
+  - '+.sbti.unun.dev'
   - '+.scache.vzw.com'
   - '+.scache1.vzw.com'
   - '+.scache2.vzw.com'
