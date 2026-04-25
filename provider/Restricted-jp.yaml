@@ -1,2 +1,7 @@
 payload:
   # 对JP有限制的网站
+  - DOMAIN-SUFFIX,hanime1.me
+  - DOMAIN-SUFFIX,nhentai.net
+  - DOMAIN-SUFFIX,danbooru.donmai.us
+  - DOMAIN-SUFFIX,gelbooru.com
+  - DOMAIN-SUFFIX,yande.re
