@@ -1,6 +1,6 @@
 payload:
-  # 2026-04-25 02:34:29
-  # TOTAL: 4203 urls
+  # 2026-04-26 02:33:03
+  # TOTAL: 4204 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3348,6 +3348,7 @@ payload:
   - '+.tbsn.org'
   - '+.tbssqh.org'
   - '+.teachparentstech.org'
+  - '+.techbang.com'
   - '+.technews.tw'
   - '+.techviz.net'
   - '+.teck.in'
