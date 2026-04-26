@@ -53,29 +53,28 @@ dns:
     - https://dns.alidns.com/dns-query
     - https://doh.pub/dns-query
   nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
+    - system
 
 # ==> 代理策略组 (Proxy Groups)
 proxy-groups:
   - name: "节点选择"
     <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/start.png
-    filter: '(港|HK|Hong Kong|日本|JP|Japan)'
+    filter: '(港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵)'
     proxies:
       - 其他节点
 
   - name: "日区网站"
     <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/cherry-blossom.png
-    filter: '(日本|JP|Japan)'
+    filter: '(日本|JP|Japan|🇯🇵)'
     proxies:
       - 节点选择
 
   - name: "其他节点"
     <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/Global.png
-    exclude-filter: '(港|HK|Hong Kong|日本|JP|Japan)'
+    exclude-filter: '(港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵)'
     proxies:
       - DIRECT
 
@@ -86,7 +85,7 @@ proxy-groups:
   - name: "游戏平台"
     <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/steam.png
-    filter: '(港|HK|Hong Kong)'
+    filter: '(港|HK|Hong Kong|🇭🇰)'
     proxies:
       - DIRECT
       - 节点选择
