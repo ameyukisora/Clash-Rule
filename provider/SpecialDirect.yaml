@@ -93,3 +93,8 @@ payload:
   - DOMAIN-SUFFIX,cycani.org
   - PROCESS-NAME,HipsDaemon.exe
   - DOMAIN-KEYWORD,nvidia
+  - DOMAIN-SUFFIX,a.nel.cloudflare.com
+  - DOMAIN-SUFFIX,challenges.cloudflare.com
+  - DOMAIN-SUFFIX,static.cloudflareinsights.com
+  - DOMAIN-SUFFIX,stun.cloudflare.com
+  - DOMAIN-SUFFIX,ip.skk.moe
