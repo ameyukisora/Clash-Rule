@@ -125,8 +125,8 @@ rules:
   - RULE-SET,AI,AI
   - RULE-SET,Proxy,节点选择
   - RULE-SET,gfw,节点选择
-  - RULE-SET,cn_v6,DIRECT
   - RULE-SET,cn,DIRECT
+  - RULE-SET,cn_v6,DIRECT
   - MATCH,♾️
 
 # ==> 规则集合 (Rule Providers)
