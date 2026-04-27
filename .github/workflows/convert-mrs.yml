@@ -5,15 +5,19 @@ on:
     - cron: '30 18 * * *'
   workflow_dispatch:
 
+concurrency:
+  group: convert-mrs
+  cancel-in-progress: true
+
 jobs:
   update-rules:
     runs-on: windows-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 获取最新版本号，用于后续缓存 Key
       - name: Get latest mihomo version
         id: version
         run: |
@@ -23,7 +27,6 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
-      # 缓存 mihomo.exe。如果版本未变，跳过下载和解压步骤，大幅提速。
       - name: Cache mihomo binary
         id: cache-mihomo
         uses: actions/cache@v4
@@ -36,14 +39,12 @@ jobs:
         run: |
           gh release download ${{ steps.version.outputs.version }} -R MetaCubeX/mihomo --pattern "*windows-amd64*.zip" --clobber
           
-          # 解压并重命名
           $zipFile = Get-ChildItem -Filter "*windows-amd64*.zip" | Select-Object -First 1
           Expand-Archive -Path $zipFile -DestinationPath . -Force
           
           $exeFile = Get-ChildItem -Filter "mihomo-windows-amd64*.exe" | Select-Object -First 1
           Move-Item -Path $exeFile -Destination "mihomo.exe" -Force
           
-          # 清理 zip 文件
           Remove-Item $zipFile -Force
         shell: pwsh
         env:
@@ -69,17 +70,26 @@ jobs:
           ./mihomo.exe convert-ruleset domain yaml autoupdate/cndomain.yaml autoupdate/cndomain.mrs
         shell: bash
 
+      - name: Verify generated .mrs files are non-empty
+        run: |
+          for f in autoupdate/*.mrs; do
+            if [ ! -s "$f" ]; then
+              echo "❌ $f is empty or missing" >&2
+              exit 1
+            fi
+          done
+        shell: bash
+
       - name: Commit and push changes if any
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
 
-          # 检查是否有变更
           if [[ $(git status --porcelain autoupdate/*.mrs) ]]; then
             echo "Changes detected in rule sets. Preparing to commit."
             git add autoupdate/*.mrs
             TIME=$(pwsh -Command "[System.TimeZoneInfo]::ConvertTimeBySystemTimeZoneId([DateTime]::UtcNow, 'China Standard Time').ToString('yyyy-MM-dd HH:mm:ss')")
-            git commit -m "Update mrs: $TIME"
+            git commit -m "Update mrs: $TIME [skip ci]"
             git push
           else
             echo "No changes to commit."
