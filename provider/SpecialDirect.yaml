@@ -94,3 +94,4 @@ payload:
   - PROCESS-NAME,HipsDaemon.exe
   - DOMAIN-KEYWORD,nvidia
   - DOMAIN-SUFFIX,ip.skk.moe
+  - DOMAIN-SUFFIX,board.zash.run.place
