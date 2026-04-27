@@ -26,23 +26,30 @@ def main():
         resp = fetch_with_retry(URL)
         lines = resp.text.splitlines()
 
-        # 过滤掉空行和注释行，其余全部视为 URL/规则
-        urls = [line for line in lines if line.strip() and not line.strip().startswith("#")]
+        # 保留非空、非注释的行，但排除以 "payload:" 开头的行（防止二次输出）
+        rule_lines = []
+        for line in lines:
+            stripped = line.strip()
+            if not stripped:
+                continue
+            if stripped.startswith("#"):
+                continue
+            if stripped.startswith("payload:"):  # 关键处理：跳过原始文件的 payload 头部
+                continue
+            rule_lines.append(line)    # 保留原始缩进，通常为 "  - 'domain'"
 
-        if not urls:
-            raise ValueError("No URLs extracted – upstream format may have changed")
+        if not rule_lines:
+            raise ValueError("No rules extracted – upstream format may have changed")
 
         timestamp = datetime.now(pytz.timezone(TIMEZONE)).strftime("%Y-%m-%d %H:%M:%S")
-        content = (
-            "payload:\n"
-            f"  # {timestamp}\n"
-            f"  # TOTAL: {len(urls)} urls\n"
-        )
-        content += "\n".join(urls) + "\n"
+
+        # 构造完整的文件内容：头部 + 保留的规则行
+        head = f"payload:\n  # {timestamp}\n  # TOTAL: {len(rule_lines)} urls\n"
+        content = head + "\n".join(rule_lines) + "\n"
 
         OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
         OUTPUT_FILE.write_text(content, encoding='utf-8')
-        print(f"✅ 成功生成: {OUTPUT_FILE} (共 {len(urls)} 条)")
+        print(f"✅ 成功生成: {OUTPUT_FILE} (共 {len(rule_lines)} 条)")
 
     except Exception as e:
         print(f"❌ 发生错误: {e}")
