@@ -58,7 +58,7 @@ jobs:
 
           if [[ $(git status --porcelain autoupdate/*.yaml) ]]; then
             git add autoupdate/*.yaml
-            git commit -m "Update rules: $(date '+%Y-%m-%d %H:%M:%S') [skip ci]"
+            git commit -m "Update rules: $(date '+%Y-%m-%d %H:%M:%S')"
             git push
           else
             echo "No changes to commit."
