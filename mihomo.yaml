@@ -94,9 +94,9 @@ proxy-groups:
     <<: *common-group
     icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/telegram.png
 
-  - name: "AI"
+  - name: "Google"
     <<: *common-group
-    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/gemini.png
+    icon: https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/icon/Google.png
 
   - name: "秋风净化"
     type: select
@@ -122,7 +122,7 @@ rules:
   - RULE-SET,JapanWeb,日区网站
   - RULE-SET,Steam,游戏平台
   - RULE-SET,Telegram,电报消息
-  - RULE-SET,AI,AI
+  - RULE-SET,Google,Google
   - RULE-SET,Proxy,节点选择
   - RULE-SET,gfw,节点选择
   - RULE-SET,cn,DIRECT
@@ -168,11 +168,11 @@ rule-providers:
     url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Telegram.yaml"
     path: ./rule_provider/Telegram.yaml
   
-  AI:
+  Google:
     <<: *rule-provider-config
     behavior: classical
-    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/AI.yaml"
-    path: ./rule_provider/AI.yaml
+    url: "https://raw.githubusercontent.com/ameyukisora/Clash-Rule/master/provider/Google.yaml"
+    path: ./rule_provider/Google.yaml
   
   Proxy:
     <<: *rule-provider-config
