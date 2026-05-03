@@ -1,6 +1,6 @@
 payload:
-  # 2026-05-03 02:39:42
-  # TOTAL: 4205 urls
+  # 2026-05-04 02:40:01
+  # TOTAL: 4206 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3170,6 +3170,7 @@ payload:
   - '+.sockslist.net'
   - '+.socrec.org'
   - '+.softether-download.com'
+  - '+.softether.co.jp'
   - '+.softether.org'
   - '+.softfamous.com'
   - '+.softwarebychuck.com'
