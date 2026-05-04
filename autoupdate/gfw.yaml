@@ -1,6 +1,6 @@
 payload:
-  # 2026-05-04 02:40:01
-  # TOTAL: 4206 urls
+  # 2026-05-05 03:09:48
+  # TOTAL: 4202 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3046,9 +3046,6 @@ payload:
   - '+.saveuighur.org'
   - '+.sbme.me'
   - '+.sbti.unun.dev'
-  - '+.scache.vzw.com'
-  - '+.scache1.vzw.com'
-  - '+.scache2.vzw.com'
   - '+.schema.org'
   - '+.scmp.com'
   - '+.scramble.io'
@@ -3229,7 +3226,6 @@ payload:
   - '+.sproutcore.com'
   - '+.squirrelvpn.com'
   - '+.ss-link.com'
-  - '+.ss7.vzw.com'
   - '+.ssglobal.co'
   - '+.ssl.webpack.de'
   - '+.sspanel.net'
