@@ -88,7 +88,7 @@ payload:
   - DOMAIN,dht.libtorrent.org
   
   # > Other
-  - DOMAIN-SUFFIX,test-ipv6.com
+  - DOMAIN-KEYWORD,test-ipv6
   - DOMAIN-SUFFIX,cycani.org
   - PROCESS-NAME,HipsDaemon.exe
   - DOMAIN-KEYWORD,nvidia
