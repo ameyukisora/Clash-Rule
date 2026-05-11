@@ -1,6 +1,6 @@
 payload:
-  # 2026-05-11 02:42:48
-  # TOTAL: 4231 urls
+  # 2026-05-12 03:24:04
+  # TOTAL: 4233 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -921,6 +921,7 @@ payload:
   - '+.darrenliuwei.com'
   - '+.dashlane.com'
   - '+.data-vocabulary.org'
+  - '+.data18.com'
   - '+.daum.net'
   - '+.david-kilgour.com'
   - '+.dawangidc.com'
@@ -1032,6 +1033,7 @@ payload:
   - '+.dropboxusercontent.com'
   - '+.dscn.info'
   - '+.dstk.dk'
+  - '+.dt18.com'
   - '+.dtiblog.com'
   - '+.dtic.mil'
   - '+.dubox.com'
