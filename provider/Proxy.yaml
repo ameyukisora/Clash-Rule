@@ -19,7 +19,5 @@ payload:
   - DOMAIN,dns.cloudflare.com
 
   # > Other
-  - DOMAIN-SUFFIX,gsxt.gov.cn
-
-
+  #- DOMAIN-SUFFIX,gsxt.gov.cn
   - DOMAIN-SUFFIX,uinodes.com
