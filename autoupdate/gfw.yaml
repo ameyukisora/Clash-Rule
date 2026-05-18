@@ -1,6 +1,6 @@
 payload:
-  # 2026-05-18 02:50:05
-  # TOTAL: 4234 urls
+  # 2026-05-19 03:20:39
+  # TOTAL: 4236 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -3138,6 +3138,7 @@ payload:
   - '+.shwchurch.org'
   - '+.shwchurch3.com'
   - '+.sidelinesnews.com'
+  - '+.sider.ai'
   - '+.signal.org'
   - '+.silvergatebank.com'
   - '+.simbolostwitter.com'
@@ -4199,6 +4200,7 @@ payload:
   - '+.zh.pokerstrategy.com'
   - '+.zh.wikiquote.org'
   - '+.zhangtianliang.com'
+  - '+.zhangzhehan.net'
   - '+.zhanlve.org'
   - '+.zhao.1984.city'
   - '+.zhengjian.org'
