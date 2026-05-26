@@ -1,6 +1,6 @@
 payload:
-  # 2026-05-26 03:12:20
-  # TOTAL: 4245 urls
+  # 2026-05-27 03:51:22
+  # TOTAL: 4246 urls
   - '+.000webhost.com'
   - '+.0rz.tw'
   - '+.1-apple.com.tw'
@@ -2449,6 +2449,7 @@ payload:
   - '+.motherless.com'
   - '+.movements.org'
   - '+.moviefap.com'
+  - '+.mozilla.ai'
   - '+.mpettis.com'
   - '+.mpfinance.com'
   - '+.mpinews.com'
