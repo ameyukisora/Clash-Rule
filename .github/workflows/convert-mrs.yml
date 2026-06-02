@@ -53,7 +53,7 @@ jobs:
       - name: Download source rule files
         run: |
           mkdir -p autoupdate
-          base_url="https://raw.githubusercontent.com/ameyukisora/Clash-Rule/refs/heads/master/autoupdate"
+          base_url="https://raw.githubusercontent.com/amenorira/Clash-Rule/refs/heads/master/autoupdate"
           
           curl -sSL -o autoupdate/gfw.yaml "$base_url/gfw.yaml" &
           curl -sSL -o autoupdate/cn.yaml "$base_url/cn.yaml" &
